@@ -1,59 +1,42 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
 
 function Landing() {
-    return (
-    <section className="landing-container bg-red-200 mx-w-lg">
+    const shortestIntro = 'Hi my name is Ruth. But I prefer Alanna.';
+    const mediumIntro = `Hi my name is Ruth, But I prefer Alanna. I'm a web developer. Alanna 
+      works as a principal developer experience engineer at Netlify, where he works to improve 
+      the experience of building and deploying to the modern web.`;
+    const longIntro = `I am long intro. Alanna works as a principal developer experience engineer 
+      at Netlify, where he works to improve the experience of building and deploying to the modern 
+      web. He also hosts Learn With Jason, a live-streamed video show where he pair programs to learn 
+      something new in 90 minutes. He spends a lot of time writing to share what he’s learned in tech 
+      as well as stories about how he used to suck`;
+    const longestIntro = `Alanna works as a principal developer experience engineer at Netlify, 
+      where he works to improve the experience of building and deploying to the modern web. 
+      He also hosts Learn With Jason, a live-streamed video show where he pair programs to 
+      learn something new in 90 minutes. He spends a lot of time writing to share what he’s 
+      learned in tech as well as stories about how he used to suck, listened to people who 
+      taught him valuable lessons, and made changes that helped him suck less. This frequently 
+      boils down to telling people that the formula for success and happiness is to lift each 
+      other up at every opportunity and share what we learn, even when it feels like something 
+      that’s been shared before or that “everybody already knows”. He is trying his very best 
+      to follow his own advice. He lives in Portland, Oregon.`;
 
-      <div className="mx-w-lg lg:flex justify-between py-20 px-10 text-blue-100">
-      
-        {/* <!--   left side --> */}
-        <div className="content lg:w-1/2">
-          <section c>
-            <img src="./images/hero-image.svg" alt="" height="800px" width="600px" class="image1"/>
-          </section>
+    const [intro, setIntro] = useState(shortestIntro); 
+  return (
+    <div className="intro-container">
+        <div className="left-intro">
+            <p>Ala<br/><span>nna</span></p>
         </div>
-
-        {/* <!--   right side --> */}  
-        <motion.div 
-          initial={{opacity: 0}}
-          animate={{opacity:1}}
-          className="mx-auto content lg:w-1/2 mb-10 lg:mb-0">
-          <h2 className="lg:text-4xl lg:text-6xl text-4xl text-gray-900 mt-6 lg:mr-6 lg:mt-0 lg:ml-6 lg:mb-0">
-            <span className="popout">
-              <span className="text-5xl lg:text-6xl sm:bg-red-500 md:bg-yellow-500 lg:bg-blue-500 xl:bg-pink-500">c</span>
-              <span className="text-5xl lg:text-6xl">o</span>
-              <span className="text-5xl lg:text-6xl">d</span>
-              <span className="text-5xl lg:text-6xl">e</span>
-              <span className="text-5xl lg:text-6xl mr-4">.</span>
-              <span className="text-5xl lg:text-6xl">d</span>
-              <span className="text-5xl lg:text-6xl">e</span>
-              <span className="text-5xl lg:text-6xl">s</span>
-              <span className="text-5xl lg:text-6xl">i</span>
-              <span className="text-5xl lg:text-6xl">g</span>
-              <span className="text-5xl lg:text-6xl">n</span>
-              <span className="text-5xl lg:text-6xl">.</span>
-            </span>
-           <br/><span className="text-3xl lg:text-4xl">bringing ideas </span><span className="lg:text-4xl mr-2">to</span>
-           <span className="popout">
-              <span className="text-5xl lg:text-6xl">l</span>
-              <span className="text-5xl lg:text-6xl">i</span>
-              <span className="text-5xl lg:text-6xl">f</span>
-              <span className="text-5xl lg:text-6xl">e</span>
-              <span className="text-5xl lg:text-6xl">.</span>
-           </span> 
-          <br/><span className="text-3xl lg:text-4xl">everything that makes the web go ‘round.</span></h2>
-          <button className="button">
-            <a href="#" className="inline-block py-2 px-6 bg-red-100 text-red-600 hover:bg-red-600 hover:no-underline hover:text-red-100 rounded mr-2">Download my resume</a>
-          </button>
-        </motion.div>
-        <div>
-          
+        <div className="right-intro">
+            <p>Adjust bio length:</p>
+            <button onClick={()=> setIntro(shortestIntro)}><span role="img">&#9899;</span></button>
+            <button onClick={()=> setIntro(mediumIntro)}><span role="img">&#9899;</span></button>
+            <button onClick={()=> setIntro(longIntro)}><span role="img">&#9899;</span></button>
+            <button onClick={()=> setIntro(longestIntro)}><span role="img">&#9899;</span></button>
+            <p>{intro}</p>
         </div>
-      </div>
-    </section>
-    )
+    </div>
+  );
 }
 
 export default Landing;
