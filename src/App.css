@@ -46,10 +46,10 @@ table {
 /*NAVIGATION*/
 nav {
   height: 10vh;
-  background-color: #F4E9F1;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid crimson;
+  border-bottom: 2px solid #E53E3E;
 }
 
 nav ul {
@@ -63,7 +63,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  background-color: #F4E9F1;
+  background-color: #fff;
 }
 
 .left-intro {
@@ -93,7 +93,43 @@ nav ul {
   align-items: center;
 }
 
+.landing-btn-div {
+  display: flex;
+  margin: 50px auto;
+}
+
+p {
+  padding: 0 50px;
+}
+
+.fa-circle {
+  color: red;
+  cursor: pointer;
+}
+
+.fa-circle:hover {
+  color: green;
+  border-radius: 50%;
+  border: 3px solid red;
+}
+
 /*PROJECT SECTION*/
 .projects-container img {
   width: 100vw;
+}
+
+/*FOOTER SECTION*/
+.footer-container {
+  height: 30vh;
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style: none;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
 }

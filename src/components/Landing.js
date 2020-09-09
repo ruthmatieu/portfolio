@@ -29,10 +29,12 @@ function Landing() {
         </div>
         <div className="right-intro">
             <p>Adjust bio length:</p>
-            <button onClick={()=> setIntro(shortestIntro)}><span role="img">&#9899;</span></button>
-            <button onClick={()=> setIntro(mediumIntro)}><span role="img">&#9899;</span></button>
-            <button onClick={()=> setIntro(longIntro)}><span role="img">&#9899;</span></button>
-            <button onClick={()=> setIntro(longestIntro)}><span role="img">&#9899;</span></button>
+            <div className="landing-btn-div">
+              <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
+              <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
+              <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
+              <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
+            </div>
             <p>{intro}</p>
         </div>
     </div>
