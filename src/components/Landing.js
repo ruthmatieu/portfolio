@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import image from '../images/profile-illustration.png';
 
 function Landing() {
     const shortestIntro = 'Hi my name is Ruth. But I prefer Alanna.';
@@ -22,20 +23,22 @@ function Landing() {
       to follow his own advice. He lives in Portland, Oregon.`;
 
     const [intro, setIntro] = useState(shortestIntro); 
+
   return (
+    
     <div className="intro-container">
         <div className="left-intro">
-            <p>Ala<br/><span>nna</span></p>
+            <img src={image} alt="" className="landing-img"/>
         </div>
         <div className="right-intro">
-            <p>Adjust bio length:</p>
+            <p className="bio-adjuster">Adjust bio length:</p>
             <div className="landing-btn-div">
               <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
               <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
               <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
               <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
             </div>
-            <p>{intro}</p>
+            <p className="bio-details">{intro}</p>
         </div>
     </div>
   );

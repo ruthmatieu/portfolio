@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
-import logo from '../images/pic001.jpg';
+import React from 'react';
+import logo from '../images/logo.svg';
 import ToggleButton from 'react-toggle-button';
 
 
-class Nav extends React.Component {
 
-  render(props){
+function Nav() {
+
     return (
       <nav>
-        <ul>
-          <li>{logo}</li>
-        </ul>
-        <ul>
-          <ToggleButton
-            
-          />
-        </ul>
+        <div className="nav-item">
+          <img src={logo} alt="logo" className="logo"/>
+        </div>
+        <div className="nav-item">
+          <ToggleButton/>
+        </div>
       </nav>
     );
-  }
+  
 
 }
 

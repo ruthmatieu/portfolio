@@ -43,44 +43,108 @@ table {
 	border-spacing: 0;
 }
 
+/*MOBILE FIRST APPROACH*/
+
 /*NAVIGATION*/
+
 nav {
-  height: 10vh;
-  background-color: #fff;
+  height: 8vh;
+  margin: 0;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #E53E3E;
+  border-bottom: 2px solid #B1D7AD;
 }
+
+nav .nav-item {
+  padding: 2px 30px;
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  width: 35px;
+}
+
+/*LANDING PAGE*/
+.intro-container {
+  height: 92vh;
+  background-image: linear-gradient(to top, rgb(220, 243, 219) 0%, white 100%);
+}
+.landing-img {
+  width: 300px;
+}
+
+.left-intro {
+  display: grid;
+  place-items: center;
+  height: 60vh;
+}
+
+.right-intro {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.bio-adjuster {
+  font-weight: 200;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+
+.landing-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.landing-page-btn {
+  color: #F8C34D;
+  margin: 0 5px;
+}
+.landing-page-btn:hover {
+  color: rgb(224, 171, 55);
+  cursor: pointer;
+}
+
+.bio-details {
+  font-size: 1rem;
+  color: black;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.projects-container img {
+  width: 100vw;
+}
+/*PROJECT PAGE*/
+
+
+/*
+
+.landing-img 
 
 nav ul {
   padding: 2.25% 6%;
   color: white;
 }
 
-/*LANDING SECTION*/
+/*
 .intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 90vh;
-  background-color: #fff;
+  background-color: white;
 }
 
 .left-intro {
   width: 50%;
   text-transform: uppercase;  
+  display: grid;
+  place-items: center;
 }
-
-.left-intro p {
-  font-size: 12rem;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.left-intro span {
-  background-color: #ED8936;
-  padding: 0 50px;
-  color: white;
+.landing-img {
+  width: 600px;
 }
 
 .right-intro {
@@ -113,12 +177,12 @@ p {
   border: 3px solid red;
 }
 
-/*PROJECT SECTION*/
+/*
 .projects-container img {
   width: 100vw;
 }
 
-/*FOOTER SECTION*/
+/* 
 .footer-container {
   height: 30vh;
 }
@@ -132,4 +196,4 @@ p {
 .footer-nav a {
   text-decoration: none;
   color: black;
-}
+} */
