@@ -37,6 +37,20 @@ function App() {
       image: projectThree,
       description: 'This is description for project 3',
       hoverImage: 'actual project image three'
+    },
+    {
+      id: 2,
+      title: 'project ',
+      image: projectTwo,
+      description: 'This is description for project 2',
+      hoverImage: 'actual project image two'
+    },
+    {
+      id: 1,
+      title: 'project ',
+      image: projectOne,
+      description: 'This is description for project 1',
+      hoverImage: 'actual project image one'
     }
   ]
 

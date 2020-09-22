@@ -9,7 +9,7 @@ function Nav() {
     return (
       <nav>
         <div className="nav-item">
-          <img src={logo} alt="logo" className="logo"/>
+          <p className="logo">Alanna Mathieu</p>
         </div>
         <div className="nav-item">
           <ToggleButton/>

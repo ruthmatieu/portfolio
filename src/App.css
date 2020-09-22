@@ -53,7 +53,7 @@ nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #B1D7AD;
+  border-bottom: 2px solid #E53E3E;
 }
 
 nav .nav-item {
@@ -63,16 +63,20 @@ nav .nav-item {
 }
 
 .logo {
-  width: 35px;
+  color: #E53E3E;
 }
 
 /*LANDING PAGE*/
+.browser-only-intro {
+  display: none;
+}
+
 .intro-container {
   height: 92vh;
-  background-image: linear-gradient(to top, rgb(220, 243, 219) 0%, white 100%);
+  background-image: linear-gradient(to top, #F4EAF1 0%, white 100%);
 }
 .landing-img {
-  width: 300px;
+  width: 350px;
 }
 
 .left-intro {
@@ -86,6 +90,14 @@ nav .nav-item {
   vertical-align: middle;
 }
 
+.diamond {
+  width: 50px;
+}
+
+.diamond:hover {
+  /* do some animation with framer motion */
+  cursor: pointer;
+}
 .bio-adjuster {
   font-weight: 200;
   font-size: 0.8rem;
@@ -95,14 +107,6 @@ nav .nav-item {
 .landing-btn-div {
   display: flex;
   justify-content: center;
-}
-.landing-page-btn {
-  color: #F8C34D;
-  margin: 0 5px;
-}
-.landing-page-btn:hover {
-  color: rgb(224, 171, 55);
-  cursor: pointer;
 }
 
 .bio-details {
@@ -114,6 +118,102 @@ nav .nav-item {
 
 .projects-container img {
   width: 100vw;
+}
+
+@media only screen and (max-width: 321px) {
+  body {
+    background-color: yellow;
+  }
+  .landing-img {
+    width: 275px;
+  }
+
+} 
+@media only screen and (min-width: 608px) {
+  body {
+    background-color: yellow;
+  }
+  .landing-img {
+    width: 450px;
+  }
+  .browser-only-intro {
+
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: lightblue;
+    
+  }
+  .landing-img {
+    width: 450px;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: red;
+  }
+  .landing-img {
+    width: 500px;
+  }
+
+  .intro-container {
+    display: flex;
+  }
+
+  .left-intro {
+    width: 50%;
+    text-transform: uppercase;  
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .right-intro {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    height: 100vh;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: green;
+  }
+
+  .intro-container {
+    height: 77vh;
+  }
+  .landing-img {
+    width: 550px;
+  }
+  .browser-only-intro {
+    display: block;
+    background-color: #E53E3E;
+    padding: 8vh 0;
+  }
+
+  .left-intro {
+    width: 50%;
+    text-transform: uppercase;  
+    display: grid;
+    place-items: center;
+    height: 77vh;
+  }
+  .right-intro {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    height: 77vh;
+  }
+
 }
 /*PROJECT PAGE*/
 

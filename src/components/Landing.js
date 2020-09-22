@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import image from '../images/profile-illustration.png';
+import diamond from '../images/icon-slider.png';
 
 function Landing() {
     const shortestIntro = 'Hi my name is Ruth. But I prefer Alanna.';
@@ -26,20 +27,26 @@ function Landing() {
 
   return (
     
-    <div className="intro-container">
-        <div className="left-intro">
-            <img src={image} alt="" className="landing-img"/>
+    <div>
+        <div className="browser-only-intro">
+          <h1>hello for browser only</h1>
         </div>
-        <div className="right-intro">
-            <p className="bio-adjuster">Adjust bio length:</p>
-            <div className="landing-btn-div">
-              <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
-              <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
-              <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
-              <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><i class="fas fa-circle"></i></span></p>
-            </div>
-            <p className="bio-details">{intro}</p>
+        <div className="intro-container">
+          <div className="left-intro">
+              <img src={image} alt="" className="landing-img"/>
+          </div>
+          <div className="right-intro">
+              <p className="bio-adjuster">Adjust bio length:</p>
+              <div className="landing-btn-div">
+                <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+              </div>
+              <p className="bio-details">{intro}</p>
+          </div>
         </div>
+        
     </div>
   );
 }
