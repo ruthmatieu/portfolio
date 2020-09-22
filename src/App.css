@@ -25,7 +25,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  color: #2B2C2B;
+  letter-spacing: 0.06rem;
+  line-height: 1.2rem;
 }
 ol, ul {
 	list-style: none;
@@ -44,6 +47,12 @@ table {
 }
 
 /*MOBILE FIRST APPROACH*/
+@media only screen and (max-width: 403px) {
+  body {
+    background-color: purple;
+  }
+  
+}
 
 /*NAVIGATION*/
 
@@ -53,7 +62,6 @@ nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #E53E3E;
 }
 
 nav .nav-item {
@@ -63,17 +71,47 @@ nav .nav-item {
 }
 
 .logo {
-  color: #E53E3E;
+  color: #88BBBC;
+  font-family: 'Lobster Two', cursive;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  
+}
+.socials a {
+  justify-content: right;
+  color: #2C2C2C;
+  margin: 5px 0;
+}
+
+.socials a:hover{
+  color: #88BBBC;
+}
+
+.verticalLine {
+border: 0;
+color: #DBDBDB;
+background-color: #DBDBDB;
+width: 1px;
+height: 60px;
+}
 /*LANDING PAGE*/
 .browser-only-intro {
-  display: none;
+  padding: 8vh 0;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.06rem;
 }
-
 .intro-container {
   height: 92vh;
-  background-image: linear-gradient(to top, #F4EAF1 0%, white 100%);
+  background-color: white;
 }
 .landing-img {
   width: 350px;
@@ -82,12 +120,103 @@ nav .nav-item {
 .left-intro {
   display: grid;
   place-items: center;
-  height: 60vh;
+  height: 50vh;
 }
 
 .right-intro {
   text-align: center;
   vertical-align: middle;
+  display: grid;
+  place-items: center;
+  padding: 0 5%;
+  height: 35vh;
+}
+
+.right-intro h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 0.35rem;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #DCEAEB 50%);
+  display: inline;
+}
+
+.right-intro h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 8% 8% 3% 8%;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+
+.right-intro p {
+  margin: 2% 8% 8% 8%;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color: #9C9C9C;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-btn hr {
+  width: 40px;
+  height: 1px;
+  border: 0;
+  color: #DBDBDB;
+  background-color: #DBDBDB;
+  margin: auto 10px;
+}
+
+.right-intro a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2B2C2B;  
+  font-weight: 900;
+  font-family: 'Merriweather Sans', sans-serif;  
+  font-size: 0.9rem;
+  
+}
+
+.right-intro a:hover {
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
+}
+
+.dots-one img {
+  width: 250px;
+  position: absolute;
+  top: 300px;
+  left: -40px;
+  z-index: auto;
+}
+
+.dots-two img {
+  width: 250px;
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  z-index: auto;
+}
+
+.dots-three img {
+  width: 250px;
+  position: absolute;
+  top: 500px;
+  left: 90px;
+  z-index: auto;
+}
+
+hr {
+  width: 90%;
+  height: 1px;
+  border: 0;
+  color: #DBDBDB;
+  background-color: #DBDBDB;
+  margin: auto 10px;
 }
 
 .diamond {
@@ -111,7 +240,6 @@ nav .nav-item {
 
 .bio-details {
   font-size: 1rem;
-  color: black;
   padding: 5% 10%;
   text-align: center;
 }
@@ -120,12 +248,15 @@ nav .nav-item {
   width: 100vw;
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 404px) {
   body {
     background-color: yellow;
   }
   .landing-img {
     width: 275px;
+  }
+  .right-intro h1 {
+    font-size: 2rem;
   }
 
 } 
@@ -187,16 +318,9 @@ nav .nav-item {
     background-color: green;
   }
 
-  .intro-container {
-    height: 77vh;
-  }
+  
   .landing-img {
     width: 550px;
-  }
-  .browser-only-intro {
-    display: block;
-    background-color: #E53E3E;
-    padding: 8vh 0;
   }
 
   .left-intro {
@@ -204,14 +328,13 @@ nav .nav-item {
     text-transform: uppercase;  
     display: grid;
     place-items: center;
-    height: 77vh;
   }
   .right-intro {
-    width: 50%;
     text-align: center;
-    vertical-align: middle;
-    margin: 0;
-    height: 77vh;
+  vertical-align: middle;
+  display: grid;
+  place-items: center;
+  padding: 0 5%;
   }
 
 }

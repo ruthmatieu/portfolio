@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import image from '../images/profile-illustration.png';
 import diamond from '../images/icon-slider.png';
+import dots from '../images/bg-dots.png';
+
+//
+
 
 function Landing() {
     const shortestIntro = 'Hi my name is Ruth. But I prefer Alanna.';
@@ -28,15 +32,60 @@ function Landing() {
   return (
     
     <div>
-        <div className="browser-only-intro">
-          <h1>hello for browser only</h1>
-        </div>
+        
         <div className="intro-container">
+          <div className="socials">
+            <a href="https://twitter.com/ruthmatieu" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/civil_co/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <hr class="verticalLine"/>
+          </div>
           <div className="left-intro">
               <img src={image} alt="" className="landing-img"/>
           </div>
           <div className="right-intro">
-              <p className="bio-adjuster">Adjust bio length:</p>
+            <div>
+              <h1>Alanna Mathieu</h1>
+              <h6>Fullstack Developer specializing in front end frameworks such as React with a passion for Design Systems, Web Accessibility, and Serverless Technologies</h6>
+              <p>Just some text about something and something else. Just keep on repeating etc. Should've
+                looked into lorem ipsum.
+              </p>
+              {/* <div className="browser-only-intro">
+                <div>
+                <p className="bio-adjuster">Adjust bio length:</p>
+                    <div className="landing-btn-div">
+                      <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                      <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                      <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                      <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                    </div>
+                    <p className="bio-details">{intro}</p>
+                </div>
+                
+              </div> */}
+              <div className="arrow-btn">
+                {/* <img src={arrow} alt="arrow icon"/> */}
+                <a href="">view work</a>
+                <hr/>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <div className="dots-one">
+          <img src={dots}/>
+        </div>
+        <div className="dots-two">
+          <img src={dots}/>
+        </div>
+        <div className="dots-three">
+          <img src={dots}/>
+        </div>
+        <hr/>
+        <div className="browser-only-intro">
+          <p className="bio-adjuster">Adjust bio length:</p>
               <div className="landing-btn-div">
                 <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
                 <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
@@ -44,7 +93,6 @@ function Landing() {
                 <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
               </div>
               <p className="bio-details">{intro}</p>
-          </div>
         </div>
         
     </div>
