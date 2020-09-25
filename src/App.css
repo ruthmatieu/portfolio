@@ -57,7 +57,7 @@ table {
 /*NAVIGATION*/
 
 nav {
-  height: 8vh;
+  height: 6vh;
   margin: 0;
   background-color: white;
   display: flex;
@@ -70,8 +70,12 @@ nav .nav-item {
   place-items: center;
 }
 
+.nav-logo {
+  background-color: #2B2C2B;
+}
 .logo {
   color: #88BBBC;
+  /* background-color: #2B2C2B; */
   font-family: 'Lobster Two', cursive;
 }
 
@@ -102,15 +106,17 @@ height: 60px;
 }
 /*LANDING PAGE*/
 .browser-only-intro {
-  padding: 8vh 0;
-  display: grid;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
   place-items: center;
   font-weight: 900;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.06rem;
+  background-color: white;
 }
 .intro-container {
-  height: 92vh;
+  height: 94vh;
   background-color: white;
 }
 .landing-img {
@@ -230,7 +236,8 @@ hr {
 .bio-adjuster {
   font-weight: 200;
   font-size: 0.8rem;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #2B2C2B
 }
 
 .landing-btn-div {
@@ -240,7 +247,7 @@ hr {
 
 .bio-details {
   font-size: 1rem;
-  padding: 5% 10%;
+  padding: 2px 10%;
   text-align: center;
 }
 
@@ -268,7 +275,7 @@ hr {
     width: 450px;
   }
   .browser-only-intro {
-
+    
   }
 
 }
