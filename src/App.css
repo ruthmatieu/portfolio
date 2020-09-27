@@ -318,6 +318,11 @@ hr {
     height: 100vh;
   }
 
+  /* .projects-container img{
+    width: 95%;
+    margin: auto;
+  } */
+
 }
 
 @media only screen and (min-width: 1024px) {

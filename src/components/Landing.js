@@ -7,9 +7,8 @@ import dots from '../images/bg-dots.png';
 
 
 function Landing() {
-    const shortestIntro = 'Hi my name is Ruth. But I prefer Alanna.';
-    const mediumIntro = `Hi my name is Ruth, But I prefer Alanna. I'm a web developer. Alanna 
-      works as a principal developer experience engineer at Netlify, where he works to improve 
+    const shortestIntro = 'Alanna is a fullstack developer.';
+    const mediumIntro = `Alanna is a fullstack devloper who is continuosly learning and currently skilled works as a principal developer experience engineer at Netlify, where he works to improve 
       the experience of building and deploying to the modern web.`;
     const longIntro = `I am long intro. Alanna works as a principal developer experience engineer 
       at Netlify, where he works to improve the experience of building and deploying to the modern 
@@ -47,7 +46,7 @@ function Landing() {
           <div className="right-intro">
             <div>
               <h1>Alanna Mathieu</h1>
-              <h6>Fullstack Developer specializing in front end frameworks such as React with a passion for Design Systems, Web Accessibility, and Serverless Technologies</h6>
+              <h6>Fullstack Developer specializing in front end frameworks such as React with a passion for Design Systems, Web Accessibility, and Serverless Technologies.</h6>
               <p>Just some text about something and something else. Just keep on repeating etc. Should've
                 looked into lorem ipsum.
               </p>
@@ -75,17 +74,17 @@ function Landing() {
           </div>
         </div>
         <div className="dots-one">
-          <img src={dots}/>
+          <img src={dots} alt="diamond-icon"/>
         </div>
         <div className="dots-two">
-          <img src={dots}/>
+          <img src={dots} alt="diamond-icon"/>
         </div>
         <div className="dots-three">
-          <img src={dots}/>
+          <img src={dots} alt="diamond-icon"/>
         </div>
         <hr/>
         <div className="browser-only-intro">
-          <p className="bio-adjuster">Adjust bio length:</p>
+          <p className="bio-adjuster">Adjust to view skills:</p>
               <div className="landing-btn-div">
                 <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
                 <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
