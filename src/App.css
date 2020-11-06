@@ -46,6 +46,8 @@ table {
 	border-spacing: 0;
 }
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /*MOBILE FIRST APPROACH*/
 @media only screen and (max-width: 403px) {
   body {
@@ -53,6 +55,7 @@ table {
   }
   
 }
+
 
 /*NAVIGATION*/
 
