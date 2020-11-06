@@ -34,10 +34,10 @@ function Landing() {
         
         <div className="intro-container">
           <div className="socials">
-            <a href="https://twitter.com/ruthmatieu" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/civil_co/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/civil_co/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
             <hr class="verticalLine"/>
           </div>
           <div className="left-intro">
@@ -65,7 +65,7 @@ function Landing() {
               </div> */}
               <div className="arrow-btn">
                 {/* <img src={arrow} alt="arrow icon"/> */}
-                <a href="">view work</a>
+                <a href="#">view work</a>
                 <hr/>
               </div>
               

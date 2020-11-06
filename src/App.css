@@ -251,14 +251,30 @@ hr {
   text-align: center;
 }
 
-.projects-container img {
-  width: 100vw;
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+.projects {
+  width: 270px;
+  height: 270px;
+  margin: 10px 0;
+}
+
+.project-one {
+  background-image: url('./images/lavabeans.png');
+  background-size: cover;
+}
+
+
+
+
 @media only screen and (max-width: 404px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   .landing-img {
     width: 275px;
   }
@@ -268,9 +284,9 @@ hr {
 
 } 
 @media only screen and (min-width: 608px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   .landing-img {
     width: 450px;
   }
@@ -281,10 +297,10 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     background-color: lightblue;
     
-  }
+  } */
   .landing-img {
     width: 450px;
   }
@@ -292,9 +308,9 @@ hr {
 }
 
 @media only screen and (min-width: 900px) {
-  body {
+  /* body {
     background-color: red;
-  }
+  } */
   .landing-img {
     width: 500px;
   }
@@ -326,9 +342,9 @@ hr {
 }
 
 @media only screen and (min-width: 1024px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
 
   
   .landing-img {
@@ -432,3 +448,13 @@ p {
   text-decoration: none;
   color: black;
 } */
+
+/*BREAKPOINTS
+
+-mobile first approach > 770px (white)
+  - hamburger menu
+-770px - 1023px (red)
+  - desktop menu
+-1024px (yellow)
+  - now includes side nav in order tab
+*/
