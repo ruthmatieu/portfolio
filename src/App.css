@@ -367,7 +367,31 @@ hr {
 
 }
 /*PROJECT PAGE*/
+/*buttons*/
 
+.proj-btn {
+	background:linear-gradient(to bottom, #88bbbc 5%, #408c99 100%);
+	background-color:#88bbbc;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1rem;
+  padding:8px 10px;
+  margin: 0 8px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  border: none;
+}
+.proj-btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #88bbbc 100%);
+  background-color:#408c99;
+  color: #eee8e8;
+}
+.proj-btn:active {
+	position:relative;
+	top:1px;
+}
 
 /*
 

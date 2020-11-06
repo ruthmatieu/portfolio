@@ -24,20 +24,20 @@ function Works() {
       title: 'The Chow',
       image: thechow,
       description: 'An app that allows user to rate burgers as well as nominate their favorite. The dashboard uses Authentication and a geolocation API, as well as Brewdogs open API. Please make sure to ',
-      tech: '',
-      category: '',
+      tech: 'JavaScript, HTML5, CSS',
+      category: 'Static website',
       link: 'https://www.chowdining.com/',
       github: 'https://github.com/ruthmatieu/ruthmatieu.github.io'
     },
     {
       id: 3,
-      title: 'JavaScript Game',
+      title: 'Doodle Jump',
       image: lavabeans,
-      description: 'This is description for project 3',
-      tech: '',
-      category: '',
-      link: '',
-      github: ''
+      description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
+      tech: 'JavaScript, HTML5, CSS',
+      category: 'Game',
+      link: 'https://doodle-jump.vercel.app/',
+      github: 'https://github.com/ruthmatieu/doodle-jump'
     },
     {
       id: 2,
@@ -64,18 +64,18 @@ function Works() {
             
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
               <div style={{padding: '0 10px'}}>
-                <p style={{color: 'orange'}}>Technologies:</p>
+                <p style={{color: '#88BBBC'}}>Technologies:</p>
                 <p>{project.tech}</p>
               </div>
               <div>
-                <p>Category:</p>
+                <p style={{color: '#88BBBC'}}>Category:</p>
                 <p>{project.category}</p>
               </div>
             </div>
 
             <div>
-              <a style={{color: 'red', textDecoration: 'none', padding: '0 5px', fontSize: '1rem', fontWeight: '900'}} href={project.link} target='_blank' rel="noopener noreferrer">Project</a>
-              <a style={{color: 'red', textDecoration: 'none', padding: '0 5px', fontSize: '1rem', fontWeight: '900'}} href={project.github} target='_blank' rel="noopener noreferrer">GitHub</a>
+              <button className="proj-btn"><a style={{color: 'white', textDecoration: 'none', padding: '0 5px'}} href={project.link} target='_blank' rel="noopener noreferrer">Project</a></button>
+              <button className="proj-btn"><a style={{color: 'white', textDecoration: 'none', padding: '0 5px'}} href={project.github} target='_blank' rel="noopener noreferrer">GitHub</a></button>
             </div>
 
           </div>
