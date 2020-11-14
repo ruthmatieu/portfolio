@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from './components/Nav';
 import Landing from './components/Landing';
 import Works from './components/Works';
+import CodingChallenges from './components/CodingChallenges';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ function App() {
       <Nav/>
       <Landing/>
       <Works/>
+      <CodingChallenges/>
       <Contact/>
       <Footer/>
     </div>

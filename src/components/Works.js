@@ -1,10 +1,11 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
+import Projects from './Project';
 
 //project images
 import lavabeans from '../images/lavabeans.png';
 import thechow from '../images/the-chow.jpg';
-import projectThree from '../images/drawing.svg';
+import fittrackr from '../images/fit-trackr.png';
 
 //style={{backgroundImage:`url(${project.image})`, display: 'flex'}}
 
@@ -21,7 +22,7 @@ function Works() {
       github: ''
     },
     {
-      id: 2,
+      id: 4,
       title: 'The Chow',
       image: thechow,
       description: 'An app that allows user to rate burgers as well as nominate their favorite. The dashboard uses Authentication and a geolocation API, as well as Brewdogs open API. Please make sure to ',
@@ -31,31 +32,41 @@ function Works() {
       github: 'https://github.com/ruthmatieu/ruthmatieu.github.io'
     },
     {
-      id: 3,
-      title: 'Doodle Jump',
-      image: lavabeans,
+      id: 2,
+      title: 'Fit Trackr',
+      image: fittrackr,
       description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
-      tech: 'JavaScript, HTML5, CSS',
+      tech: 'React, Redux, Firebase, HTML5, CSS',
       category: 'Game',
       link: 'https://doodle-jump.vercel.app/',
-      github: 'https://github.com/ruthmatieu/doodle-jump'
+      github: 'https://github.com/ruthmatieu/fit-trackr/tree/master/fit-trackr'
     },
-    {
-      id: 2,
-      title: 'Revenoo',
-      image: lavabeans,
-      description: 'This is description for project 2',
-      tech: '',
-      category: '',
-      link: '',
-      github: ''
-    }
+    // {
+    //   id: 5,
+    //   title: 'FitTrakr',
+    //   image: lavabeans,
+    //   description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
+    //   tech: 'JavaScript, HTML5, CSS',
+    //   category: 'Game',
+    //   link: 'https://doodle-jump.vercel.app/',
+    //   github: 'https://github.com/ruthmatieu/doodle-jump'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Jouveaux',
+    //   image: lavabeans,
+    //   description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
+    //   tech: 'JavaScript, HTML5, CSS',
+    //   category: 'E-commerce',
+    //   link: 'https://doodle-jump.vercel.app/',
+    //   github: 'https://github.com/ruthmatieu/doodle-jump'
+    // },
   ]
  
   const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original: lavabeans,
+      thumbnail: lavabeans,
     },
     {
       original: 'https://picsum.photos/id/1015/1000/600/',
@@ -67,40 +78,30 @@ function Works() {
     },
   ];
   
-  class MyGallery extends React.Component {
-    render() {
-      return <ImageGallery items={images} />;
-    }
-  }
+
 
   return (
-    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#E7F0EF'}}>
+    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#2B2C2B'}}>
       {projectsData.map(project => (
         <div id={project.id} style={{display: 'flex', flexWrap: 'wrap'}}>
 
-          <img style={{width: '500px', marginTop: '60px'}} src={project.image} alt={project.title}/>
-          <div style={{width: '500px', marginTop: '60px', backgroundColor: 'white', display: 'grid', placeItems: 'center'}}>
-
-            <h1 style={{color: '#2B2C2B', fontSize: '2rem', fontWeight: '900'}}>{project.title}</h1>
-            <p style={{padding: '0 50px', fontSize: '1rem', lineHeight: '1.5rem'}}>{project.description}</p>
+          <div style={{display: 'flex'}}>
+          <img 
+            style={{width: '400px',height: '200px', marginTop: '60px'}} 
+            src={project.image} 
+            alt={project.title}
             
-            <div style={{display: 'flex', justifyContent: 'space-between'}}>
-              <div style={{padding: '0 10px'}}>
-                <p style={{color: '#88BBBC'}}>Technologies:</p>
-                <p>{project.tech}</p>
-              </div>
-              <div>
-                <p style={{color: '#88BBBC'}}>Category:</p>
-                <p>{project.category}</p>
-              </div>
+            />
+            <Projects
+                title={project.title}
+                description={project.description}
+                tech={project.tech}
+                category={project.category}
+                link={project.link}
+                github={project.github}
+              />
             </div>
-
-            <div>
-              <button className="proj-btn"><a style={{color: 'white', textDecoration: 'none', padding: '0 5px'}} href={project.link} target='_blank' rel="noopener noreferrer">Project</a></button>
-              <button className="proj-btn"><a style={{color: 'white', textDecoration: 'none', padding: '0 5px'}} href={project.github} target='_blank' rel="noopener noreferrer">GitHub</a></button>
-            </div>
-
-          </div>
+          
         </div>
       ))}
     </div>
