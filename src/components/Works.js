@@ -36,9 +36,9 @@ function Works() {
       title: 'Fit Trackr',
       image: fittrackr,
       description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
-      tech: 'React, Redux, Firebase, HTML5, CSS',
+      tech: 'React, Redux, Firebase, Node, Express, HTML5, CSS',
       category: 'Game',
-      link: 'https://doodle-jump.vercel.app/',
+      link: 'https://fit-trackr.vercel.app/',
       github: 'https://github.com/ruthmatieu/fit-trackr/tree/master/fit-trackr'
     },
     // {
@@ -62,32 +62,16 @@ function Works() {
     //   github: 'https://github.com/ruthmatieu/doodle-jump'
     // },
   ]
- 
-  const images = [
-    {
-      original: lavabeans,
-      thumbnail: lavabeans,
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
-  
 
 
   return (
-    <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#2B2C2B'}}>
+    <div style={{ backgroundColor: 'white'}}>
       {projectsData.map(project => (
-        <div id={project.id} style={{display: 'flex', flexWrap: 'wrap'}}>
+        <div id={project.id} style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-around', backgroundColor: '#2B2C2B', margin: '10px'}}>
 
-          <div style={{display: 'flex'}}>
+          <div>
           <img 
-            style={{width: '400px',height: '200px', marginTop: '60px'}} 
+            style={{width: '400px',height: '210px', marginTop: '60px'}} 
             src={project.image} 
             alt={project.title}
             
