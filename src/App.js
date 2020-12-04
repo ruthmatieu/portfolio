@@ -16,10 +16,9 @@ function App() {
     <div className="App">
       <Nav/>
       <Landing/>
-      <Works/>
-      <CodingChallenges/>
+      {/* <CodingChallenges/>
       <Contact/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }

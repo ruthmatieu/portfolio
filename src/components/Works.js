@@ -67,13 +67,13 @@ function Works() {
   return (
     <div style={{ backgroundColor: 'white'}}>
       {projectsData.map(project => (
-        <div id={project.id} style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-around', backgroundColor: '#2B2C2B', margin: '10px'}}>
+        <div id={project.id}>
 
-          <div>
-          <img 
-            style={{width: '400px',height: '210px', marginTop: '60px'}} 
-            src={project.image} 
-            alt={project.title}
+          <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-around', backgroundColor: '#2B2C2B', margin: '10px 0'}}>
+            <img 
+              style={{width: '400px',height: '210px', marginTop: '60px'}} 
+              src={project.image} 
+              alt={project.title}
             
             />
             <Projects

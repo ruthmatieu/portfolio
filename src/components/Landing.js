@@ -4,12 +4,26 @@ import diamond from '../images/icon-slider.png';
 import dots from '../images/bg-dots.png';
 
 //
-
+import Works from './Works'
 
 function Landing() {
-    const shortestIntro = 'Alanna is a fullstack developer.';
-    const mediumIntro = `Alanna is a fullstack devloper who is continuosly learning and currently skilled works as a principal developer experience engineer at Netlify, where he works to improve 
-      the experience of building and deploying to the modern web.`;
+    const shortestIntro = [
+      `About Me:`,
+      `I am long intro. Alanna works as a principal developer experience engineer 
+      at Netlify, where he works to improve the experience of building and deploying to the modern 
+      web. He also hosts Learn With Jason, a live-streamed video show where he pair programs to learn 
+      something new in 90 minutes. He spends a lot of time writing to share what he’s learned in tech 
+      as well as stories about how he used to suck`,
+      <Works/>
+      ]
+    const mediumIntro = [
+      'JavaScript ES6',
+      'React',
+      'HTML & CSS',
+      'Node.js',
+      'SCSS',
+      'Styled-Components'
+      ]
     const longIntro = `I am long intro. Alanna works as a principal developer experience engineer 
       at Netlify, where he works to improve the experience of building and deploying to the modern 
       web. He also hosts Learn With Jason, a live-streamed video show where he pair programs to learn 
@@ -34,10 +48,11 @@ function Landing() {
         
         <div className="intro-container">
           <div className="socials">
-            <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.instagram.com/civil_co/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
             <hr class="verticalLine"/>
           </div>
           <div className="left-intro">
@@ -50,22 +65,8 @@ function Landing() {
               <p>Just some text about something and something else. Just keep on repeating etc. Should've
                 looked into lorem ipsum.
               </p>
-              {/* <div className="browser-only-intro">
-                <div>
-                <p className="bio-adjuster">Adjust bio length:</p>
-                    <div className="landing-btn-div">
-                      <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                      <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                      <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                      <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                    </div>
-                    <p className="bio-details">{intro}</p>
-                </div>
-                
-              </div> */}
               <div className="arrow-btn">
-                {/* <img src={arrow} alt="arrow icon"/> */}
-                <a href="#">view work</a>
+                <a href="#">Contact Me</a>
                 <hr/>
               </div>
               
@@ -86,10 +87,16 @@ function Landing() {
         <div className="browser-only-intro">
           <p className="bio-adjuster">Adjust to view skills:</p>
               <div className="landing-btn-div">
-                <p className="landing-page-btn" onClick={()=> setIntro(shortestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
-                <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/></span></p>
+                <div className="landing-page-btn" onClick={()=> 
+                  setIntro(shortestIntro.map(item => (item)))}>
+                    <span>
+                      <img src={diamond} alt="diamond" className="diamond"/>
+                      <h4>About</h4>
+                    </span>
+                </div>
+                <p className="landing-page-btn" onClick={()=> setIntro(mediumIntro.map(item => (item)))}><span role="img"><img src={diamond} alt="diamond" className="diamond"/><h5>Portfolio</h5></span></p>
+                <p className="landing-page-btn" onClick={()=> setIntro(longIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/><h5>Blog</h5></span></p>
+                <p className="landing-page-btn" onClick={()=> setIntro(longestIntro)}><span role="img"><img src={diamond} alt="diamond" className="diamond"/><h5>Contact</h5></span></p>
               </div>
               <p className="bio-details">{intro}</p>
         </div>
