@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from '../images/logo.svg';
 import ToggleButton from 'react-toggle-button';
-
+import {Link} from 'react-router-dom';
 
 
 function Nav() {
@@ -9,7 +8,7 @@ function Nav() {
     return (
       <nav>
         <div className="nav-item nav-logo">
-          <p className="logo">Alanna Mathieu</p>
+          <Link to='/'><p className="logo">Alanna Mathieu</p></Link>
         </div>
         <div className="nav-item">
           <ToggleButton/>

@@ -109,7 +109,7 @@ height: 60px;
 }
 /*LANDING PAGE*/
 .browser-only-intro {
-  height: 30vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   place-items: center;

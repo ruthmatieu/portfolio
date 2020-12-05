@@ -3,13 +3,10 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="footer-container">
-      <div className="footer-nav">
-        <li className="footer-item"><a href="#">item 1</a></li>
-        <li className="footer-item"><a href="#">item 2</a></li>
-        <li className="footer-item"><a href="#">item 3</a></li>
-        <li className="footer-item"><a href="#">item 4</a></li>
-        <li className="footer-item"><a href="#">item 5</a></li>
-      </div>
+      <h5>Let's Get In Touch!</h5>
+      <p>Feel free to reach out if you're looking for a developer, 
+        have a question, or just want to connect.</p>
+      <p>ruth.matieu@gmail.com</p>
     </footer>
   );
 }

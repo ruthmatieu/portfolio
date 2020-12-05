@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
+
+//
+import Lavabeans from './components/Projects/Lavabeans';
+import TheChow from './components/Projects/TheChow';
+import FitTrakr from './components/Projects/FitTrakr';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route exact path='/' component={App}/>
+      <Route path='/lavabeans-coffee' component={Lavabeans}/>
+      <Route path='/the-chow' component={TheChow}/>
+      <Route path='/fit-trakr' component={FitTrakr}/>
+    </Switch>
+  </Router>,
   document.getElementById('root')
 );
 
