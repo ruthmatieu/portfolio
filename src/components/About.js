@@ -5,7 +5,7 @@ function About() {
   const lightblue = '#82B4C3'
   
   return (
-    <div style={{padding: '0 0 80px 0'}}>
+    <div style={{padding: '0 0 100px 0'}}>
       <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2rem', padding: '30px 0'}}>About Me</h5>
       <div style={{position: 'absolute', top: '150'}}>
         <img style={{width: '70px'}} src={quotes} alt='quotes'/>

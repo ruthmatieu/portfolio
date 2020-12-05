@@ -13,6 +13,8 @@ const Lavabeans = () => {
           github: 'https://github.com/ruthmatieu/ruthmatieu.github.io'
         }
 
+        //boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}}
+
     return (
         <div>
             fit trackr description

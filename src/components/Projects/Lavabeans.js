@@ -1,8 +1,13 @@
 import React from 'react';
 import Nav from '../Nav';
 
+
 //images
 import homepage from '../../images/the-chow-homepage.png';
+import snippetOne from '../../images/the-chow-one.png';
+import spotlightOne from '../../images/the-chow-spotlight-one.png';
+import spotlightTwo from '../../images/the-chow-spotlight-two.png';
+import spotlightThree from '../../images/the-chow-spotlight-three.png';
 
 const Lavabeans = () => {
     const data = {
@@ -37,33 +42,92 @@ const Lavabeans = () => {
                         <p><a style={{color: 'pink', textDecoration: 'none', padding: '0 5px'}} href={data.github} target='_blank' rel="noopener noreferrer">View GitHub</a></p>
                     </div>
                 </div>
-                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={homepage} alt='homepage'/>
+                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.40)'}} src={homepage} alt='homepage'/>
             </div>
 
-            <div style={{textAlign: 'left'}}>
-                <h3>Purpose + Goal</h3>
-                <p>This project included 3 phases</p>
-                <img src='' alt='image-ayye'/>
+            <div style={{textAlign: 'left', paddingLeft: '250px'}}>
+                <h3 style={{fontSize: '2rem', padding: '150px 0 50px 0'}}>Purpose + Goal</h3>
+                <div style={{padding: '0 250px 80px 0'}}>
+                    <p style={{paddingBottom: '20px'}}>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
+                        have suffered alteration in some form, by injected humour, or randomised words 
+                        which don't look even slightly believable. If you are going to use a passage of 
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
+                        middle of text. </p>
+
+                        <p style={{paddingBottom: '20px'}}>All the Lorem Ipsum generators on the Internet tend to repeat 
+                        predefined chunks as necessary, making this the first true generator on the 
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
+                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                        The generated Lorem Ipsum is therefore always free from repetition, injected 
+                        humour, or non-characteristic words etc.</p>
+
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat 
+                        predefined chunks as necessary, making this the first true generator on the 
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
+                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                        The generated Lorem Ipsum is therefore always free from repetition, injected 
+                        humour, or non-characteristic words etc.</p>
+                </div>
+                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={snippetOne} alt='image-ayye'/>
             </div>
 
-            <div style={{textAlign: 'right'}}>
-                <h3>Spotlight</h3>
-                <p>explain the parts you;re proud of</p>
-                <img src='' alt='image-three'/>
-                <img src='' alt='image-two'/>
-                <img src='' alt='image-three'/>
+            <div style={{textAlign: 'right', paddingRight: '250px'}}>
+                <h3 style={{fontSize: '2rem', padding: '150px 0 50px 0'}}>Spotlight</h3>
+                <div style={{padding: '0 0 80px 250px'}}>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority 
+                        have suffered alteration in some form, by injected humour, or randomised words 
+                        which don't look even slightly believable. If you are going to use a passage of 
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
+                        middle of text. All the Lorem Ipsum generators on the Internet tend to repeat 
+                        predefined chunks as necessary, making this the first true generator on the 
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
+                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                        The generated Lorem Ipsum is therefore always free from repetition, injected 
+                        humour, or non-characteristic words etc.</p>
+                </div>
+                <div>
+                    <img style={{maxWidth: '800px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightThree} alt='image-three'/>
+                    <div style={{display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
+                        <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightOne} alt='image-two'/>
+                        <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightTwo} alt='image-three'/>
+                    </div>
+                </div>
+                
             </div>
 
             <div style={{textAlign: 'center'}}>
-                <h3>Problems + Lessons Learned</h3>
-                <p>This became a bigger app than intended and had to incorporate Redux to handle data.</p>
-                <p>This app became very messy with vanilla CSS, for this reason styled-components became more better.</p>
+                <h3 style={{fontSize: '2rem', padding: '150px 0 50px 0'}}>Problems + Lessons Learned</h3>
+                <div style={{padding: '0 250px', textAlign: 'left'}}>
+                    <div>
+                    <p style={{paddingBottom: '20px'}}>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
+                        have suffered alteration in some form, by injected humour, or randomised words 
+                        which don't look even slightly believable. If you are going to use a passage of 
+                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
+                        middle of text. </p>
 
-                <p>As for lessons learned, I lerned a lot.</p>
+                        <p style={{paddingBottom: '20px'}}>All the Lorem Ipsum generators on the Internet tend to repeat 
+                        predefined chunks as necessary, making this the first true generator on the 
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
+                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                        The generated Lorem Ipsum is therefore always free from repetition, injected 
+                        humour, or non-characteristic words etc.</p>
+
+                        <p>All the Lorem Ipsum generators on the Internet tend to repeat 
+                        predefined chunks as necessary, making this the first true generator on the 
+                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
+                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+                        The generated Lorem Ipsum is therefore always free from repetition, injected 
+                        humour, or non-characteristic words etc.</p>
+                    </div>
+                    <p>This became a bigger app than intended and had to incorporate Redux to handle data.</p>
+                    <p>This app became very messy with vanilla CSS, for this reason styled-components became more better.</p>
+
+                    <p>As for lessons learned, I lerned a lot.</p>
+                </div>
             </div>
 
             <div>
-                <h4>View more projects:</h4>
+                <h4 style={{fontSize: '1.5rem', padding: '150px 0 50px 0'}}>View more projects:</h4>
                 <p>include project here</p>
             </div>
             

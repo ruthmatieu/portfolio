@@ -43,7 +43,7 @@ function Works() {
   const lightblue = '#82B4C3';
 
   return (
-    <div style={{padding: '0 0 80px 0'}}>
+    <div style={{padding: '0 0 100px 0'}}>
       <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2rem', padding: '30px 0'}}>Portfolio</h5>
       <p style={{padding: '0 40px', textAlign: 'left'}}>I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to.</p>
       {projectsData.map(project => (
