@@ -86,8 +86,8 @@ const Lavabeans = () => {
                         humour, or non-characteristic words etc.</p>
                 </div>
                 <div>
-                    <img style={{maxWidth: '800px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightThree} alt='image-three'/>
-                    <div style={{display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
+                    <img style={{maxWidth: '800px',  marginBottom: '50px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightThree} alt='image-three'/>
+                    <div style={{paddingBottom: '150px', display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
                         <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightOne} alt='image-two'/>
                         <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightTwo} alt='image-three'/>
                     </div>
@@ -96,7 +96,7 @@ const Lavabeans = () => {
             </div>
 
             <div style={{textAlign: 'center'}}>
-                <h3 style={{fontSize: '2rem', padding: '150px 0 50px 0'}}>Problems + Lessons Learned</h3>
+                <h3 style={{fontSize: '2rem', padding: '0 0 50px 0'}}>Problems + Lessons Learned</h3>
                 <div style={{padding: '0 250px', textAlign: 'left'}}>
                     <div>
                     <p style={{paddingBottom: '20px'}}>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
