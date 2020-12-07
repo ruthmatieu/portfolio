@@ -11,7 +11,7 @@ function Project(props) {
 
 
             <div>
-              <p><a style={{color: 'pink', textDecoration: 'none', padding: '0 5px'}} href={props.link} rel="noopener noreferrer">View project</a></p>
+              <p><a style={{color: '#89BEAF', textDecoration: 'none', padding: '0 5px'}} href={props.link} rel="noopener noreferrer">View project</a></p>
             </div>
 
         </div>

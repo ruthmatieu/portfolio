@@ -45,7 +45,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #6A6A6A;
+  font-weight: 600;
+  line-height: 2rem;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 /*MOBILE FIRST APPROACH*/
@@ -108,6 +116,7 @@ width: 1px;
 height: 60px;
 }
 /*LANDING PAGE*/
+
 .browser-only-intro {
   height: 100vh;
   display: flex;
@@ -123,7 +132,7 @@ height: 60px;
   background-color: white;
 }
 .landing-img {
-  width: 350px;
+  width: 230px;
 }
 
 .left-intro {
@@ -146,7 +155,7 @@ height: 60px;
   font-size: 3rem;
   font-family: 'Lobster Two', cursive;
   letter-spacing: 0.35rem;
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #DCEAEB 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFE6E2 50%);
   display: inline;
 }
 
@@ -266,10 +275,6 @@ hr {
   margin: 10px 0;
 }
 
-.project-one {
-  background-image: url('./images/lavabeans.png');
-  background-size: cover;
-}
 
 
 
@@ -291,7 +296,7 @@ hr {
     background-color: yellow;
   } */
   .landing-img {
-    width: 450px;
+    width: 250px;
   }
   .browser-only-intro {
     
@@ -305,7 +310,7 @@ hr {
     
   } */
   .landing-img {
-    width: 450px;
+    width: 250px;
   }
 
 }
@@ -315,7 +320,7 @@ hr {
     background-color: red;
   } */
   .landing-img {
-    width: 500px;
+    width: 375px;
   }
 
   .intro-container {
@@ -351,7 +356,7 @@ hr {
 
   
   .landing-img {
-    width: 550px;
+    width: 420px;
   }
 
   .left-intro {

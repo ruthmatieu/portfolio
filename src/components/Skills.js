@@ -1,9 +1,47 @@
 import React from 'react';
-import skills from '../images/skills.svg'
+
+//images
+import skills from '../images/skills.svg';
+import reactCard from '../images/react-skill-card.svg';
+import frontEndCard from '../images/html-css-js-skills-card.svg';
+import backEndCard from '../images/back-end-dev-skills-card.svg';
+import frontDesignCard from '../images/front-end-design-skills.svg';
+
 
 function Skills() {
 
-  const lightblue = '#82B4C3';
+  const lightblue = '#89BEAF';
+
+  const skillsCards = [
+    {
+      id: 1,
+      image: frontEndCard,
+      name: 'Front-End Development skill card'
+    },
+    {
+      id: 2,
+      image: reactCard,
+      name: 'React skill card'
+    },
+    {
+      id: 3,
+      image: backEndCard,
+      name: 'Back-End Development skill card'
+    },
+    {
+      id: 4,
+      image: frontDesignCard,
+      name: 'Front-End Design skill card'
+    },
+    {
+      id: 5,
+      image: frontEndCard
+    },
+    {
+      id: 6,
+      image: reactCard
+    }
+  ]
   
   return (
     <div>
@@ -19,6 +57,16 @@ function Skills() {
           apply these concepts to real-world scenarios and applications.
         </p>
         
+      </div>
+
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', margin: '100px 0'}}>
+        {skillsCards.map(item => {
+          return (
+            <div style={{paddingTop: '40px'}}>
+              <img style={{ minWidth: '200px', maxWidth: '300px', boxShadow: '0px 0px 33px 16px rgba(244,245,249,0.95)'}} src={item.image} alt={`${item.name}`}/>
+            </div>
+          )
+        })}
       </div>
       
     </div>

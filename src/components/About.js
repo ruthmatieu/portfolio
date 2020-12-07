@@ -1,8 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import quotes from '../images/quotes.png';
 
 function About() {
-  const lightblue = '#82B4C3'
+  const lightblue = '#89BEAF';
+
+  const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
   
   return (
     <div style={{padding: '0 0 100px 0'}}>
@@ -34,6 +41,7 @@ function About() {
         </p>
         
       </div>
+      <a href=''><p style={{textAlign: 'left', padding: '10px'}}>Resumé</p></a>
       
     </div>
     

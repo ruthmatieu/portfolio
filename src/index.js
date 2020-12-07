@@ -9,6 +9,7 @@ import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
 import Lavabeans from './components/Projects/Lavabeans';
 import TheChow from './components/Projects/TheChow';
 import FitTrakr from './components/Projects/FitTrakr';
+import Travelopia from './components/Travelopia';
 
 ReactDOM.render(
   <Router>
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path='/lavabeans-coffee' component={Lavabeans}/>
       <Route path='/the-chow' component={TheChow}/>
       <Route path='/fit-trakr' component={FitTrakr}/>
+      <Route path='/travelopia' component={Travelopia}/>
     </Switch>
   </Router>,
   document.getElementById('root')

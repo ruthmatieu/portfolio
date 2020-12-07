@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
 
-  const lightblue = '#82B4C3';
+  const lightblue = '#89BEAF';
 
   return (
     <footer style={{textAlign: 'left'}}>
@@ -10,6 +10,9 @@ function Footer() {
       <p>Feel free to reach out if you're looking for a developer, 
         have a question, or just want to connect.</p>
       <p>ruth.matieu@gmail.com</p>
+      <div>
+        <p>© 2021 Copyright Ruth Matieu</p>
+      </div>
     </footer>
   );
 }

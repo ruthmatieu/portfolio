@@ -34,16 +34,16 @@ function Works() {
       id: 2,
       title: 'Fit Trackr',
       image: fittrackr,
-      description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game.',
+      description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game. Business Bank Account Dashboard using React, Python and Django. This dashboard uses Authentication and Companies House API. Please make sure to register to view its full capacity, or view screenshots on my GitHub ReadMe file here.',
       tech: 'React, Redux, Firebase, Node, Express, HTML5, CSS',
       category: 'Game',
       link: '/fit-trakr',
     }
   ]
-  const lightblue = '#82B4C3';
+  const lightblue = '#89BEAF';
 
   return (
-    <div style={{padding: '0 0 100px 0'}}>
+    <div style={{padding: '0 0 100px 0'}} className="portfolio">
       <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>Portfolio</h5>
       <p style={{padding: '0 40px', textAlign: 'left'}}>I like to stay busy and always have a project in the works. Take a look at some of the applications, articles, and companies I've dedicated my time to.</p>
       {projectsData.map(project => (
