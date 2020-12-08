@@ -23,7 +23,7 @@ function Travelopia() {
         <h2 style={{color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 50px 0'}}>Working at Travelopia</h2>
         
         <p>
-        I currently work as a Jr. Web Developer (Online Specialist) at <a href='https://www.travelopia.com/' target='_blank' rel="noopener noreferrer">Travelopia</a>, a travel/leisure 
+        I currently work as a Jr. Web Developer (Online Specialist) at <a className="btn-link" href='https://www.travelopia.com/' target='_blank' rel="noopener noreferrer">Travelopia</a>, a travel/leisure 
         company located in Clearwater, FL. Since I first began in August 2019, this has proved to be an amazing experience 
         where I was able to work alongside senior Developers and experienced Designers to build multiple powerful client facing products.
         Throughout the summer I was pushed and challenged in every aspect of my skills and walked away as a much more refined developer.

@@ -52,9 +52,11 @@ function Skills() {
         </div>
         
         <p>
-          Through my studies, I've gained a solid nderstanding of computer science 
-          and web development concepts, and have dedicated a lot of my free time to 
-          apply these concepts to real-world scenarios and applications.
+          Throughout my studies, I have acquired a solid understanding of web foundations,
+          computer science, and the importance of accessability. My knowledge can be found 
+          in the form of the following tech stacks: HTML & CSS, JavaScript, React, Redux,
+          Node, SQL, Jira, LESS, Python, Express, Cypress.io, Bootstrap, GSAP, Jest, React Testing Library and much more. Below, I have 
+          highlighted my key technical skills I bring to any project.
         </p>
         
       </div>

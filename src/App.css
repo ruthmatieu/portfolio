@@ -45,6 +45,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #6A6A6A;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
 p {
   font-family: 'Raleway', sans-serif;
   color: #6A6A6A;
@@ -159,7 +167,7 @@ height: 60px;
   display: inline;
 }
 
-.right-intro h6 {
+.right-intro h2 {
   font-weight: 700;
   font-size: 1rem;
   margin: 8% 8% 3% 8%;
@@ -189,20 +197,20 @@ height: 60px;
   margin: auto 10px;
 }
 
-.right-intro a {
+.btn-link {
   text-decoration: none;
   text-transform: uppercase;
   color: #2B2C2B;  
   font-weight: 900;
   font-family: 'Merriweather Sans', sans-serif;  
   font-size: 0.9rem;
-  
 }
 
-.right-intro a:hover {
+.btn-link:hover {
   text-decoration: none;
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
 }
+
 
 .dots-one img {
   width: 250px;
@@ -375,33 +383,6 @@ hr {
 
 }
 /*PROJECT PAGE*/
-/*buttons*/
-
-.proj-btn {
-	background:linear-gradient(to bottom, #88bbbc 5%, #408c99 100%);
-	background-color:#88bbbc;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:1rem;
-  padding:8px 10px;
-  margin: 0 8px;
-	text-decoration:none;
-  text-shadow:0px 1px 0px #3d768a;
-  border: none;
-}
-.proj-btn:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #88bbbc 100%);
-  background-color:#408c99;
-  color: #eee8e8;
-}
-.proj-btn:active {
-	position:relative;
-	top:1px;
-}
-
-/*
 
 .landing-img 
 

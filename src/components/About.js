@@ -18,30 +18,34 @@ function About() {
         <img style={{width: '70px'}} src={quotes} alt='quotes'/>
       </div>
       <div style={{textAlign: 'left', padding: '60px 40px 0 40px'}}>
-        <p style={{padding: '5px 0'}}>
-          Hi there! I’m Alanna. I’m a passionate introvert who loves building things with code.
+        <p style={{paddingBottom: '30px'}}>
+          Hi there! My name is Ruth but I prefer Alanna. I’m a passionate introvert who 
+          loves immersing in the world of code.
         </p>
-        <p style={{padding: '5px 0'}}>
-          My first experience with programming was when I was 12, but I didn’t last
-          long: I was a big fan of computer-animated TV shows like Reboot, and I
-          decided I wanted to do “computer graphics”. My mom bought me a C++
-          Reference Manual. It was several hundred pages, and totally inscrutable to me.
+        <p style={{paddingBottom: '30px'}}>
+          I currently work as a frontend developer at Travelopia, where I work to improve 
+          the experience of building and deploying to the modern web. Outside of work, I spend a lot 
+          of time reading to increase my knowledge with valuable lessons from experienced
+          programmers, <a href='https://blog.ruthmatieu.com/' target='_blank' className="btn-link">writing</a> to 
+          share what I've learned, and coding in order to solidify 
+          my understanding of new concepts. 
         </p>
-        <p style={{padding: '5px 0'}}>
-          Years later, I decided to try learning Python. It was a radically different
-          experience. I distinctly remember the moment it clicked; I was watching The
-          Price is Right, and they were spinning the big wheel. A contestant landed on
-          0.70, and it made me wonder: statistically, what was their best move?
+        <p style={{paddingBottom: '30px'}}>
+          On my web development journey, I have come to realize that the more I learn, 
+          the more there is left to learn. Working alongside senior developers have in 
+          encouraged me to raise my expectations of not only myself but the work I put 
+          out for the world to see.
         </p>
-        <p style={{padding: '5px 0'}}>
-          Since then, I’ve been honing my skills and learning Javascript. I recently
-          graduated from Apex College’s 12-week intensive Web Development Bootcamp
-          program. I’m seeking a full-time role where I can help a company achieve their
-          goals.
+        <p style={{paddingBottom: '30px'}}>
+          Currently, I’ve been honing my skills and learning the backend. I am currently 
+          going through Lambda School's 18-month intensive Fullstack Development 
+          program. I’m seeking a full-time role where I can play a part in helping 
+          others achieve their goals.
         </p>
+        <a className="btn-link" href="./pdfFile.pdf" target="blank">Resumé</a>
         
       </div>
-      <a href=''><p style={{textAlign: 'left', padding: '10px'}}>Resumé</p></a>
+      
       
     </div>
     

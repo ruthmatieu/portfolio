@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Project(props) {
   
@@ -6,12 +7,12 @@ function Project(props) {
     <div>
         <div style={{width: '600px', height: '200px', padding: '20px 0', marginTop: '60px', backgroundColor: '', display: 'grid', placeItems: 'center'}}>
 
-            <h1 style={{color: '', fontSize: '2rem', fontWeight: '900'}}>{props.title}</h1>
+        <Link to={props.link} style={{color: 'black', textDecoration: 'none'}}><h1 style={{color: '', fontSize: '2rem', fontWeight: '900'}}>{props.title}</h1></Link>
             <p style={{color: '#9C9C9C', padding: '0 50px', fontSize: '1rem', lineHeight: '1.5rem'}}>{props.description}</p>
 
 
             <div>
-              <p><a style={{color: '#89BEAF', textDecoration: 'none', padding: '0 5px'}} href={props.link} rel="noopener noreferrer">View project</a></p>
+              <p><a className="btn-link" href={props.link} rel="noopener noreferrer">{props.category} &#187;</a></p>
             </div>
 
         </div>

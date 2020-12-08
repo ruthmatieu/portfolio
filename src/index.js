@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router , Route, Switch} from "react-router-dom";
+import ScrollToTop from 'react-router-scroll-top'
 
 //
 import Lavabeans from './components/Projects/Lavabeans';
@@ -14,11 +15,13 @@ import Travelopia from './components/Travelopia';
 ReactDOM.render(
   <Router>
     <Switch>
+      <ScrollToTop>
       <Route exact path='/' component={App}/>
       <Route path='/lavabeans-coffee' component={Lavabeans}/>
       <Route path='/the-chow' component={TheChow}/>
       <Route path='/fit-trakr' component={FitTrakr}/>
       <Route path='/travelopia' component={Travelopia}/>
+      </ScrollToTop>
     </Switch>
   </Router>,
   document.getElementById('root')
