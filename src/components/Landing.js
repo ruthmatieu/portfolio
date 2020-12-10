@@ -3,12 +3,13 @@ import hero from '../images/profile-illustration.svg';
 import diamond from '../images/icon-slider.png';
 import { Link} from "react-router-dom";
 import styled, { css, keyframes } from 'styled-components';
-//
+//components
 import Works from './Portfolio';
 import About from './About';
 import Skills from './Skills';
 import Footer from './Footer';
 import Blog from './Blog';
+import Instagram from './InstagramFooter';
 
 
 
@@ -64,7 +65,7 @@ function Landing() {
     const aboutSection = [
       <About/>,
       <Works/>,
-      <Footer/>
+      <Instagram/>
       ]
     const portfolioSection = [
       <Works/>,
@@ -102,8 +103,9 @@ function Landing() {
           <div className="right-intro">
             <div>
               <h1>Alanna Mathieu</h1>
-              <h2>Web Developer at <Link to='/travelopia' className="btn-link">Travelopia</Link>. Fullstack student at Lambda School.</h2>
-              <h3>specializing in front end frameworks such as React with a passion for Design Systems, Web Accessibility, and Serverless Technologies.</h3>
+              <h2>Web Developer at <Link to='/travelopia' className="btn-link">Travelopia</Link>. 
+                Fullstack student at Lambda School. Lover of code.</h2>
+              <h3>specializing in front end frameworks such as React with a passion for Design Systems.</h3>
               <div className="arrow-btn">
                 <a href="#portfolio" className="btn-link">View Works</a>
                 <hr/>
@@ -147,6 +149,7 @@ function Landing() {
               </div>
               <p className="bio-details">{intro}</p>
         </div>
+          
         
     </div>
   );

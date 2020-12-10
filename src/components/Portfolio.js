@@ -51,7 +51,7 @@ function Portfolio() {
     <div style={{padding: '0 0 100px 0'}} className="portfolio">
       <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>Portfolio</h5>
       <p style={{padding: '0 40px', textAlign: 'left'}}>
-        "The only way out is through". I have found this saying more than appropriate
+        "The only way out is through". I have found this saying appropriate
         when applied to the art and science of coding. For this reason, I always have a 
         project in the works. For me, this has proven to be the best method of stay on top 
         of my skills and continuously learn. Take a look at some of the applications and 

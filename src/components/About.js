@@ -18,29 +18,26 @@ function About() {
         <img style={{width: '70px'}} src={quotes} alt='quotes'/>
       </div>
       <div style={{textAlign: 'left', padding: '60px 40px 0 40px'}}>
-        <p style={{paddingBottom: '30px'}}>
-          Hi there! My name is Ruth but I prefer Alanna. I’m a passionate introvert who 
-          loves immersing in the world of code.
+        <p>
+          Hi there! My name is Ruth but I prefer Alanna.
+          I'm a developer at Travelopia, where I work to improve 
+          the experience of yacht vacationing and booking exotic vacations on
+          the modern web. 
         </p>
-        <p style={{paddingBottom: '30px'}}>
-          I currently work as a frontend developer at Travelopia, where I work to improve 
-          the experience of building and deploying to the modern web. Outside of work, I spend a lot 
-          of time reading to increase my knowledge with valuable lessons from experienced
-          programmers, <a href='https://blog.ruthmatieu.com/' target='_blank' className="btn-link">writing</a> to 
-          share what I've learned, and coding in order to solidify 
-          my understanding of new concepts. 
-        </p>
-        <p style={{paddingBottom: '30px'}}>
-          On my web development journey, I have come to realize that the more I learn, 
-          the more there is left to learn. Working alongside senior developers have in 
-          encouraged me to raise my expectations of not only myself but the work I put 
+        
+        <p>
+          On my web dev journey, I have come to realize that the more I learn, 
+          the more there is left to learn. Working alongside senior developers have 
+          raised my expectations of not only myself but the work I put 
           out for the world to see.
         </p>
-        <p style={{paddingBottom: '30px'}}>
-          Currently, I’ve been honing my skills and learning the backend. I am currently 
-          going through Lambda School's 18-month intensive Fullstack Development 
-          program. I’m seeking a full-time role where I can play a part in helping 
-          others achieve their goals.
+
+        <p>
+          Currently, I’ve been honing my skills learning the backend as I
+          navigate through Lambda School's 18-month intensive Fullstack Development 
+          program. Outside of work, I spend most of my time reading, <a href='https://blog.ruthmatieu.com/' target='_blank' className="btn-link">writing</a> to 
+          share what I've learned, and coding in order to solidify 
+          my understanding of new concepts. 
         </p>
         <a className="btn-link" href="./pdfFile.pdf" target="blank">Resumé</a>
         
