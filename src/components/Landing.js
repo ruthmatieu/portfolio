@@ -10,7 +10,7 @@ import Skills from './Skills';
 import Footer from './Footer';
 import Blog from './Blog';
 import Instagram from './InstagramFooter';
-
+import Lambda from './Lambda';
 
 
 function Landing() {
@@ -104,7 +104,7 @@ function Landing() {
             <div>
               <h1>Alanna Mathieu</h1>
               <h2>Web Developer at <Link to='/travelopia' className="btn-link">Travelopia</Link>. 
-                Fullstack student at Lambda School. Lover of code.</h2>
+                Fullstack student at <Link to='/lambda-school' className="btn-link">Lambda School</Link>. Lover of code.</h2>
               <h3>specializing in front end frameworks such as React with a passion for Design Systems.</h3>
               <div className="arrow-btn">
                 <a href="#portfolio" className="btn-link">View Works</a>

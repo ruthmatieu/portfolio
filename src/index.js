@@ -11,6 +11,7 @@ import Lavabeans from './components/Projects/Lavabeans';
 import TheChow from './components/Projects/TheChow';
 import FitTrakr from './components/Projects/FitTrakr';
 import Travelopia from './components/Travelopia';
+import Lambda from './components/Lambda';
 
 ReactDOM.render(
   <Router>
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Route path='/the-chow' component={TheChow}/>
       <Route path='/fit-trakr' component={FitTrakr}/>
       <Route path='/travelopia' component={Travelopia}/>
+      <Route path='/lambda-school' component={Lambda}/>
       </ScrollToTop>
     </Switch>
   </Router>,

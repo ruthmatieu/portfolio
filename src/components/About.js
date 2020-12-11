@@ -19,16 +19,16 @@ function About() {
       </div>
       <div style={{textAlign: 'left', padding: '60px 40px 0 40px'}}>
         <p>
-          Hi there! My name is Ruth but I prefer Alanna.
+          Hi 👋🏾! My name is Ruth but I prefer Alanna.
           I'm a developer at Travelopia, where I work to improve 
-          the experience of yacht vacationing and booking exotic vacations on
+          the experience of yacht vacationing and the booking of exotic vacations on
           the modern web. 
         </p>
         
         <p>
           On my web dev journey, I have come to realize that the more I learn, 
           the more there is left to learn. Working alongside senior developers have 
-          raised my expectations of not only myself but the work I put 
+          raised expectations of not only myself but the work I put 
           out for the world to see.
         </p>
 
