@@ -29,7 +29,12 @@ body {
   color: #2B2C2B;
   letter-spacing: 0.06rem;
   line-height: 1.2rem;
+  
 }
+body, html {
+  overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -271,6 +276,7 @@ hr {
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 50px  20px;
+  height: 85vh;
   -webkit-box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97); 
   box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97);
 }
@@ -286,7 +292,7 @@ hr {
 .project {
   width: 600px;
   height: 200px;
-  margin: 15px 0 80px 0;
+  padding: 15px 0 80px 0;
   display: grid;
   place-items: center;
 }
@@ -301,17 +307,25 @@ hr {
 }
 
 .project-description {
-  margin: 15px 80px;
-  padding: 0;
+  padding: 15px 150px;
 }
 
     /*FOOTER*/
 .ig-footer {
   background-color: #F4F5F9;
+  padding: 60px 0 20px 0;
+}
+.insta-section {
+  padding: 60px 0;
+  margin: 20px 40px;
 }
 
+.insta-details {
+  text-align: left;
+}
 .ig-grid {
   width: 80%;
+  margin-top: 50px;
 }
 
 .cta-description {

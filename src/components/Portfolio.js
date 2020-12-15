@@ -14,7 +14,7 @@ function Portfolio() {
   const projectsData = [
     {
       id: 1,
-      title: 'Lavabeans Coffee Company',
+      title: 'Lavabeans Coffee Co.',
       image: lavabeans,
       description: 'Business Bank Account Dashboard using React, Python and Django. This dashboard uses Authentication and Companies House API. Please make sure to register to view its full capacity, or view screenshots on my GitHub ReadMe file here.',
       category: 'View project',
@@ -32,7 +32,7 @@ function Portfolio() {
       id: 2,
       title: 'Fit Trackr',
       image: fittrackr,
-      description: 'A Vanilla JavaScript clone of the infamous Doodle Jump game. Business Bank Account Dashboard using React, Python and Django. This dashboard uses Authentication and Companies House API. Please make sure to register to view its full capacity, or view screenshots on my GitHub ReadMe file here.',
+      description: 'Business Bank Account Dashboard using React, Python and Django. This dashboard uses Authentication and Companies House API. Please make sure to register to view its full capacity, or view screenshots on my GitHub ReadMe file here.',
       category: 'View project',
       link: '/fit-trakr',
     },
