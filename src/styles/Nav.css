@@ -1,0 +1,87 @@
+nav {
+    height: 6vh;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.nav-item {
+    padding: 2px 30px;
+    display: grid;
+    place-items: center;
+    background-color: #2B2C2B;
+}
+
+.logo {
+    color: #88BBBC;
+    font-family: 'Lobster Two', cursive;
+}
+  
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+    
+}
+
+a {
+    justify-content: right;
+    color: #2C2C2C;
+    margin: 5px 0;
+}
+  
+a:hover{
+    color: #88BBBC;
+  }
+  
+  .verticalLine {
+  border: 0;
+  color: #DBDBDB;
+  background-color: #DBDBDB;
+  width: 1px;
+  height: 60px;
+  }
+
+/*BREAKPOINTS*/
+/* small screen*/
+@media only screen and (max-width: 404px) {
+    body {
+      background-color: lightcoral;
+    }
+  
+} 
+  
+/* M screen*/  
+@media only screen and (min-width: 608px) {
+    body {
+      background-color: yellow;
+    }
+  
+}
+
+/* M screen*/
+@media only screen and (min-width: 768px) {
+    body {
+      background-color: green; 
+    }
+  
+}
+
+/* L screen*/
+@media only screen and (min-width: 900px) {
+    body {
+      background-color: lightblue;
+    }
+  
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1024px) {
+    body {
+      background-color: green;
+    }
+  
+}

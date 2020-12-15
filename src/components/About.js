@@ -1,19 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import quotes from '../images/quotes.png';
+import '../styles/About.css';
 
 function About() {
   const lightblue = '#89BEAF';
-
-  const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
   
   return (
-    <div style={{padding: '0 0 100px 0'}}>
-      <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>About Me</h5>
+    <div className='wrapper'>
+      <h5 style={{}}>About Me</h5>
       <div style={{position: 'absolute', top: '150'}}>
         <img style={{width: '70px'}} src={quotes} alt='quotes'/>
       </div>

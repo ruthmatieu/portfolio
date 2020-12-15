@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Footer from './Footer';
+import '../styles/mediaQueries.css';
 
 //
 import instaGallery from '../images/insta-grid.svg';
@@ -26,7 +26,7 @@ const InstagramFooter = () => {
                     </div>
                 </div>
                 <div>
-                    <img style={{width: '700px'}} src={instaGallery} alt='Instagram collage'/>
+                    <img className='ig-grid' src={instaGallery} alt='Instagram collage'/>
                     
                 </div>
                 

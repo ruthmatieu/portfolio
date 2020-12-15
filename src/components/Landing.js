@@ -3,6 +3,9 @@ import hero from '../images/profile-illustration.svg';
 import diamond from '../images/icon-slider.png';
 import { Link} from "react-router-dom";
 import styled, { css, keyframes } from 'styled-components';
+import '../styles/Landing.css';
+
+
 //components
 import Works from './Portfolio';
 import About from './About';
@@ -10,12 +13,39 @@ import Skills from './Skills';
 import Footer from './Footer';
 import Blog from './Blog';
 import Instagram from './InstagramFooter';
-import Lambda from './Lambda';
 
+/*
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  
+}
+.socials a {
+  justify-content: right;
+  color: #2C2C2C;
+  margin: 5px 0;
+}
+
+.socials a:hover{
+  color: #88BBBC;
+}
+
+.verticalLine {
+border: 0;
+color: #DBDBDB;
+background-color: #DBDBDB;
+width: 1px;
+height: 60px;
+}
+
+*/
 
 function Landing() {
   
-
+  
   const PageFade = styled.div`
    
     opacity: 1;

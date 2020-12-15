@@ -66,54 +66,6 @@ p {
 }
 /*INSTAGRAM POSTS*/
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 40px 50px auto 50px 40px;
-    grid-template-rows: 50px 100px auto;
-    grid-gap: 10px;
-    background-color: #fff;
-    color: #444;
-    width: 50%;
-    max-width: 2000px;
-  }
-
-  .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-
-  }
-
-  .a {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .b {
-    grid-column-start: 6;
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  
-  .c {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .d {
-    grid-column-start: 7;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  
-
-/*****************************/
-
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 /*MOBILE FIRST APPROACH*/
@@ -235,19 +187,7 @@ height: 60px;
   color: #9C9C9C;
 }
 
-.arrow-btn {
-  display: flex;
-  justify-content: center;
-}
 
-.arrow-btn hr {
-  width: 40px;
-  height: 1px;
-  border: 0;
-  color: #DBDBDB;
-  background-color: #DBDBDB;
-  margin: auto 10px;
-}
 
 .btn-link {
   text-decoration: none;
@@ -319,12 +259,8 @@ hr {
 
 .bio-details {
   font-size: 1rem;
-  padding: 2px 10%;
+  padding: 0;
   text-align: center;
-}
-
-.details {
-  padding: 2px 10%;
 }
 
 .projects-container {
@@ -338,8 +274,6 @@ hr {
   height: 270px;
   margin: 10px 0;
 }
-
-
 
 
 
