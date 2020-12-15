@@ -138,7 +138,6 @@ function Landing() {
               <h3>specializing in front end frameworks such as React with a passion for Design Systems.</h3>
               <div className="arrow-btn">
                 <a href="#portfolio" className="btn-link">View Works</a>
-                <hr/>
               </div>
               
             </div>

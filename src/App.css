@@ -333,6 +333,11 @@ hr {
   margin: 0 40px;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
 /* Small screen*/  
 @media only screen and (min-width: 608px) {
   body {
@@ -357,6 +362,41 @@ hr {
   body {
     background-color: lightblue;
   }
+  .intro-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  .landing-img {
+    width: 370px;
+  }
+
+  .left-intro {
+    width: 50%;
+    height: 100vh;
+  }
+  .right-intro {
+    width: 50%;
+    height: 100vh;
+  }
+
+      /*PROJECTS*/
+
+
+  .project {
+    width: 800px;
+  }
+
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    padding: 15px 0;
+  }
+
+  
 }
 
 /* XL screen*/
@@ -364,5 +404,19 @@ hr {
   body {
     background-color: lightgreen;
   }
+  .landing-img {
+    width: 400px;
+  }
 
 }
+
+/* .browser-only-intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.06rem;
+  background-color: white;
+} */
