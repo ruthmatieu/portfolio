@@ -46,15 +46,33 @@ table {
 	border-spacing: 0;
 }
 
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*BREAKPOINTS*/
+/* original screen - mobile first approach*/
+body {
+    background-color: lightsalmon;
+}
+
+/*global*/
 h2 {
   font-family: 'Raleway', sans-serif;
+  line-height: 1.5rem;
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
   color: #6A6A6A;
   font-weight: 600;
-  line-height: 2rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #89BEAF;
+  padding: 30px 0;
 }
 
 p {
@@ -64,20 +82,22 @@ p {
   line-height: 2rem;
   padding-bottom: 30px;
 }
-/*INSTAGRAM POSTS*/
 
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
-/*MOBILE FIRST APPROACH*/
-@media only screen and (max-width: 403px) {
-  body {
-    background-color: purple;
-  }
-  
+.btn-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2B2C2B;  
+  font-weight: 900;
+  font-family: 'Merriweather Sans', sans-serif;  
+  font-size: 0.9rem;
 }
 
+.btn-link:hover {
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
+}
 
-/*NAVIGATION*/
+      /*NAVIGATION*/
 
 nav {
   height: 6vh;
@@ -87,21 +107,23 @@ nav {
   justify-content: space-between;
 }
 
-nav .nav-item {
+.nav-item, .nav-toggle{
   padding: 2px 30px;
   display: grid;
   place-items: center;
 }
 
-.nav-logo {
+.nav-item {
   background-color: #2B2C2B;
 }
+
 .logo {
   color: #88BBBC;
-  /* background-color: #2B2C2B; */
+  background-color: #2B2C2B;
   font-family: 'Lobster Two', cursive;
 }
 
+    /*LANDING*/
 .socials {
   display: flex;
   flex-direction: column;
@@ -121,30 +143,24 @@ nav .nav-item {
 }
 
 .verticalLine {
-border: 0;
-color: #DBDBDB;
-background-color: #DBDBDB;
-width: 1px;
-height: 60px;
+  border: 0;
+  color: #DBDBDB;
+  background-color: #DBDBDB;
+  width: 1px;
+  height: 60px;
 }
-/*LANDING PAGE*/
 
-.browser-only-intro {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  font-weight: 900;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.06rem;
-  background-color: white;
-}
-.intro-container {
-  height: 94vh;
-  background-color: white;
-}
 .landing-img {
-  width: 230px;
+  width: 250px;
+  align-items: center;
+}
+
+.right-intro h2 {
+  /* text-align: right; */
+}
+
+.right-intro h3 {
+  padding-bottom: 18px;
 }
 
 .left-intro {
@@ -159,7 +175,7 @@ height: 60px;
   display: grid;
   place-items: center;
   padding: 0 5%;
-  height: 35vh;
+  height: 50vh;
 }
 
 .right-intro h1 {
@@ -187,47 +203,6 @@ height: 60px;
   color: #9C9C9C;
 }
 
-
-
-.btn-link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #2B2C2B;  
-  font-weight: 900;
-  font-family: 'Merriweather Sans', sans-serif;  
-  font-size: 0.9rem;
-}
-
-.btn-link:hover {
-  text-decoration: none;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
-}
-
-
-.dots-one img {
-  width: 250px;
-  position: absolute;
-  top: 300px;
-  left: -40px;
-  z-index: auto;
-}
-
-.dots-two img {
-  width: 250px;
-  position: absolute;
-  top: 100px;
-  left: 180px;
-  z-index: auto;
-}
-
-.dots-three img {
-  width: 250px;
-  position: absolute;
-  top: 500px;
-  left: 90px;
-  z-index: auto;
-}
-
 hr {
   width: 90%;
   height: 1px;
@@ -235,6 +210,7 @@ hr {
   color: #DBDBDB;
   background-color: #DBDBDB;
   margin: auto 10px;
+  margin-top: 30px;
 }
 
 .diamond {
@@ -245,11 +221,13 @@ hr {
   /* do some animation with framer motion */
   cursor: pointer;
 }
+
 .bio-adjuster {
   font-weight: 200;
   font-size: 0.8rem;
   padding-top: 10px;
-  color: #2B2C2B
+  color: #2B2C2B;
+  text-align: center;
 }
 
 .landing-btn-div {
@@ -263,201 +241,114 @@ hr {
   text-align: center;
 }
 
-.projects-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.projects {
-  width: 270px;
-  height: 270px;
-  margin: 10px 0;
-}
-
-
-
-@media only screen and (max-width: 404px) {
-  /* body {
-    background-color: yellow;
-  } */
-  .landing-img {
-    width: 275px;
-  }
-  .right-intro h1 {
-    font-size: 2rem;
-  }
-
-} 
-@media only screen and (min-width: 608px) {
-  /* body {
-    background-color: yellow;
-  } */
-  .landing-img {
-    width: 250px;
-  }
-  .browser-only-intro {
-    
-  }
-
-}
-
-@media only screen and (min-width: 768px) {
-  /* body {
-    background-color: lightblue;
-    
-  } */
-  .landing-img {
-    width: 250px;
-  }
-
-}
-
-@media only screen and (min-width: 900px) {
-  /* body {
-    background-color: red;
-  } */
-  .landing-img {
-    width: 375px;
-  }
-
-  .intro-container {
-    display: flex;
-  }
-
-  .left-intro {
-    width: 50%;
-    text-transform: uppercase;  
-    display: grid;
-    place-items: center;
-    height: 100vh;
-  }
-  .right-intro {
-    width: 50%;
-    text-align: center;
-    vertical-align: middle;
-    margin: auto;
-    height: 100vh;
-  }
-
-  /* .projects-container img{
-    width: 95%;
-    margin: auto;
-  } */
-
-}
-
-@media only screen and (min-width: 1024px) {
-  /* body {
-    background-color: green;
-  } */
-
-  
-  .landing-img {
-    width: 420px;
-  }
-
-  .left-intro {
-    width: 50%;
-    text-transform: uppercase;  
-    display: grid;
-    place-items: center;
-  }
-  .right-intro {
-    text-align: center;
-  vertical-align: middle;
-  display: grid;
-  place-items: center;
-  padding: 0 5%;
-  }
-
-}
-/*PROJECT PAGE*/
-
-.landing-img 
-
-nav ul {
-  padding: 2.25% 6%;
-  color: white;
-}
-
-/*
+  /*ABOUT PAGE*/
 .intro-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 90vh;
-  background-color: white;
+  height: 94vh;
+}
+.wrapper, .portfolio {
+  margin: 0 20px;
 }
 
-.left-intro {
-  width: 50%;
-  text-transform: uppercase;  
+.quotes {
+  position: absolute;
+  top: 150;
+}
+
+.quotes img {
+  width: 50px;
+}
+
+.about-para {
+  padding: 50px 0 25px 0;
+  text-align: left;
+  margin: 0 40px;
+}
+
+    /*PORTFOLIO*/
+
+.project-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px  20px;
+  -webkit-box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97); 
+  box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97);
+}
+
+.project-wrapper img{
+  width: 300px;
+  margin-top: 40px;
+}
+
+    /*PROJECTS*/
+
+
+.project {
+  width: 600px;
+  height: 200px;
+  margin: 15px 0 80px 0;
   display: grid;
   place-items: center;
 }
-.landing-img {
-  width: 600px;
-}
 
-.right-intro {
-  width: 50%;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.right-intro button{
-  align-items: center;
-}
-
-.landing-btn-div {
-  display: flex;
-  margin: 50px auto;
-}
-
-p {
-  padding: 0 50px;
-}
-
-.fa-circle {
-  color: red;
-  cursor: pointer;
-}
-
-.fa-circle:hover {
-  color: green;
-  border-radius: 50%;
-  border: 3px solid red;
-}
-
-/*
-.projects-container img {
-  width: 100vw;
-}
-
-/* 
-.footer-container {
-  height: 30vh;
-}
-.footer-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  list-style: none;
-}
-
-.footer-nav a {
-  text-decoration: none;
+.project-title-link {
   color: black;
-} */
+  text-decoration: none;
+}
 
-/*BREAKPOINTS
+.project-title {
+  font-size: 1.5rem;
+}
 
--mobile first approach > 770px (white)
-  - hamburger menu
--770px - 1023px (red)
-  - desktop menu
--1024px (yellow)
-  - now includes side nav in order tab
-*/
+.project-description {
+  margin: 15px 80px;
+  padding: 0;
+}
+
+    /*FOOTER*/
+.ig-footer {
+  background-color: #F4F5F9;
+}
+
+.ig-grid {
+  width: 80%;
+}
+
+.cta-description {
+  text-align: left;
+  margin: 0 40px;
+}
+
+/* Small screen*/  
+@media only screen and (min-width: 608px) {
+  body {
+    background-color: yellow;
+  }
+  .wrapper {
+    text-align: left;
+  }
+
+}
+
+/* M screen*/
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: lightcoral; 
+  }
+
+}
+
+/* L screen*/
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: lightgreen;
+  }
+
+}

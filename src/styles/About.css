@@ -17,54 +17,41 @@ p {
     padding-bottom: 30px;
   } */
 
-/* BREAKPOINTS*/
-
 /*BREAKPOINTS*/
 /* small screen*/
-@media only screen and (max-width: 404px) {
-    body {
-      background-color: lightcoral;
-    }
-  
-} 
-  
+/* small/original screen - mobile first approach*/
+body {
+  background-color: lightsalmon;
+}
+
 /* M screen*/  
 @media only screen and (min-width: 608px) {
-    body {
-      background-color: yellow;
-    }
-    .bio-details {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
+  body {
+    background-color: yellow;
+  }
 
-    .ig-grid {
-        width: 50px;
-    }
-  
 }
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-    body {
-      background-color: green; 
-    }
-  
+  body {
+    background-color: lightcoral; 
+  }
+
 }
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-    body {
-      background-color: lightblue;
-    }
-  
+  body {
+    background-color: lightblue;
+  }
+
 }
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-    body {
-      background-color: green;
-    }
-  
+  body {
+    background-color: lightgreen;
+  }
+
 }

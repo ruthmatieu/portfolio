@@ -48,9 +48,9 @@ function Portfolio() {
   const lightblue = '#89BEAF';
 
   return (
-    <div style={{padding: '0 0 100px 0'}} className="portfolio">
-      <h5 style={{textAlign: 'left', color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>Portfolio</h5>
-      <p style={{padding: '0 40px', textAlign: 'left'}}>
+    <div className="portfolio">
+      <h5>Portfolio</h5>
+      <p className='about-para'>
         "The only way out is through". I have found this saying appropriate
         when applied to the art and science of coding. For this reason, I always have a 
         project in the works. For me, this has proven to be the best method of stay on top 
@@ -60,14 +60,17 @@ function Portfolio() {
       {projectsData.map(project => (
         <div id={project.id}>
 
-          <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-around', boxShadow: '0px 0px 33px 16px rgba(244,245,249,0.95)', margin: '30px 0'}}>
-          <Link to={project.link}><img 
-              style={{width: '400px',height: '210px', marginTop: '60px'}} 
+          <div className='project-wrapper'>
+          <Link to={project.link}>
+            <img 
+              className='image'
               src={project.image} 
               alt={project.title}
             
-            /></Link>
+            />
+          </Link>
             <Project
+                className='project-container'
                 title={project.title}
                 description={project.description}
                 link={project.link}

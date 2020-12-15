@@ -5,15 +5,16 @@ function Project(props) {
   
   return (
     <div>
-        <div style={{width: '600px', height: '200px', padding: '20px 0', marginTop: '60px', backgroundColor: '', display: 'grid', placeItems: 'center'}}>
+        <div className='project'>
 
-        <Link to={props.link} style={{color: 'black', textDecoration: 'none'}}><h1 style={{color: '', fontSize: '2rem', fontWeight: '900'}}>{props.title}</h1></Link>
-            <p style={{color: '#9C9C9C', padding: '0 50px', fontSize: '1rem', lineHeight: '1.5rem'}}>{props.description}</p>
+          <Link className='project-title-link' to={props.link}>
+            <h6 className='project-title'>{props.title}</h6>
+          </Link>
+          <p className='project-description'>{props.description}</p>
 
-
-            <div>
-              <p><a className="btn-link" href={props.link} rel="noopener noreferrer">{props.category} &#187;</a></p>
-            </div>
+          <div className='project-link'>
+            <p><a className="btn-link" href={props.link} rel="noopener noreferrer">{props.category} &#187;</a></p>
+          </div>
 
         </div>
     </div>

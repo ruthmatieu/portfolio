@@ -1,18 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
 import quotes from '../images/quotes.png';
-import '../styles/About.css';
 
 function About() {
-  const lightblue = '#89BEAF';
   
   return (
     <div className='wrapper'>
-      <h5 style={{}}>About Me</h5>
-      <div style={{position: 'absolute', top: '150'}}>
-        <img style={{width: '70px'}} src={quotes} alt='quotes'/>
+      <h5>About Me</h5>
+      <div className='quotes'>
+        <img src={quotes} alt='quotes'/>
       </div>
-      <div style={{textAlign: 'left', padding: '60px 40px 0 40px'}}>
+      <div className='about-para'>
         <p>
           Hi 👋🏾! My name is Ruth but I prefer Alanna.
           I'm a developer at Travelopia, where I work to improve 
