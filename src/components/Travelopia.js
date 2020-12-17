@@ -1,30 +1,28 @@
 import React from 'react';
-
+import '../TravelopiaLambda.css'
 //comps
 import Nav from './Nav';
 import Footer from './Footer';
 
 //images
 import imageOne from '../images/travelopia-one.png';
-import imageTwo from '../images/travelopia-two.jpg';
-import imageThree from '../images/travelopia-three.jpg';
 import imageFour from '../images/travelopia-four.png';
-import techStack from '../images/trav-tech-stack.svg'
+import techStack from '../images/trav-tech-stack.svg';
+import techStackCol from '../images/trav-tech-stack-col.svg';
 
 //1yr • 1 year ago Had a great day working on digital marketing at the Grow boating Marketing Summit #boating #salesandmarketing #mymoorings The Moorings Yacht Charters
 document.title = 'Alanna Mathieu | Portfolio';
 
 function Travelopia() {
 
-  const lightblue = '#89BEAF';
   
   return (
       
     <div>
       <Nav/>
-      <div className='details'>
-        <div style={{paddingTop: '50px', textAlign: 'left'}}>
-          <h2 style={{color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 50px 0'}}>Working at Travelopia</h2>
+      <div className='travelopia-wrapper'>
+        <div className='trav-intro'>
+          <h2>Working at Travelopia</h2>
           
           <p>
           I currently work as a Jr. Web Developer (Online Specialist) at <a className="btn-link" href='https://www.travelopia.com/' target='_blank' rel="noopener noreferrer">Travelopia</a>, a travel/leisure 
@@ -35,43 +33,46 @@ function Travelopia() {
           
         </div>
 
-        <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', marginTop: '50px'}}>
-          <img src={imageOne} alt='' style={{ minWidth: '200px', maxWidth: '900px'}}/>
+        <div className='image-wrapper'>
+          <img src={imageOne} alt=''/>
         </div>
 
-        <div style={{textAlign: 'right'}}>
-                  <h3 style={{fontSize: '2rem', padding: '120px 0 50px 0', textAlign: 'left', color: 'black'}}>Personal Goals</h3>
-                  <div style={{padding: '0 0 80px 0', display: 'flex'}}>
-                    
-                    <div style={{textAlign: 'left', paddingRight: '150px'}}>
-                      <p style={{paddingBottom: '20px'}}>
+        <div className='personal-goals-wrapper'>
+          <h3>Personal Goals</h3>
+          <div className='personal-goals'>
+            <div className='p-g-div'>
+              <p>
                         Prior to working at Travelopia, I had set a few goals for myself. 
                         One being that I would learn as much as I could about the tech stack the company used, 
                         more specifically, Drupal, as I was expected to use the CMS daily.
-                      </p>
+              </p>
 
-                      <p>Another goal was to learn to be a productive member of my team. Travelopia is a UK-based company with
+              <p>Another goal was to learn to be a productive member of my team. Travelopia is a UK-based company with
                         multiple locations globally that which resulted in working with people not only from the US and UK but also Australia, 
                         Germany, France, South Africa and the Netherlands. 
                       
-                      </p>
+              </p>
 
-                      <p>My third goal was birthed during the covid-19 pandemic in early 2020. While working from home was
+              <p>My third goal was birthed during the covid-19 pandemic in early 2020. While working from home was
                         always an option, come March 2020, it became the new normal. My goal was to adapt to the new work 
                         environment and ensure I was being just as effective as I was in the office.
-                      </p>
-                    </div>
-                    <div style={{paddingLeft: '40px'}}>
-                      <img src={techStack} alt=''/>
-                    </div>
+              </p>
+            </div>
+            <div className='tech-stack-col'>
+              <img src={techStack} alt='Travelopia tech stack'/>
+              
+            </div>
+            <div className='tech-stack-row'>
+              <img src={techStackCol} alt='Travelopia tech stack'/>
+            </div>
                     
-                  </div>
+          </div>
                   
-              </div>
+        </div>
 
-              <div style={{textAlign: 'left'}}>
+        <div style={{textAlign: 'left'}}>
                   
-                  <img style={{maxWidth: '900px', padding: '0 0 50px 0'}} src={imageFour} alt='IBEX Summit 2019'/>
+                  <img className='second-image' style={{maxWidth: '900px', padding: '0 0 50px 0'}} src={imageFour} alt='IBEX Summit 2019'/>
                   <h3 style={{fontSize: '2rem', padding: '0 0 50px 0', textAlign: 'right', color: 'black'}}>Challenges + Growth</h3>
                   <div style={{padding: '0 0 80px 0', textAlign: 'left'}}>
                     <p>

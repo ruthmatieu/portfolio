@@ -57,14 +57,10 @@ table {
 /*BREAKPOINTS*/
 /* original screen - mobile first approach*/
 body {
-    background-color: lightsalmon;
+    background-color: white;
 }
 
 /*global*/
-h2 {
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.5rem;
-}
 
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -102,12 +98,26 @@ p {
   background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
 }
 
+.btn-landing-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2B2C2B;  
+  font-weight: 900;
+  font-family: 'Merriweather Sans', sans-serif;  
+  font-size: 3vw;
+}
+
+.btn-landing-link:hover {
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #DCEAEB 65%);
+}
+
       /*NAVIGATION*/
 
 nav {
+  background-color: #F4F5F9;
   height: 6vh;
   margin: 0;
-  background-color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -129,6 +139,9 @@ nav {
 }
 
     /*LANDING*/
+.landing-wrapper {
+  
+}
 .socials {
   display: flex;
   flex-direction: column;
@@ -160,18 +173,11 @@ nav {
   align-items: center;
 }
 
-.right-intro h2 {
-  /* text-align: right; */
-}
-
-.right-intro h3 {
-  padding-bottom: 18px;
-}
-
 .left-intro {
   display: grid;
   place-items: center;
   height: 50vh;
+  background-color: #F4F5F9;
 }
 
 .right-intro {
@@ -181,23 +187,24 @@ nav {
   place-items: center;
   padding: 0 5%;
   height: 50vh;
+  background-color: #F4F5F9;
 }
 
 .right-intro h1 {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 4.3vw;
   font-family: 'Lobster Two', cursive;
   letter-spacing: 0.35rem;
+  line-height: 3.5rem;
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFE6E2 50%);
   display: inline;
 }
 
 .right-intro h2 {
-  font-weight: 700;
-  font-size: 1rem;
-  margin: 8% 8% 3% 8%;
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
+  font-family: 'Raleway', sans-serif; 
+  line-height: 5vw;
+  font-size: 4vw;
+  padding: 20px 0;
 }
 
 .right-intro p {
@@ -219,7 +226,7 @@ hr {
 }
 
 .diamond {
-  width: 50px;
+  width: 70px;
 }
 
 .diamond:hover {
@@ -250,6 +257,11 @@ hr {
 .intro-container {
   height: 94vh;
 }
+
+.wrapper {
+  padding-bottom: 50px;
+}
+
 .wrapper, .portfolio {
   margin: 0 20px;
 }
@@ -340,9 +352,9 @@ hr {
 
 /* Small screen*/  
 @media only screen and (min-width: 608px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   .wrapper {
     text-align: left;
   }
@@ -351,17 +363,18 @@ hr {
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     background-color: lightcoral; 
-  }
+  } */
+
 
 }
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
   .intro-container {
     height: 100vh;
     display: flex;
@@ -380,6 +393,12 @@ hr {
     height: 100vh;
   }
 
+  h5{
+    text-align: left;
+  }
+
+  
+
       /*PROJECTS*/
 
 
@@ -396,17 +415,91 @@ hr {
     padding: 15px 0;
   }
 
+  .wrapper, .portfolio, .skills-wrapper, .footer-wrapper, .insta-section{
+    margin: 0 7%;
+  }
+
+  .flex-detail {
+    display: grid;
+    place-items: center;
+  }
+  .insta-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ig-grid{
+    width: 500px;
+  }
+
+  .project-wrapper {
+    height: 70vh;
+  }
+
   
 }
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-  body {
+  /* body {
     background-color: lightgreen;
-  }
+  } */
   .landing-img {
     width: 400px;
   }
+
+  .right-intro h1 {
+    font-weight: 100;
+    font-size: 4.3vw;
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 0.35rem;
+    line-height: 3.5rem;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFE6E2 50%);
+    display: inline;
+  }
+  
+  .right-intro h2 {
+    font-family: 'Raleway', sans-serif; 
+    line-height: 5vw;
+    font-size: 4vw;
+    padding-top: 20px;
+  }
+  
+
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1250px) {
+  /* body {
+    background-color: orange;
+  } */
+
+  .right-intro h1 {
+    letter-spacing: 0.35rem;
+  }
+  
+  .right-intro h2 {
+    font-size: 3rem;
+  }
+
+  .btn-landing-link { 
+    font-size: 2rem;
+  }
+  
+
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1325px) {
+  /* body {
+    background-color: pink;
+  } */
+  .landing-img {
+    width: 400px;
+  }
+  .project-wrapper {
+    height: 35vh;
+  }
+  
 
 }
 

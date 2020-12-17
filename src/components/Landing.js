@@ -3,7 +3,6 @@ import hero from '../images/profile-illustration.svg';
 import diamond from '../images/icon-slider.png';
 import { Link} from "react-router-dom";
 import styled, { css, keyframes } from 'styled-components';
-import '../styles/Landing.css';
 
 
 //components
@@ -13,35 +12,6 @@ import Skills from './Skills';
 import Footer from './Footer';
 import Blog from './Blog';
 import Instagram from './InstagramFooter';
-
-/*
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 120px;
-  right: 50px;
-  
-}
-.socials a {
-  justify-content: right;
-  color: #2C2C2C;
-  margin: 5px 0;
-}
-
-.socials a:hover{
-  color: #88BBBC;
-}
-
-.verticalLine {
-border: 0;
-color: #DBDBDB;
-background-color: #DBDBDB;
-width: 1px;
-height: 60px;
-}
-
-*/
 
 function Landing() {
   
@@ -115,7 +85,7 @@ function Landing() {
 
   return (
     
-    <div>
+    <div className='landing-wrapper'>
         
         <Container className="intro-container">
         <PageFade/>
@@ -132,20 +102,22 @@ function Landing() {
           </div>
           <div className="right-intro">
             <div>
-              <h1>Alanna Mathieu</h1>
-              <h2>Web Developer at <Link to='/travelopia' className="btn-link">Travelopia</Link>. 
-                Fullstack student at <Link to='/lambda-school' className="btn-link">Lambda School</Link>. Lover of code.</h2>
-              <h3>specializing in front end frameworks such as React with a passion for Design Systems.</h3>
-              <div className="arrow-btn">
+              <h2 className='header-intro'>Hi, I'm <span><h1>Alanna Mathieu</h1></span>.</h2>
+              
+              <h2 className='header-intro'>Web Developer at <Link to='/travelopia' className="btn-landing-link">Travelopia</Link>. 
+                Fullstack student at <Link to='/lambda-school' className="btn-landing-link">Lambda School</Link>. Lover of code.</h2>
+              {/* <h3 style={{textAlign: 'left'}}>specializing in front end frameworks such as React with a passion for Design Systems.</h3> */}
+              <div className="cta-btn">
                 <a href="#portfolio" className="btn-link">View Works</a>
+                {/* <hr/> */}
               </div>
               
             </div>
             
           </div>
         </Container>
-        <hr/>
-        <div className="browser-only-intro">
+        
+        <div className="desktop-only-intro">
           <p className="bio-adjuster">Adjust to see more:</p>
               <div className="landing-btn-div">
                 <div className="landing-page-btn" 

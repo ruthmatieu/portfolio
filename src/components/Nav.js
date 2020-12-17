@@ -7,7 +7,7 @@ function Nav() {
     return (
       <nav>
         <div className="nav-item">
-          <Link to='/'><h4 className="logo">Alanna Mathieu</h4></Link>
+          <Link to='/' style={{textDecoration: 'none'}}><h4 className="logo">Alanna Mathieu</h4></Link>
         </div>
         <div className="nav-toggle">
           <ToggleButton/>
