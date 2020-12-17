@@ -33,22 +33,22 @@ function Skills() {
       image: frontDesignCard,
       name: 'Front-End Design skill card'
     },
-    {
-      id: 5,
-      image: frontEndCard
-    },
-    {
-      id: 6,
-      image: reactCard
-    }
+    // {
+    //   id: 5,
+    //   image: frontEndCard
+    // },
+    // {
+    //   id: 6,
+    //   image: reactCard
+    // }
   ]
   
   return (
-    <div>
+    <div className='skills-wrapper'>
       <div style={{textAlign: 'left'}}>
         <h5>My Skills</h5>
         <div style={{display: 'grid', placeItems: 'center', paddingBottom: '20px'}}>
-          <img style={{width: '800px'}} src={skills} alt='skills'/>
+          <img className='skills-image' src={skills} alt='skills'/>
         </div>
         
         <p>
@@ -56,7 +56,7 @@ function Skills() {
           computer science, and the importance of accessability. My knowledge can be found 
           in the form of the following tech stacks: HTML & CSS, JavaScript, React, Redux,
           Node, SQL, Jira, LESS, Python, Express, Cypress.io, Bootstrap, GSAP, Jest, React Testing Library and much more. Below, I have 
-          highlighted my key technical skills I bring to any project.
+          highlighted the key technical skills I bring to my projects.
         </p>
         
       </div>

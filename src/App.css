@@ -278,7 +278,6 @@ hr {
 .about-para {
   padding: 50px 0 25px 0;
   text-align: left;
-  margin: 0 40px;
 }
 
     /*PORTFOLIO*/
@@ -287,7 +286,7 @@ hr {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 50px  20px;
+  margin: 50px 0;
   height: 85vh;
   -webkit-box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97); 
   box-shadow: 0px 0px 33px 16px rgba(244,245,249,0.97);
@@ -336,13 +335,22 @@ hr {
   text-align: left;
 }
 .ig-grid {
-  width: 80%;
+  width: 100%;
   margin-top: 50px;
 }
 
 .cta-description {
   text-align: left;
   margin: 0 40px;
+}
+
+/*SKILLS*/
+.skills-wrapper{
+  margin: 0 20px;
+}
+
+.skills-image {
+  width: 100%;  
 }
 
 /* For mobile phones: */
@@ -397,7 +405,6 @@ hr {
     text-align: left;
   }
 
-  
 
       /*PROJECTS*/
 
@@ -435,6 +442,10 @@ hr {
     height: 70vh;
   }
 
+  /**/
+  .skills-image {
+    width: 800px;  
+  }
   
 }
 
