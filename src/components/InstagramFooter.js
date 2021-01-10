@@ -19,7 +19,7 @@ const InstagramFooter = () => {
                 <div className='flex-detail'>
                     <div className='insta-details'>
                         <h6>Cooler on the gram.</h6>
-                        <a href='https://www.instagram.com/alanna.code/' target='_blank' className="btn-link">Check me out</a>
+                        <a href='https://www.instagram.com/alanna.code/' target='_blank' rel="noopener noreferrer" className="btn-link">Check me out</a>
                     </div>
                 </div>
                 <div>

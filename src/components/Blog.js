@@ -1,5 +1,4 @@
 import React from 'react';
-import skills from '../images/skills.svg';
 
 function Blog() {
 
@@ -22,7 +21,7 @@ function Blog() {
   return (
     <div>
       <div style={{textAlign: 'left'}}>
-        <h2 style={{color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>Blog</h2>
+        <h2 style={{color: lightblue, fontWeight: '900', fontSize: '2.5rem', padding: '30px 0 90px 0'}}>Hire Me</h2>
         <p>
           The more I learn, the more necessary I have found it to be to write things down. Keeping blog posts
           on certain topics allowed me to dig deeper and invest more time towards them in a more productive effort at 

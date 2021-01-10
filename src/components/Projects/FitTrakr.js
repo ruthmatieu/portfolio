@@ -41,7 +41,7 @@ const Lavabeans = () => {
                         <p><a style={{color: 'pink', textDecoration: 'none', padding: '0 5px'}} href={data.github} target='_blank' rel="noopener noreferrer">View GitHub</a></p>
                     </div>
                 </div>
-                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={homepage} alt='homepage'/>
+                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={homepage} alt='project homepage screenshot'/>
             </div>
 
             <div style={{textAlign: 'left', paddingLeft: '250px'}}>
@@ -67,7 +67,7 @@ const Lavabeans = () => {
                         The generated Lorem Ipsum is therefore always free from repetition, injected 
                         humour, or non-characteristic words etc.</p>
                 </div>
-                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={snippetOne} alt='image-ayye'/>
+                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={snippetOne} alt='project screenshot'/>
             </div>
 
             <div style={{textAlign: 'right', paddingRight: '250px'}}>
@@ -85,10 +85,10 @@ const Lavabeans = () => {
                         humour, or non-characteristic words etc.</p>
                 </div>
                 <div>
-                    <img style={{maxWidth: '800px',  marginBottom: '50px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightThree} alt='image-three'/>
+                    <img style={{maxWidth: '800px',  marginBottom: '50px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightThree} alt='project screenshot'/>
                     <div style={{paddingBottom: '150px', display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
-                        <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightOne} alt='image-two'/>
-                        <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightTwo} alt='image-three'/>
+                        <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightOne} alt='project screenshot'/>
+                        <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(219,233,235,0.95)'}} src={spotlightTwo} alt='project screenshot'/>
                     </div>
                 </div>
                 

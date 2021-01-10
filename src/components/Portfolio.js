@@ -45,7 +45,6 @@ function Portfolio() {
       link: '/travelopia',
     }
   ]
-  const lightblue = '#89BEAF';
 
   return (
     <div className="portfolio">

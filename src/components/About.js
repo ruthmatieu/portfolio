@@ -11,7 +11,7 @@ function About() {
       </div>
       <div className='about-para'>
         <p>
-          Hi 👋🏾! My name is Ruth but I prefer Alanna.
+          Hi <span role="img" aria-label="waving hand">👋🏾</span>! My name is Ruth but I prefer Alanna.
           I'm a developer at Travelopia, where I work to improve 
           the experience of yacht vacationing and the booking of exotic vacations on
           the modern web. 
@@ -27,7 +27,7 @@ function About() {
         <p>
           Currently, I’ve been honing my skills learning the backend as I
           navigate through Lambda School's 18-month intensive Fullstack Development 
-          program. Outside of work, I spend most of my time reading, <a href='https://blog.ruthmatieu.com/' target='_blank' className="btn-link">writing</a> to 
+          program. Outside of work, I spend most of my time reading, <a href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</a> to 
           share what I've learned, and coding in order to solidify 
           my understanding of new concepts. 
         </p>

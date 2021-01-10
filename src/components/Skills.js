@@ -10,8 +10,6 @@ import frontDesignCard from '../images/front-end-design-skills.svg';
 
 function Skills() {
 
-  const lightblue = '#89BEAF';
-
   const skillsCards = [
     {
       id: 1,

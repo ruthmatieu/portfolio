@@ -20,38 +20,38 @@ p {
 /*BREAKPOINTS*/
 /* small screen*/
 /* small/original screen - mobile first approach*/
-body {
+/* body {
   background-color: lightsalmon;
-}
+} */
 
 /* M screen*/  
 @media only screen and (min-width: 608px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
 
 }
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-  body {
+  /* body {
     background-color: lightcoral; 
-  }
+  } */
 
 }
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
 
 }
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-  body {
+  /* body {
     background-color: lightgreen;
-  }
+  } */
 
 }

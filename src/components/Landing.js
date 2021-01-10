@@ -3,6 +3,7 @@ import hero from '../images/profile-illustration.svg';
 import diamond from '../images/icon-slider.png';
 import { Link} from "react-router-dom";
 import styled, { css, keyframes } from 'styled-components';
+import '../styles/Landing.css';
 
 
 //components
@@ -102,7 +103,8 @@ function Landing() {
           </div>
           <div className="right-intro">
             <div>
-              <h2 className='header-intro'>Hi, I'm <span><h1>Alanna Mathieu</h1></span>.</h2>
+              <h2 className='header-intro-mobile'>Hi, I'm <br/><span className='name-mobile'>Alanna Mathieu</span>.</h2>
+              <h2 className='header-intro-display'>Hi, I'm <span className='name'>Alanna Mathieu</span>.</h2>
               
               <h2 className='header-intro'>Web Developer at <Link to='/travelopia' className="btn-landing-link">Travelopia</Link>. 
                 Fullstack student at <Link to='/lambda-school' className="btn-landing-link">Lambda School</Link>. Lover of code.</h2>

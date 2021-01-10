@@ -1,3 +1,5 @@
+
+
 /*MOBILE FIRST APPROACH*/
 .browser-only-intro {
   height: 100vh;
@@ -10,6 +12,7 @@
   background-color: white;
 }
 .intro-container {
+  
   height: 94vh;
   background-color: white;
 }
@@ -30,23 +33,43 @@
   place-items: center;
   padding: 0 5%;
   height: 35vh;
+  
 }
 
-.right-intro h1 {
+.header-intro {
+  margin: 0;
+}
+
+.header-intro-display {
+  display: none;
+}
+.name {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Lobster Two', cursive;
   letter-spacing: 0.35rem;
   background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFE6E2 50%);
   display: inline;
 }
 
+
+.name-mobile {
+  font-weight: 100;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 0.35rem;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #CFE6E2 50%);
+  display: inline;
+  line-height: 5rem;
+}
+
 .right-intro h2 {
+  
   font-weight: 700;
   font-size: 1rem;
   margin: 8% 8% 3% 8%;
   font-family: 'Raleway', sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 .right-intro p {
@@ -137,9 +160,10 @@ hr {
 }
 
 @media only screen and (max-width: 403px) {
-    body {
+    /* body {
       background-color: purple;
-    }
+    } */
+  
     .intro-container {
         display: flex;
         justify-content: center;
@@ -177,17 +201,14 @@ hr {
       
     p {
         padding: 0 50px;
-    }
-      
-      
-    
+    }    
 }
 
 /* small screen*/
 @media only screen and (max-width: 404px) {
-    body {
+    /* body {
       background-color: lightcoral;
-    }
+    } */
     .landing-img {
       width: 275px;
     }
@@ -199,24 +220,35 @@ hr {
   
 /* M screen*/  
 @media only screen and (min-width: 608px) {
-    body {
+    /* body {
       background-color: yellow;
-    }
+    } */
     .landing-img {
       width: 250px;
     }
-    .browser-only-intro {
-      
+    .right-intro h1 {
+      font-size: 3rem;
     }
+
+    .header-intro-display {
+      display: block;
+    }
+    .header-intro-mobile {
+      display: none;
+    }
+
+    .name {
+      padding-top: 10px;
+    }
+  
   
 }
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-    body {
+    /* body {
       background-color: green;
-      
-    }
+    } */
     .landing-img {
       width: 250px;
     }
@@ -225,9 +257,9 @@ hr {
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-    body {
+    /* body {
       background-color: lightblue;
-    }
+    } */
     .landing-img {
       width: 375px;
     }
@@ -255,9 +287,9 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-    body {
+    /* body {
       background-color: green;
-    }
+    } */
   
     
     .landing-img {

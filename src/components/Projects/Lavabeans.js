@@ -68,7 +68,7 @@ const Lavabeans = () => {
                         The generated Lorem Ipsum is therefore always free from repetition, injected 
                         humour, or non-characteristic words etc.</p>
                 </div>
-                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={snippetOne} alt='image-ayye'/>
+                <img style={{maxWidth: '60%', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={snippetOne} alt='project screenshot'/>
             </div>
 
             <div style={{textAlign: 'right', paddingRight: '250px'}}>
@@ -86,10 +86,10 @@ const Lavabeans = () => {
                         humour, or non-characteristic words etc.</p>
                 </div>
                 <div>
-                    <img style={{maxWidth: '800px',  marginBottom: '50px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightThree} alt='image-three'/>
+                    <img style={{maxWidth: '800px',  marginBottom: '50px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightThree} alt='project screenshot'/>
                     <div style={{paddingBottom: '150px', display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
-                        <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightOne} alt='image-two'/>
-                        <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightTwo} alt='image-three'/>
+                        <img style={{width: '500px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightOne} alt='project screenshot'/>
+                        <img style={{width: '600px', boxShadow: '0px 0px 33px 16px rgba(243,171,129,0.20)'}} src={spotlightTwo} alt='project screenshot'/>
                     </div>
                 </div>
                 
