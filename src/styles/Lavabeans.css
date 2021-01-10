@@ -2,20 +2,26 @@
     text-align: center;
 }
 
-.project-wrapper h1 {
+.project-wrapper-section h1 {
     font-size: 3rem;
     padding: 50px 0;
+    text-align: center;
 }
 
-.project-wrapper p {
+.project-wrapper-section p {
     padding: 0 40px;
     text-align: left;
+}
+
+.project-title-one {
+    font-family: 'Merriweather Sans', sans-serif;  
+    line-height: 3rem;
 }
 
 .tech-stack {
     display: flex;
     justify-content: space-around;
-    padding: 50px 250px;
+    padding: 20px 40px;
 }
 
 .link {
@@ -23,8 +29,13 @@
     text-decoration: none;
     padding: 0 5px;
 }
-
-img {
+.homepage {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-img {
     width: 100%;
     box-shadow: 0px 0px 33px 16px rgba(243,171,129,0.40);
 }
@@ -38,8 +49,82 @@ img {
     padding: 0;
 }
 
-h3{
+.section-title {
     font-size: 2rem;
     padding: 40px 0;
     line-height: 2.5rem;
+    margin: 50px 0 0 0;
+}
+
+/* M screen*/  
+@media only screen and (min-width: 608px) {
+    
+    body {
+      background-color: red;
+    }
+}
+
+/* M screen*/
+@media only screen and (min-width: 768px) {
+    
+    .landing-img {
+      width: 250px;
+    }
+  
+}
+
+/* L screen*/
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: lightblue;
+    }
+    
+    .homepage {
+        width: 800px;
+    }
+
+    .project-img {
+        width: 500px;
+    }
+
+    .spotlight {
+        text-align: right;
+    }
+
+    .additional-images img {
+        margin: 20px 20px 0 0;
+    }
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1024px) {
+    
+  
+    
+    .landing-img {
+      width: 420px;
+    }
+  
+    .left-intro {
+      width: 50%;
+      text-transform: uppercase;  
+      display: grid;
+      place-items: center;
+    }
+    .right-intro {
+      text-align: center;
+    vertical-align: middle;
+    display: grid;
+    place-items: center;
+    padding: 0 5%;
+    }  
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1250px) {
+  
+
+  .name {
+    font-size: 4rem;
+  }
 }

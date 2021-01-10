@@ -26,8 +26,8 @@ const Lavabeans = () => {
         <div>
             <Nav/>
             
-            <div className='project-wrapper'>
-                <h1>Lavabeans Coffee Co.</h1>
+            <div className='project-wrapper-section'>
+                <h1 className='project-title-one'>Lavabeans Coffee Co.</h1>
                 <p>Introduction (few sentences that explains that the app is about).<br/>
                     Lavabeans Coffee is a React Application built for a self roasting coffee kit. I built this project from scratch.
                     Introduction (few sentences that explains that the app is about).
@@ -43,11 +43,14 @@ const Lavabeans = () => {
                         <p className='link'><a style={{color: 'pink', textDecoration: 'none'}} href={data.github} target='_blank' rel="noopener noreferrer">View GitHub</a></p>
                     </div>
                 </div>
-                <img src={homepage} alt='homepage' className='project-homepage-screenshot'/>
+                
             </div>
-
+            <div>
+                <img src={homepage} alt='homepage' className='homepage'/>
+            </div>
+            
             <div className='project-details'>
-                <h3>Purpose + Goal</h3>
+                <h3 className='section-title'>Purpose + Goal</h3>
                 <div className='details'>
                     <p style={{paddingBottom: '20px'}}>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
                         have suffered alteration in some form, by injected humour, or randomised words 
@@ -69,11 +72,11 @@ const Lavabeans = () => {
                         The generated Lorem Ipsum is therefore always free from repetition, injected 
                         humour, or non-characteristic words etc.</p>
                 </div>
-                <img src={snippetOne} alt='project screenshot'/>
+                <img src={snippetOne} alt='project screenshot' className='project-img'/>
             </div>
 
             <div className='project-details'>
-                <h3>Spotlight</h3>
+                <h3 className='section-title'>Spotlight</h3>
                 <div className='details'>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority 
                         have suffered alteration in some form, by injected humour, or randomised words 
@@ -87,17 +90,17 @@ const Lavabeans = () => {
                         humour, or non-characteristic words etc.</p>
                 </div>
                 <div>
-                    <img style={{maxWidth: '800px',  marginBottom: '50px'}} src={spotlightThree} alt='project screenshot'/>
-                    <div style={{paddingBottom: '150px', display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
-                        <img src={spotlightOne} alt='project screenshot'/>
-                        <img src={spotlightTwo} alt='project screenshot'/>
+                    <img className='project-img' style={{marginBottom: '50px'}} src={spotlightThree} alt='project screenshot'/>
+                    <div style={{paddingBottom: '50px', display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap'}}>
+                        <img src={spotlightOne} alt='project screenshot' className='project-img'/>
+                        <img src={spotlightTwo} alt='project screenshot' className='project-img'/>
                     </div>
                 </div>
                 
             </div>
 
             <div className='project-details'>
-                <h3>Problems + Lessons Learned</h3>
+                <h3 className='section-title'>Problems + Lessons Learned</h3>
                 <div className='details'>
                     <div>
                     <p style={{paddingBottom: '20px'}}>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
