@@ -75,10 +75,10 @@
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-    body {
+    /* body {
         background-color: lightblue;
     }
-    
+     */
     .homepage {
         width: 800px;
     }

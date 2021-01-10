@@ -11,8 +11,7 @@ const InstagramFooter = () => {
             <div className='footer-wrapper'>
                 <h5 className='connect'>Let's collaborate or connect</h5>
                 <div className='cta-description'>
-                    <p>Feel free to reach out if you're looking for a developer, 
-                        have a question, or just want to connect.</p>
+                    <p>If you're looking for a developer, shoot me a message. If not,</p>
                     <a href="mailto:matieu.ruth@gmail.com" className="btn-link">Start a conversation</a>
                 </div>
             </div>

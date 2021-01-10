@@ -24,4 +24,20 @@
       .connect {
         margin: 0 40px;
       }
+
+      @media only screen and (min-width: 900px) {
+        /* body {
+            background-color: lightblue;
+        } */
+
+        .cta-description {
+          text-align: left;
+          margin: 0;
+        }
+  
+        .connect {
+          margin: 0;
+        }
+        
+    }
       
