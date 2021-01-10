@@ -321,29 +321,6 @@ hr {
   padding: 15px 150px;
 }
 
-    /*FOOTER*/
-.ig-footer {
-  background-color: #F4F5F9;
-  padding: 60px 0 20px 0;
-}
-.insta-section {
-  padding: 60px 0;
-  margin: 20px 40px;
-}
-
-.insta-details {
-  text-align: left;
-}
-.ig-grid {
-  width: 100%;
-  margin-top: 50px;
-}
-
-.cta-description {
-  text-align: left;
-  margin: 0 40px;
-}
-
 /*SKILLS*/
 .skills-wrapper{
   margin: 0 20px;

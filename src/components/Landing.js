@@ -102,11 +102,11 @@ function Landing() {
               <img src={hero} alt="" className="landing-img"/>
           </div>
           <div className="right-intro">
-            <div>
+            <div className='intro-div'>
               <h2 className='header-intro-mobile'>Hi, I'm <br/><span className='name-mobile'>Alanna Mathieu</span>.</h2>
               <h2 className='header-intro-display'>Hi, I'm <span className='name'>Alanna Mathieu</span>.</h2>
               
-              <h2 className='header-intro'>Web Developer at <Link to='/travelopia' className="btn-landing-link">Travelopia</Link>. 
+              <h2 className='header-intro-details'>Web Developer at <Link to='/travelopia' className="btn-landing-link">Travelopia</Link>. 
                 Fullstack student at <Link to='/lambda-school' className="btn-landing-link">Lambda School</Link>. Lover of code.</h2>
               {/* <h3 style={{textAlign: 'left'}}>specializing in front end frameworks such as React with a passion for Design Systems.</h3> */}
               <div className="cta-btn">

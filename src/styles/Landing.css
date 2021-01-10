@@ -36,8 +36,7 @@
   
 }
 
-.header-intro {
-  margin: 0;
+.header-intro-details {
 }
 
 .header-intro-display {
@@ -67,7 +66,7 @@
   
   font-weight: 700;
   font-size: 1rem;
-  margin: 8% 8% 3% 8%;
+  margin: 0 8%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
@@ -126,6 +125,7 @@ hr {
   cursor: pointer;
 }
 .bio-adjuster {
+  margin-top: 50px;
   font-weight: 200;
   font-size: 0.8rem;
   padding-top: 10px;
@@ -135,6 +135,7 @@ hr {
 .landing-btn-div {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .bio-details {
@@ -229,6 +230,9 @@ hr {
     .right-intro h1 {
       font-size: 3rem;
     }
+    .name {
+      font-size: 3rem;
+    }
 
     .header-intro-display {
       display: block;
@@ -240,8 +244,6 @@ hr {
     .name {
       padding-top: 10px;
     }
-  
-  
 }
 
 /* M screen*/
@@ -281,6 +283,11 @@ hr {
       vertical-align: middle;
       margin: auto;
       height: 100vh;
+      padding: 0;
+    }
+
+    .intro-div {
+      padding-right: 5%;
     }
   
 }
@@ -308,6 +315,16 @@ hr {
     display: grid;
     place-items: center;
     padding: 0 5%;
-    }
-  
+    }  
+}
+
+/* XL screen*/
+@media only screen and (min-width: 1250px) {
+  /* body {
+    background-color: orange;
+  } */
+
+  .name {
+    font-size: 4rem;
+  }
 }

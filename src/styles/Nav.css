@@ -47,41 +47,41 @@ a:hover{
 
 /*BREAKPOINTS*/
 /* small screen*/
-@media only screen and (max-width: 404px) {
+/* @media only screen and (max-width: 404px) {
     body {
       background-color: lightcoral;
     }
   
-} 
+}  */
   
 /* M screen*/  
-@media only screen and (min-width: 608px) {
+/* @media only screen and (min-width: 608px) {
     body {
       background-color: yellow;
     }
   
-}
+} */
 
 /* M screen*/
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     body {
       background-color: green; 
     }
   
-}
+} */
 
 /* L screen*/
-@media only screen and (min-width: 900px) {
+/* @media only screen and (min-width: 900px) {
     body {
       background-color: lightblue;
     }
   
-}
+} */
 
 /* XL screen*/
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     body {
       background-color: green;
     }
   
-}
+} */
