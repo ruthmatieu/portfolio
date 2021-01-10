@@ -24,6 +24,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/* html body {
+  background-color: white;
+} */
 body {
   line-height: 1;
   color: #2B2C2B;
@@ -337,9 +340,7 @@ hr {
 
 /* Small screen*/  
 @media only screen and (min-width: 608px) {
-  /* body {
-    background-color: yellow;
-  } */
+  
   .wrapper {
     text-align: left;
   }
@@ -348,18 +349,14 @@ hr {
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-  /* body {
-    background-color: lightcoral; 
-  } */
+  
 
 
 }
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-  /* body {
-    background-color: lightblue;
-  } */
+ 
   .intro-container {
     height: 100vh;
     display: flex;
@@ -428,9 +425,7 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-  /* body {
-    background-color: lightgreen;
-  } */
+  
   .landing-img {
     width: 400px;
   }
@@ -457,9 +452,7 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1250px) {
-  /* body {
-    background-color: orange;
-  } */
+  
 
   .right-intro h1 {
     letter-spacing: 0.35rem;
@@ -478,26 +471,11 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1325px) {
-  /* body {
-    background-color: pink;
-  } */
+  
   .landing-img {
     width: 400px;
   }
   .project-wrapper {
     height: 35vh;
   }
-  
-
 }
-
-/* .browser-only-intro {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  font-weight: 900;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 0.06rem;
-  background-color: white;
-} */

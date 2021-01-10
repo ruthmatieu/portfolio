@@ -44,9 +44,9 @@
 /*BREAKPOINTS*/
 /* small screen*/
 @media only screen and (max-width: 404px) {
-    body {
+    /* body {
       background-color: lightcoral;
-    }
+    } */
     .ig-grid {
       width: 500px;
   }
@@ -55,9 +55,9 @@
   
 /* M screen*/  
 @media only screen and (min-width: 608px) {
-    body {
+    /* body {
       background-color: yellow;
-    }
+    } */
     .ig-grid {
         width: 500px;
     }
@@ -69,24 +69,24 @@
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-    body {
+    /* body {
       background-color: green; 
-    }
+    } */
   
 }
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-    body {
+    /* body {
       background-color: lightblue;
-    }
+    } */
   
 }
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-    body {
+    /* body {
       background-color: red;
-    }
+    } */
   
 }

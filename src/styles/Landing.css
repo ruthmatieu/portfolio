@@ -161,9 +161,7 @@ hr {
 }
 
 @media only screen and (max-width: 403px) {
-    /* body {
-      background-color: purple;
-    } */
+    
   
     .intro-container {
         display: flex;
@@ -207,9 +205,7 @@ hr {
 
 /* small screen*/
 @media only screen and (max-width: 404px) {
-    /* body {
-      background-color: lightcoral;
-    } */
+    
     .landing-img {
       width: 275px;
     }
@@ -221,9 +217,7 @@ hr {
   
 /* M screen*/  
 @media only screen and (min-width: 608px) {
-    /* body {
-      background-color: yellow;
-    } */
+    
     .landing-img {
       width: 250px;
     }
@@ -248,9 +242,7 @@ hr {
 
 /* M screen*/
 @media only screen and (min-width: 768px) {
-    /* body {
-      background-color: green;
-    } */
+    
     .landing-img {
       width: 250px;
     }
@@ -259,9 +251,7 @@ hr {
 
 /* L screen*/
 @media only screen and (min-width: 900px) {
-    /* body {
-      background-color: lightblue;
-    } */
+    
     .landing-img {
       width: 375px;
     }
@@ -294,9 +284,7 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1024px) {
-    /* body {
-      background-color: green;
-    } */
+    
   
     
     .landing-img {
@@ -320,9 +308,7 @@ hr {
 
 /* XL screen*/
 @media only screen and (min-width: 1250px) {
-  /* body {
-    background-color: orange;
-  } */
+  
 
   .name {
     font-size: 4rem;
