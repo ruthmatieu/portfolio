@@ -9,6 +9,8 @@ const Contact = () => {
 
             <p>See something you like?</p>
             <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
+
+            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>Get In Touch</button></a>
         </Wrapper>
     )
 }
@@ -33,6 +35,22 @@ const Wrapper = styled.section`
         line-height: 25px;
         padding: 0 0 10px 0;
     }
+
+    button {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+        padding: 10px 15px;
+        background-color: #138085;
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
     @media only screen and ${breakpoint.device.tablet} {
         padding: 50px 40px 100px 40px;
     }
