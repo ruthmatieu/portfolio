@@ -54,7 +54,8 @@ export default Homepage;
 const Wrapper = styled.section`
 
     position: relative;
-    background-color: #138085;
+    background: rgb(19,128,133);
+    background: linear-gradient(180deg, rgba(19,128,133,1) 0%, rgba(255,255,255,1) 100%);
     height: 80vh;
     display: grid;
     place-items: center;
@@ -66,18 +67,18 @@ const Wrapper = styled.section`
     h1 {
         font-size: 45px;
         padding-bottom: 10px;
-        color: white;
+        color: #138085;
     }
 
     h2 {
         padding-bottom: 30px;
         font-size: 30px;
-        color: #DC8666;
+        color: #EEB462;
     }
 
     p {
         line-height: 25px;
-        color: white;
+        color: #544667;
     }
 
     h1, h2, p {
@@ -95,7 +96,7 @@ const Wrapper = styled.section`
 
     .socials a {
         margin-bottom: 15px;
-        color: #DC8666;
+        color: #EEB462;
     }
 
     .socials a:hover {
@@ -126,7 +127,7 @@ const Wrapper = styled.section`
     }
 `;
 const StyledLink = styled(Link)`
-    color: #EEB462;
+    color: #CE7672;
     text-decoration: none;
 
 `;

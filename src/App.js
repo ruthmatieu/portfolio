@@ -44,7 +44,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   padding: 20px 0;
   background: #138085;
-  border-bottom: 1px solid white;
   
     img {
       width: 40px;
