@@ -9,19 +9,21 @@ const Projects = () => {
   return (
     <Wrapper>
       <h5>Work</h5>
-      {data.map(item => {
-        return (
-          <Project
-            key={item.id}
-            image={item.image}
-            name={item.name}
-            link={item.link}
-            description={item.description}
-            cta1={item.cta1}
-            cta2={item.cta2}
-          />
-        )
-      })}
+      <section>
+        {data.map(item => {
+          return (
+            <Project
+              key={item.id}
+              image={item.image}
+              name={item.name}
+              link={item.link}
+              description={item.description}
+              cta1={item.cta1}
+              cta2={item.cta2}
+            />
+          )
+        })}
+      </section>
     </Wrapper>
   );
 }
@@ -41,12 +43,21 @@ const Wrapper = styled.section`
       font-weight: 700;
     }
 
+   
+
     @media only screen and ${breakpoint.device.laptop} {
         background-color: yellow;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
+        display: grid;
+        place-items: center;
+
+        section {
+          
+          width: 700px;
+        }
+       
     }
 `;
 

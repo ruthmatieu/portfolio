@@ -102,8 +102,22 @@ const Wrapper = styled.section`
 
     }
 
+    button {
+        text-align: center;
+        margin-top: 30px;
+        padding: 10px 15px;
+        background-color: #138085;
+        border: 1px solid white;
+        border-radius: 25px;
+        color: white;
+    }
 
-    @media only screen and ${breakpoint.device.laptop} {
+    button:hover {
+        cursor: pointer;
+    }
+
+
+    @media only screen and ${breakpoint.device.tablet} {
         background-color: yellow;
     }
 

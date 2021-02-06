@@ -6,10 +6,10 @@ import breakpoint from './breakpoints';
 
 //
 import Homepage from './components/Homepage';
-import About from './components/About';
-import Projects from './components/Projects';
 import LaceUp from './components/work/LaceUp';
-import Footer from './components/Footer';
+
+//images
+import logo from './images/logo.png'
 
 function App() {  
 
@@ -17,7 +17,7 @@ function App() {
     <div>
       <header>
         <Nav>
-          <Link to='/'><img src='' alt='logo'/></Link>
+          <Link to='/'><img src={logo} alt='logo'/></Link>
           <p>resume</p>
         </Nav>
       </header>
@@ -43,11 +43,13 @@ const Nav = styled.nav`
   display: flex;  
   justify-content: space-between;
   padding: 20px 0;
+  background: #138085;
+  border-bottom: 1px solid white;
   
     img {
-
+      width: 40px;
     }
-    @media only screen and ${breakpoint.device.laptop} {
+    @media only screen and ${breakpoint.device.tablet} {
         
     }
 

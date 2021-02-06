@@ -33,12 +33,12 @@ const Wrapper = styled.section`
         line-height: 25px;
         padding: 0 0 10px 0;
     }
-    @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
+    @media only screen and ${breakpoint.device.tablet} {
+        padding: 50px 40px 100px 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
+        padding: 100px 50px 150px 50px;
     }
 `;
 

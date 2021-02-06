@@ -47,15 +47,6 @@ const Wrapper = styled.div`
     .socials a:hover {
 
     }
-
-
-    @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
-    }
-
-    @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
-    }
 `;
 
 

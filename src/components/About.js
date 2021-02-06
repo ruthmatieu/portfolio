@@ -69,12 +69,17 @@ const Wrapper = styled.section`
         line-height: 25px;
         padding: 0 20px 10px 20px;
     }
-    @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
+    @media only screen and ${breakpoint.device.tablet} {
+        padding: 50px 40px 0 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
+        padding: 50px 50px 0 50px;
+
+        .skills {
+
+            width: 600px;
+        }
     }
 `;
 
