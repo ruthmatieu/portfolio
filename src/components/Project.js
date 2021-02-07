@@ -99,7 +99,7 @@ const Wrapper = styled.section`
     .mobile-project-details {
       background-color: #DC8666;
       position: absolute;
-      bottom: 170px;
+      bottom: 150px;
       right: 50px;
       left: 0px;
       -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
@@ -113,7 +113,7 @@ const Wrapper = styled.section`
     .mobile-cta-container {
      background-color: #544667;
      position: absolute;
-     bottom: 130px;
+     bottom: 110px;
      left: 200px;
      right: 0;
      padding: 20px 0;
