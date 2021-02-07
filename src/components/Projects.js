@@ -33,7 +33,7 @@ export default Projects;
 const Wrapper = styled.section`
 
     padding: 50px 20px 0 20px;
-    background-color: #CE7672;
+    background-color: rgba(206, 120, 115, 0.96);
 
     h5 {
       font-size: 23px;
@@ -45,8 +45,9 @@ const Wrapper = styled.section`
 
    
 
-    @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
+    @media only screen and ${breakpoint.device.tablet} {
+
+        padding: 50px 40px 0 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {

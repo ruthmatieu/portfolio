@@ -16,15 +16,20 @@ const Project = (props) => {
           <div>
             <Link to={props.cta1}><img src={props.image} alt={props.name}/></Link>
           </div>
-          <h2>{props.name}</h2>
-          
-          <p>{props.description}</p>
-          
-          <div className='cta-container'>
-            <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
-            <a href={props.cta2} target='_blank' className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-            <a href={props.link} target='_blank' className='cta'><FaGithub className='icons'/></a>
+          <div className='mobile-project-details'>
+            <h2>{props.name}</h2>
+            
+            <p>{props.description}</p>
+            
           </div>
+
+          <div className='mobile-cta-container'>
+              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
+              <a href={props.cta2} target='_blank' className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
+              <a href={props.link} target='_blank' className='cta'><FaGithub className='icons'/></a>
+            </div>
+          
+        
         </div>
 
         <div className='desktop-desc'>
@@ -37,6 +42,7 @@ const Project = (props) => {
             <p>{props.description}</p>
             
           </div>
+
           <div className='cta-container'>
               <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
               <a href={props.cta2} target='_blank' className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
@@ -59,7 +65,7 @@ const Wrapper = styled.section`
   text-align: center;
 
     .project-container {
-      padding-bottom: 80px;
+      padding-bottom: 250px;
       position: relative;
     }
 
@@ -87,16 +93,51 @@ const Wrapper = styled.section`
     .icons {
       color: #544667;
     }
-    
+
+    .mobile-desc {
+    }
+    .mobile-project-details {
+      background-color: #DC8666;
+      position: absolute;
+      bottom: 170px;
+      right: 50px;
+      left: 0px;
+      -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
+      box-shadow: 5px 5px 24px -1px #633C2E;
+     }
+
+     .mobile-project-details  p {
+      padding: 0 30px 30px 30px;
+    }
+
+    .mobile-cta-container {
+     background-color: #544667;
+     position: absolute;
+     bottom: 130px;
+     left: 240px;
+     right: 0;
+     padding: 20px 0;
+     -webkit-box-shadow: 5px 5px 24px -1px #544667; 
+     box-shadow: 5px 5px 24px -1px #544667;
+    }
+
+    .mobile-cta-container .icons {
+     color: #EEB462;
+   }
     .desktop-desc {
 
       display: none;
     }
     @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
+
     }
 
     @media only screen and ${breakpoint.device.desktop} {
+      .project-container {
+        padding-bottom: 100px;
+        position: relative;
+      }
+
        .mobile-desc {
          display: none;
        }
@@ -113,6 +154,10 @@ const Wrapper = styled.section`
         left: -100px;
         -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
         box-shadow: 5px 5px 24px -1px #633C2E;
+       }
+
+       .project-details  p {
+         padding: 0 30px 30px 30px;
        }
 
        .cta-container {
@@ -147,7 +192,7 @@ const Wrapper = styled.section`
 `;
 
 const StyledLink = styled(Link)`
-    color: #544667;
+    color: #EEB462;
     text-decoration: none;
 
     @media only screen and ${breakpoint.device.desktop} {

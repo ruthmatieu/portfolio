@@ -9,10 +9,11 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import headshot from '../images/headshot.svg';
+import bg from '../images/bg.png';
 
 const Homepage = () => {  
 
-    const string = 'I build web stuff.'
+    const string = 'I build  web  stuff.'
 
   return (
       <div>
@@ -20,14 +21,19 @@ const Homepage = () => {
       
         <Wrapper>
             <div className='intro'>
-                <div>
-                    <img className='headshot' src={headshot} alt='Ruth Matieu headshot'/>
-                    <h1>Alanna Mathieu</h1>
-                    <h2>{string}</h2>
-                    <p>
-                        Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at <StyledLink to='/lambda'>Lambda School</StyledLink>.
-                    </p>
-                    <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>Get In Touch</button></a>
+                <div className='intro-wrapper'>
+                    <div className='left-side'>
+                        <img className='headshot' src={headshot} alt='Ruth Matieu headshot'/>
+                    </div>
+                    <div className='right-side'>
+                        <h1>Alanna Mathieu</h1>
+                        <h2>{string}</h2>
+                        <p>
+                            Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at <StyledLink to='/lambda'>Lambda School</StyledLink>.
+                        </p>
+                        <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>Get In Touch</button></a>
+                    
+                    </div>
                 </div>
             </div>
         
@@ -56,8 +62,9 @@ export default Homepage;
 const Wrapper = styled.section`
 
     position: relative;
-    background: rgb(19,128,133);
-    background: linear-gradient(180deg, rgba(19,128,133,1) 0%, rgba(255,255,255,1) 100%);
+    // background: rgb(19,128,133);
+    // background: linear-gradient(180deg, rgba(19,128,133,1) 0%, rgba(255,255,255,1) 100%);
+    background-color: rgb(19, 128, 134);
     height: 80vh;
     display: grid;
     place-items: center;
@@ -86,14 +93,14 @@ const Wrapper = styled.section`
         font-family: 'Padauk', sans-serif;
         padding-bottom: 30px;
         font-size: 30px;
-        color: #138085;
+        color: #EEB462;
         text-align: center;
     }
 
     p {
         
         line-height: 25px;
-        color: #544667;
+        color: #DC8666;
         text-align: left;
     }
 
@@ -118,11 +125,12 @@ const Wrapper = styled.section`
 
     button {
         margin-top: 30px;
-        padding: 10px 15px;
+        padding: 15px 15px;
         background-color: #544667;
-        border: 1px solid white;
+        border: 1px solid #544667;
         border-radius: 25px;
         color: white;
+        
     }
 
     button:hover {
@@ -131,15 +139,46 @@ const Wrapper = styled.section`
 
 
     @media only screen and ${breakpoint.device.tablet} {
-        background-color: yellow;
+        // background-color: yellow;
+        .socials {
+            top: 60px;
+            right: 40px; 
+        }
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
+        // background-color: white;
+        
+        .intro {
+            margin: 0;
+        }
+
+        .intro-wrapper {
+            display: flex;
+            width: 100%;
+        }
+
+        .right-side {
+            padding: 0 120px;
+            width: 50%;
+        }
+
+        .left-side {
+            width: 50%;
+            height: 100%;
+            background-image: url(${bg});
+            background-size: cover;
+        }
+
+        .socials {
+            top: 60px;
+            right: 50px; 
+        }
     }
 `;
 const StyledLink = styled(Link)`
-    color: #CE7672;
+    color: #EEB462;
     text-decoration: none;
+    
 
 `;
