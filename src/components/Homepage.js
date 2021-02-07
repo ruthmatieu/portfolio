@@ -8,6 +8,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import headshot from '../images/headshot.svg';
 
 const Homepage = () => {  
 
@@ -20,6 +21,7 @@ const Homepage = () => {
         <Wrapper>
             <div className='intro'>
                 <div>
+                    <img className='headshot' src={headshot} alt='Ruth Matieu headshot'/>
                     <h1>Alanna Mathieu</h1>
                     <h2>{string}</h2>
                     <p>
@@ -63,20 +65,32 @@ const Wrapper = styled.section`
     .intro {
         margin: 0 20px;
     }
+
+    .headshot {
+        width: 275px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
     h1 {
         font-size: 45px;
-        padding-bottom: 10px;
-        color: #138085;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 8px;
+        padding: 10px 0;
+        color: #CE7672;
+        text-align: center;
     }
 
     h2 {
+        font-family: 'Padauk', sans-serif;
         padding-bottom: 30px;
         font-size: 30px;
-        color: #EEB462;
+        color: #138085;
     }
 
     p {
+        
         line-height: 25px;
         color: #544667;
     }
@@ -107,7 +121,7 @@ const Wrapper = styled.section`
         text-align: center;
         margin-top: 30px;
         padding: 10px 15px;
-        background-color: #138085;
+        background-color: #544667;
         border: 1px solid white;
         border-radius: 25px;
         color: white;
