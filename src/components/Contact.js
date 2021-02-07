@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 
+
+
 const Contact = () => {
     return (
         <Wrapper>
@@ -10,7 +12,7 @@ const Contact = () => {
             <p>See something you like?</p>
             <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
 
-            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>Get In Touch</button></a>
+            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>contact me</button></a>
         </Wrapper>
     )
 }

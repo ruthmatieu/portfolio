@@ -31,7 +31,7 @@ const Homepage = () => {
                         <p>
                             Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at <StyledLink to='/lambda'>Lambda School</StyledLink>.
                         </p>
-                        <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>Get In Touch</button></a>
+                        <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>CONTACT ME</button></a>
                     
                     </div>
                 </div>
@@ -127,7 +127,7 @@ const Wrapper = styled.section`
         margin-top: 30px;
         padding: 15px 15px;
         background-color: #544667;
-        border: 1px solid #544667;
+        border: none;
         border-radius: 25px;
         color: white;
         
@@ -135,6 +135,7 @@ const Wrapper = styled.section`
 
     button:hover {
         cursor: pointer;
+        background-color: rgba(84, 70, 103, 0.64);
     }
 
 

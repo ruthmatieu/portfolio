@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 import quotes from '../images/quotes.png';
 import skills from '../images/skills.svg';
+import { AiFillStar } from 'react-icons/ai';
 
 const About = () => {
     return (
@@ -25,8 +26,8 @@ const About = () => {
                 <p>
                 Currently, I’ve been honing my skills learning the backend as I
                 navigate through Lambda School's 18-month intensive Fullstack Development 
-                program. I've come to realize that the more I learn, the more there is left to know. 
-                Outside of work, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</StyledLink> and
+                program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
+                Outside of work though, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</StyledLink> and
                 catching up with Game of Thrones. 
                 </p>
                 <StyledLink className="btn-link" href="./pdfFile.pdf" target="blank">Resumé</StyledLink>
@@ -34,6 +35,34 @@ const About = () => {
                 
             </div>
             <img src={skills} alt='skillset' className='skills'/>   
+            <div className='skills-container'>
+                <div>
+                    <div>
+                        <AiFillStar/>HTML/CSS
+                    </div>
+                    <div>
+                        <AiFillStar/>JavaScript
+                    </div>
+                    <div>
+                        <AiFillStar/>React
+                    </div>
+                    <div>
+                        <AiFillStar/>Redux
+                    </div>
+                    
+                </div>
+                <div>
+                    <div>
+                        <AiFillStar/>Node.js
+                    </div>
+                    <div>
+                        <AiFillStar/>Drupal
+                    </div>
+                    <div>
+                        <AiFillStar/>SASS + LESS
+                    </div>
+                </div>
+            </div>
         </Wrapper>
     )
 }
@@ -63,6 +92,13 @@ const Wrapper = styled.section`
         width: 100%;
         margin: 30px 0;
         
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 30px 0 50px 0;
     }
 
     p {

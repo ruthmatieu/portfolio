@@ -18,7 +18,7 @@ function App() {
       <header>
         <Nav>
           <Link to='/'><img src={logo} alt='logo'/></Link>
-          <p>resume</p>
+          {/* <p>resume</p> */}
         </Nav>
       </header>
 
@@ -46,13 +46,18 @@ const Nav = styled.nav`
   background: #138085;
   
     img {
-      width: 40px;
+      width: 140px;
+      padding-left: 20px;
     }
     @media only screen and ${breakpoint.device.tablet} {
-        
+      img {
+        padding-left: 40px;
+      }
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        
+      img {
+        padding-left: 50px;
+      }
     }
 `;
