@@ -12,7 +12,7 @@ import headshot from '../images/headshot.svg';
 
 const Homepage = () => {  
 
-    const string = 'I build stuff.'
+    const string = 'I build web stuff.'
 
   return (
       <div>
@@ -76,7 +76,7 @@ const Wrapper = styled.section`
     h1 {
         font-size: 45px;
         font-family: 'Anton', sans-serif;
-        letter-spacing: 8px;
+        letter-spacing: 5px;
         padding: 10px 0;
         color: #CE7672;
         text-align: center;
@@ -87,17 +87,16 @@ const Wrapper = styled.section`
         padding-bottom: 30px;
         font-size: 30px;
         color: #138085;
+        text-align: center;
     }
 
     p {
         
         line-height: 25px;
         color: #544667;
-    }
-
-    h1, h2, p {
         text-align: left;
     }
+
 
     .socials  {
         display: flex;
@@ -118,7 +117,6 @@ const Wrapper = styled.section`
     }
 
     button {
-        text-align: center;
         margin-top: 30px;
         padding: 10px 15px;
         background-color: #544667;
