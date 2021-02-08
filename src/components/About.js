@@ -106,6 +106,15 @@ const Wrapper = styled.section`
         
     }
 
+    .skills-div {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .skills-item {
+        margin-left: 10px;
+    }
+
     .skills-container {
         display: flex;
         justify-content: space-around;
@@ -144,18 +153,6 @@ const Wrapper = styled.section`
         }
         .skills {
             width: 100%;
-        }
-
-        .skills-container {
-            text-align: left;
-        }
-
-        .skills-div {
-            padding: 10px;
-        }
-
-        .skills-item {
-            margin-left: 10px;
         }
 
         .resume {

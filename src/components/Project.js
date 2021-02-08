@@ -114,7 +114,7 @@ const Wrapper = styled.section`
      background-color: #544667;
      position: absolute;
      bottom: 110px;
-     left: 200px;
+     left: 10;
      right: 0;
      padding: 20px 0;
      -webkit-box-shadow: 5px 5px 24px -1px #544667; 
