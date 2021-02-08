@@ -43,29 +43,32 @@ const About = () => {
                 <img src={skills} alt='skillset' className='skills'/>   
                 <div className='skills-container'>
                     <div>
-                        <div>
-                            <AiFillStar/>HTML/CSS
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#DC8666'}} size={20}/><span className='skills-item'>HTML/CSS</span>
                         </div>
-                        <div>
-                            <AiFillStar/>JavaScript
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>JavaScript</span>
                         </div>
-                        <div>
-                            <AiFillStar/>React
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#CE7672'}} size={20}/><span className='skills-item'>React</span>
                         </div>
-                        <div>
-                            <AiFillStar/>Redux
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>Redux</span>
                         </div>
                         
                     </div>
                     <div>
-                        <div>
-                            <AiFillStar/>Node.js
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>Node.js</span>
                         </div>
-                        <div>
-                            <AiFillStar/>Drupal
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#DC8666'}} size={20}/><span className='skills-item'>Drupal</span>
                         </div>
-                        <div>
-                            <AiFillStar/>SASS + LESS
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>SASS + LESS</span>
+                        </div>
+                        <div className='skills-div'>
+                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>SASS + LESS</span>
                         </div>
                     </div>
                 </div>
@@ -110,12 +113,19 @@ const Wrapper = styled.section`
         padding: 30px 0 50px 0;
     }
 
+    .resume {
+        padding-left: 20px;
+    }
+
     p {
         line-height: 25px;
         padding: 0 20px 10px 20px;
     }
     @media only screen and ${breakpoint.device.tablet} {
         padding: 50px 40px 0 40px;
+    }
+    .resume {
+        padding-left: 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
@@ -125,9 +135,27 @@ const Wrapper = styled.section`
             display: flex;
         }
 
-        .skills {
+        .about-one {
+            width: 50%;
+        }
 
-            width: 600px;
+        .about-two {
+            width: 50%;
+        }
+        .skills {
+            width: 100%;
+        }
+
+        .skills-container {
+            text-align: left;
+        }
+
+        .skills-div {
+            padding: 10px;
+        }
+
+        .skills-item {
+            margin-left: 10px;
         }
 
         .resume {
