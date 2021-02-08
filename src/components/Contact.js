@@ -2,17 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 
+import igCollage from '../images/insta-grid.svg';
+
 
 
 const Contact = () => {
     return (
         <Wrapper>
-            <h6>Let's work together</h6>
+            <div className='action-left'>
+                <h6>Let's work together</h6>
 
-            <p>See something you like?</p>
-            <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
+                <p>See something you like?</p>
+                <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
 
-            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>contact me</button></a>
+                <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>contact me</button></a>
+
+            </div>
+            <div className='action-right'>
+                <h6>Psst! Find me on the gram</h6>
+                <p>I sometimes do fun stuff 🙃</p>
+                <img src={igCollage} alt='Instagram collage'/>
+            </div>
         </Wrapper>
     )
 }
@@ -52,13 +62,35 @@ const Wrapper = styled.section`
     button:hover {
         cursor: pointer;
     }
+    .action-right {
+        text-align: right;
+        padding-top: 50px;
+    }
+
+    .action-right h6 {
+        font-size: 17px;
+    }
+    img {
+        width: 100%;
+    }
 
     @media only screen and ${breakpoint.device.tablet} {
         padding: 50px 40px 100px 40px;
+        
     }
 
     @media only screen and ${breakpoint.device.desktop} {
         padding: 100px 50px 150px 50px;
+        display: flex;
+
+        .action-left {
+            width: 50%
+        }
+
+        .action-right {
+            // padding-top: 150px;
+            width: 50%
+        }
     }
 `;
 
