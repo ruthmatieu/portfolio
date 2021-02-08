@@ -10,59 +10,68 @@ const About = () => {
         <Wrapper className='wrapper'>
 
             <h5>About Me</h5>
+            <div className='about-flex-wrapper'>
+
             
-            <div className='quotes'>
-                <img src={quotes} alt='quotes'className='quotes-img'/>
-            </div>
+            <div className='about-one'>
+                <div className='quotes'>
+                    <img src={quotes} alt='quotes'className='quotes-img'/>
+                </div>
 
-            <div className='about-para'>
-                <p>
-                Hi <span role="img" aria-label="waving hand">👋🏾</span>! My name is Ruth but I prefer Alanna.
-                I'm a developer at Travelopia, where I work to improve 
-                the experience of yacht vacationing and the booking of exotic vacations on
-                the modern web. 
-                </p>
+                <div className='about-para'>
+                    <p>
+                    Hi <span role="img" aria-label="waving hand">👋🏾</span>! My name is Ruth but I prefer Alanna.
+                    I'm a developer at Travelopia, where I work to improve 
+                    the experience of yacht vacationing and the booking of exotic vacations on
+                    the modern web. 
+                    </p>
 
-                <p>
-                Currently, I’ve been honing my skills learning the backend as I
-                navigate through Lambda School's 18-month intensive Fullstack Development 
-                program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
-                Outside of work though, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</StyledLink> and
-                catching up with Game of Thrones. 
-                </p>
-                <StyledLink className="btn-link" href="./pdfFile.pdf" target="blank">Resumé</StyledLink>
-                
-                
-            </div>
-            <img src={skills} alt='skillset' className='skills'/>   
-            <div className='skills-container'>
-                <div>
-                    <div>
-                        <AiFillStar/>HTML/CSS
-                    </div>
-                    <div>
-                        <AiFillStar/>JavaScript
-                    </div>
-                    <div>
-                        <AiFillStar/>React
-                    </div>
-                    <div>
-                        <AiFillStar/>Redux
-                    </div>
+                    <p>
+                    Currently, I’ve been honing my skills learning the backend as I
+                    navigate through Lambda School's 18-month intensive Fullstack Development 
+                    program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
+                    Outside of work though, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</StyledLink> and
+                    catching up with Game of Thrones. 
+                    </p>
+                    <StyledLink className="btn-link resume" href="./pdfFile.pdf" target="blank">View Resumé</StyledLink>
+                    
                     
                 </div>
-                <div>
+            </div>
+            
+            <div className='about-two'>
+                <img src={skills} alt='skillset' className='skills'/>   
+                <div className='skills-container'>
                     <div>
-                        <AiFillStar/>Node.js
+                        <div>
+                            <AiFillStar/>HTML/CSS
+                        </div>
+                        <div>
+                            <AiFillStar/>JavaScript
+                        </div>
+                        <div>
+                            <AiFillStar/>React
+                        </div>
+                        <div>
+                            <AiFillStar/>Redux
+                        </div>
+                        
                     </div>
                     <div>
-                        <AiFillStar/>Drupal
-                    </div>
-                    <div>
-                        <AiFillStar/>SASS + LESS
+                        <div>
+                            <AiFillStar/>Node.js
+                        </div>
+                        <div>
+                            <AiFillStar/>Drupal
+                        </div>
+                        <div>
+                            <AiFillStar/>SASS + LESS
+                        </div>
                     </div>
                 </div>
             </div>
+            </div>
+            
         </Wrapper>
     )
 }
@@ -110,11 +119,19 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        padding: 50px 50px 0 50px;
+        padding: 50px;
+
+        .about-flex-wrapper {
+            display: flex;
+        }
 
         .skills {
 
             width: 600px;
+        }
+
+        .resume {
+            padding-left: 20px;
         }
     }
 `;
