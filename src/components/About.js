@@ -53,7 +53,7 @@ const About = () => {
                             <AiFillStar style={{color: '#CE7672'}} size={20}/><span className='skills-item'>React</span>
                         </div>
                         <div className='skills-div'>
-                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>Redux</span>
+                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>SASS + LESS</span>
                         </div>
                         
                     </div>
@@ -65,10 +65,10 @@ const About = () => {
                             <AiFillStar style={{color: '#DC8666'}} size={20}/><span className='skills-item'>Drupal</span>
                         </div>
                         <div className='skills-div'>
-                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>SASS + LESS</span>
+                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>Redux</span>
                         </div>
                         <div className='skills-div'>
-                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>SASS + LESS</span>
+                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>HubSpot</span>
                         </div>
                     </div>
                 </div>

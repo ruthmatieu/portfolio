@@ -3,9 +3,13 @@ import styled from 'styled-components';
 import breakpoint from '../../breakpoints';
 import { projectData } from '../../data';
 
+//
+import Footer from '../Footer';
+
 const LaceUp = () => {
     return (
-        <Wrapper>
+        <div>
+            <Wrapper>
             <div className='intro-container'>
                 <h1>{projectData.laceUp.title}</h1>
 
@@ -25,7 +29,7 @@ const LaceUp = () => {
                 </div>
 
                 <div>
-                    <img src={projectData.laceUp.mainImage} alt='homepage screenshot'/>
+                    <img src={projectData.laceUp.mainImage} alt='homepage screenshot' className='main-image'/>
                 </div>
                 
             </div>
@@ -57,9 +61,9 @@ const LaceUp = () => {
                         humour, or non-characteristic words etc.</p>
                 </div>
                 <div>
-                    <img src={projectData.laceUp.snapOne} alt='project screenshot'/>
+                    <img src={projectData.laceUp.snapOne} alt='project screenshot' className='snap-one-image'/>
                     <div>
-                        <img src='' alt='project screenshot'/>
+                        <img src='' alt='project screenshot' className=''/>
                         <img src='' alt='project screenshot'/>
                     </div>
                 </div>
@@ -77,7 +81,18 @@ const LaceUp = () => {
                         middle of text.</p>
                 </div>
             </div>
-        </Wrapper>
+            {/* <div className='more-projects'>
+                <div className='more-proj-one'>
+                    aht
+                </div>
+                <div className='more-proj-two'>
+                    aht
+                </div>
+            </div> */}
+            </Wrapper>
+            <Footer/>
+        </div>
+        
     )
 }
 
@@ -93,9 +108,11 @@ const Wrapper = styled.section`
     }
 
     h1 {
-      padding: 40px 0;
+      font-family: 'Anton', sans-serif;
+      font-size: 50px;
       text-align: center;
-      font-size: 30px;
+      text-transform: uppercase;
+      padding: 40px 0;
       color: #CE7672;
     }
 
@@ -122,6 +139,8 @@ const Wrapper = styled.section`
 
     img {
       width: 100%;
+      -webkit-box-shadow: 5px 5px 18px 5px #B2B2B2; 
+      box-shadow: 5px 5px 18px 5px #B2B2B2;
     }
 
     .purpose-container h3 {
@@ -146,13 +165,45 @@ const Wrapper = styled.section`
         color: #138085;
     }
 
+    .more-projects {
+        padding: 50px 0 90px 0;
+    }
+
    
 
-    @media only screen and ${breakpoint.device.laptop} {
-        background-color: yellow;
+    @media only screen and ${breakpoint.device.tablet} {
+        // background-color: yellow;
+
+        margin: 0 40px;
+        .intro-paragraph {
+            text-align: center;
+        }
+
+        .tech-stack {
+            display: flex;
+            justify-content: space-around;
+        }
+        .cta {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .snap-one-image {
+            width: 300px;
+        }
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        background-color: red;
+        // background-color: red;
+
+        margin: 0 50px;
+
+        img {
+            width: 900px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 `;

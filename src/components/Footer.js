@@ -29,6 +29,7 @@ const Wrapper = styled.div`
 
     p {
         color: white;
+        font-size: 14px;
         text-align: center;  
         padding-top: 20px;
     }
