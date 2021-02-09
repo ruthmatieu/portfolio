@@ -15,7 +15,7 @@ const Footer = () => {
                 </div>
 
                 <p>Designed and Built by Ruth Matieu</p>
-                <p>Copyright 2021</p>
+                <p><span>&#169;</span> Copyright 2021</p>
             </div>
         </Wrapper>
     )

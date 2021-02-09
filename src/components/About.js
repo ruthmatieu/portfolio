@@ -122,9 +122,7 @@ const Wrapper = styled.section`
         padding: 30px 0 50px 0;
     }
 
-    .resume {
-        padding-left: 20px;
-    }
+    
 
     p {
         line-height: 25px;
@@ -140,6 +138,9 @@ const Wrapper = styled.section`
     @media only screen and ${breakpoint.device.desktop} {
         padding: 50px;
 
+        h5 {
+            text-align: center;
+        }
         .about-flex-wrapper {
             display: flex;
         }

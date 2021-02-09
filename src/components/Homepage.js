@@ -13,7 +13,7 @@ import bg from '../images/bg.png';
 
 const Homepage = () => {  
 
-    const string = 'I build  web  stuff.'
+    const string = 'Clean code. Clean designs.'
 
   return (
       <div>
@@ -31,8 +31,9 @@ const Homepage = () => {
                         <p>
                             Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at <StyledLink to='/lambda'>Lambda School</StyledLink>.
                         </p>
-                        <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>CONTACT ME</button></a>
-                    
+                        <div className='btn-div'>
+                            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>CONTACT ME</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,6 +122,10 @@ const Wrapper = styled.section`
 
     .socials a:hover {
 
+    }
+
+    .btn-div {
+        text-align: center;
     }
 
     button {
