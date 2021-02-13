@@ -172,8 +172,6 @@ const Wrapper = styled.section`
         .left-side {
             width: 50%;
             height: 100%;
-            background-image: url(${bg});
-            background-size: cover;
         }
 
         .socials {

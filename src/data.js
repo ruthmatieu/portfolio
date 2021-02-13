@@ -17,22 +17,22 @@ export const data = [
     },
     {
         id: 2,
-        name: 'Potluck Planner',
+        name: 'Chow Dining',
         image: projectTwo,
         cta1: 'Read More',
         cta2: '',
         github: '',
-        link: '',
+        link: 'https://www.chowdining.com/',
         description: 'An e-commerce store that allows users to shop for their favorite shoes. This project utilizes React, Redux, Styled-Components.'
     },
     {
         id: 3,
-        name: 'The Chow',
+        name: 'Potluck Planner',
         image: projectOne,
         cta1: 'Read More',
         cta2: '',
-        github: '',
-        link: '',
+        github: 'https://github.com/PotluckPlanner-BW/front-end',
+        link: 'https://front-end-liart-phi.vercel.app/',
         description: 'describes project one'
     }
 ]
