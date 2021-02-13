@@ -17,7 +17,7 @@ const Project = (props) => {
             <Link to={props.cta1}><img src={props.image} alt={props.name}/></Link>
           </div>
           <div className='mobile-project-details'>
-            <h2>{props.name}</h2>
+            <Link to={props.cta1}><h2>{props.name}</h2></Link>
             
             <p>{props.description}</p>
             

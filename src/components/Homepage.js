@@ -29,7 +29,7 @@ const Homepage = () => {
                         <h1>Alanna Mathieu</h1>
                         <h2>{string}</h2>
                         <p>
-                            Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at <StyledLink to='/lambda'>Lambda School</StyledLink>.
+                            Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at Lambda School.
                         </p>
                         <div className='btn-div'>
                             <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>CONTACT ME</button></a>

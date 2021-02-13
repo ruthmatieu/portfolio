@@ -7,7 +7,7 @@ import mainLace from './images/chow-proj.png';
 export const data = [
     {
         id: 1,
-        name: 'Laced Up',
+        name: 'Lace Up',
         image: projectOne,
         cta1: '/project-laced-up',
         cta2: '',
