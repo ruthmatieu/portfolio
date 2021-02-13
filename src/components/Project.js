@@ -17,7 +17,7 @@ const Project = (props) => {
             <Link to={props.cta1}><img src={props.image} alt={props.name}/></Link>
           </div>
           <div className='mobile-project-details'>
-            <Link to={props.cta1}><h2>{props.name}</h2></Link>
+            <StyledLink to={props.cta1}><h2>{props.name}</h2></StyledLink>
             
             <p>{props.description}</p>
             
@@ -25,8 +25,8 @@ const Project = (props) => {
 
           <div className='mobile-cta-container'>
               <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
-              <a href={props.cta2} target='_blank' className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-              <a href={props.link} target='_blank' className='cta'><FaGithub className='icons'/></a>
+              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
+              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
           
         
@@ -45,8 +45,8 @@ const Project = (props) => {
 
           <div className='cta-container'>
               <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
-              <a href={props.cta2} target='_blank' className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-              <a href={props.link} target='_blank' className='cta'><FaGithub className='icons'/></a>
+              <a href={props.cta2} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
+              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
           
         </div>

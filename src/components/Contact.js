@@ -15,12 +15,12 @@ const Contact = () => {
                 <p>See something you like?</p>
                 <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
 
-                <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>contact me</button></a>
+                <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>contact me</button></a>
 
             </div>
             <div className='action-right'>
                 <h6>Psst! Find me on the gram</h6>
-                <p>I sometimes do fun stuff 🙃</p>
+                <p>I sometimes do fun stuff <span role="img" aria-label="sheep">🙃</span></p>
                 <img src={igCollage} alt='Instagram collage'/>
             </div>
         </Wrapper>

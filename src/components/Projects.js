@@ -14,12 +14,12 @@ const Projects = () => {
           return (
             <Project
               key={item.id}
-              image={item.image}
               name={item.name}
+              image={item.image}
+              cta1={item.cta1}
+              github={item.github}
               link={item.link}
               description={item.description}
-              cta1={item.cta1}
-              cta2={item.cta2}
             />
           )
         })}
@@ -60,10 +60,4 @@ const Wrapper = styled.section`
         }
        
     }
-`;
-
-const StyledLink = styled.a`
-    color: #DC8666;
-    text-decoration: none;
-
 `;

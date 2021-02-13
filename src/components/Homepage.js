@@ -9,7 +9,6 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import headshot from '../images/headshot.svg';
-import bg from '../images/bg.png';
 
 const Homepage = () => {  
 
@@ -32,7 +31,7 @@ const Homepage = () => {
                             Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at Lambda School.
                         </p>
                         <div className='btn-div'>
-                            <a href='mailto:matieu.ruth@gmail.com' target='_blank'><button>CONTACT ME</button></a>
+                            <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>CONTACT ME</button></a>
                         </div>
                     </div>
                 </div>
