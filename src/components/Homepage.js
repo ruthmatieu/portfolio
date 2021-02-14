@@ -15,7 +15,7 @@ const Homepage = () => {
     const string = 'Clean code. Clean designs.'
 
   return (
-      <div>
+      <WrapperDiv>
 
       
         <Wrapper>
@@ -52,12 +52,17 @@ const Homepage = () => {
         <Projects/>
         <Contact/>
         <Footer/>
-    </div>
+    </WrapperDiv>
     
   );
 }
 
 export default Homepage;
+
+const WrapperDiv = styled.div`
+  //min-width: 1280px;
+
+`
 
 const Wrapper = styled.section`
 

@@ -15,7 +15,7 @@ import logo from './images/logo.png'
 function App() {  
 
   return (
-    <div>
+    <WrapperDiv>
       <header>
         <Nav>
           <Link to='/'><img src={logo} alt='logo'/></Link>
@@ -33,11 +33,18 @@ function App() {
         <Route path='/lambda-school' component={''}/>
         </ScrollToTop>
     </Switch>
-    </div>
+    </WrapperDiv>
   );
 }
 
 export default App;
+
+const WrapperDiv = styled.div`
+  // display: grid;
+  // place-items: center;
+  // width: 1024px;
+
+`
 
 const Nav = styled.nav`
 
