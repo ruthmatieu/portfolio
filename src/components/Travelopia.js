@@ -5,6 +5,8 @@ import breakpoint from '../breakpoints';
 import main from '../images/travelopia-one.jpg';
 import techStack from '../images/trav-tech-stack.svg';
 import techStackCol from '../images/trav-tech-stack-col.svg';
+import trav from '../images/travelopia-four.png';
+
 
 //
 import Footer from './Footer';
@@ -78,14 +80,12 @@ const LaceUp = () => {
                       this reason, I made it a habit to always use a nice, professional tone (sarcasm cannot be detected through 
                       text) and be as detailed as possible to leave as little room as possible for confusion.
                     </p>
-                    <p>Like most companies, and being a travel/vacationing company at that, many employees were laid 
-                      off. Quickly, the existing employees soon found themselves doing tasks out of their role description 
-                      including myself. With this change, I made it a goal to dive deeper into data analyst (our Data Analyst 
-                      was laid off and her work handed over).
+                    <p>Similar to many companies affected by covid-19, many employees were laid 
+                      off. Quickly, I found myself wearing multiple hats as we lunged into an all-hands-on-deck approach.
                     </p>
                     </div>
                   </div>
-                
+                  <img src={trav} alt='Boat Summit' className='boat-summit-collage'/>
             </div>
             </Wrapper>
             <Footer/>
@@ -125,6 +125,9 @@ const Wrapper = styled.section`
 
     .tech-stack {
         padding: 20px 0;
+    }
+    .tech-stack-row {
+      padding-bottom: 50px;
     }
     .tech-stack-col {
       display: none;
@@ -171,7 +174,10 @@ const Wrapper = styled.section`
     .more-projects {
         padding: 50px 0 90px 0;
     }
-
+    
+    .boat-summit-collage {
+      width: 100%;
+    }
    
 
     @media only screen and ${breakpoint.device.tablet} {
@@ -210,6 +216,7 @@ const Wrapper = styled.section`
         .random {
           display: flex;
         }
+
         .tech-stack-col {
           display: block;
         }
