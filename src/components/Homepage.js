@@ -181,7 +181,6 @@ const Wrapper = styled.section`
 `;
 const StyledLink = styled(Link)`
     color: #EEB462;
-    text-decoration: none;
-    
+    text-decoration: none;   
 
 `;

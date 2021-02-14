@@ -1,6 +1,7 @@
 //images
 import projectOne from './images/lace-up-proj.svg';
 import projectTwo from './images/chow-proj.svg';
+import projectThree from './images/potluck-proj.svg';
 import screenshotOne from './images/snapOne.png';
 import mainLace from './images/chow-proj.png';
 
@@ -12,26 +13,26 @@ export const data = [
         cta1: '/project-laced-up',
         github: 'https://github.com/ruthmatieu/laced-up',
         link: 'https://www.google.com/',
-        description: 'An e-commerce store that allows users to shop for their favorite shoes. This project utilizes React, Redux, Styled-Components.'
+        description: 'An e-commerce site that allows you to shop your favorite sneakers. Browse the collection and add your top picks to your cart.'
     },
     {
         id: 2,
+        name: 'Potluck Planner',
+        image: projectThree,
+        cta1: '/project-potluck-planner',
+        github: 'https://github.com/PotluckPlanner-BW/front-end',
+        link: 'https://front-end-liart-phi.vercel.app/',
+        description: 'Single page application to keep track of who is responsible for bringing certain dishes to your event. Create, update or delete your lists to stay up to date with plan changes.'
+    },
+    {
+        id: 3,
         name: 'Chow Dining',
         image: projectTwo,
         cta1: '/project-chow-dining',
         github: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
         link: 'https://www.chowdining.com/',
-        description: 'An e-commerce store that allows users to shop for their favorite shoes. This project utilizes React, Redux, Styled-Components.'
+        description: `A static website for a local restaurant. Presents a nice look at the company's services, description and methods of contact.`
     },
-    {
-        id: 3,
-        name: 'Potluck Planner',
-        image: projectOne,
-        cta1: '/project-potluck-planner',
-        github: 'https://github.com/PotluckPlanner-BW/front-end',
-        link: 'https://front-end-liart-phi.vercel.app/',
-        description: 'describes project one'
-    }
 ]
 
 
