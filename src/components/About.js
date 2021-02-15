@@ -138,7 +138,8 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        padding: 50px;
+        max-width: 1024px;
+        margin: 0 auto;
 
         h5 {
             text-align: center;

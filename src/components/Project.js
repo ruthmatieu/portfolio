@@ -24,7 +24,7 @@ const Project = (props) => {
           </div>
 
           <div className='mobile-cta-container'>
-              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
+              <StyledLink to={props.cta1} className='cta'>View Project</StyledLink>
               <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
               <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
@@ -44,7 +44,7 @@ const Project = (props) => {
           </div>
 
           <div className='cta-container'>
-              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
+              <StyledLink to={props.cta1} className='cta'>View Project</StyledLink>
               <a href={props.cta2} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
               <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
@@ -133,6 +133,8 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
+      max-width: 1024px;
+        margin: 0 auto;
       .project-container {
         padding-bottom: 100px;
         position: relative;

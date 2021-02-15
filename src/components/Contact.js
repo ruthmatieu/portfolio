@@ -19,9 +19,9 @@ const Contact = () => {
 
             </div>
             <div className='action-right'>
-                <h6>Psst! Find me on the gram</h6>
+                <a href='https://www.instagram.com/alanna.code/' target='_blank' rel="noopener noreferrer"><h6>Psst! Find me on the gram</h6></a>
                 <p>I sometimes do fun stuff <span role="img" aria-label="sheep">🙃</span></p>
-                <img src={igCollage} alt='Instagram collage'/>
+                <a href='https://www.instagram.com/alanna.code/' target='_blank' rel="noopener noreferrer"><img src={igCollage} alt='Instagram collage'/></a>
             </div>
         </Wrapper>
     )
@@ -74,13 +74,18 @@ const Wrapper = styled.section`
         width: 100%;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     @media only screen and ${breakpoint.device.tablet} {
         padding: 50px 40px 100px 40px;
         
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        padding: 100px 50px 150px 50px;
+        max-width: 1024px;
+        margin: 0 auto;
         display: flex;
 
         .action-left {

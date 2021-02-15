@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import breakpoint from '../breakpoints';
+
 
 const Footer = () => {
     return (
         <Wrapper>
-            <div>
+            <div className='footer-container'>
                 <div className="socials">
                     <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
                     <a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
@@ -22,7 +24,7 @@ const Footer = () => {
 
 export default Footer;
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
     background-color: #544667;
     padding: 30px 0;
 
@@ -47,6 +49,16 @@ const Wrapper = styled.div`
     .socials a:hover {
 
     }
+
+    .footer-container {
+        @media only screen and ${breakpoint.device.desktop} {
+            //background-color: red;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+    }
+
+    
 `;
 
 

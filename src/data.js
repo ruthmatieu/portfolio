@@ -6,7 +6,10 @@ import screenshotOne from './images/snapOne.png';
 import mainLace from './images/lacedup-main.png';
 import mainPot from './images/potluck-main.png';
 import potluckOne from './images/potluck-one.png';
-import lacedTwo from './images/lacedup-two.png'
+import lacedTwo from './images/lacedup-two.png';
+import chowMain from './images/chow-proj.svg';
+import chowOne from './images/chow-screenshot-one.png';
+
 
 export const data = [
     {
@@ -47,7 +50,7 @@ export const projectData = {
    laceUp: 
     {
         title: 'Laced Up',
-        tech: 'React, Redux, CSS, HTML5, Styled Components',
+        tech: 'React, Redux, HTML5, Styled Components, Netlify',
         live: 'https://laced-up.netlify.app/',
         git: 'https://github.com/ruthmatieu/laced-up',
         mainImage: mainLace,
@@ -63,13 +66,13 @@ export const projectData = {
         mainImage: mainPot,
         snapOne: potluckOne,
     },
-    thirdproj: 
+    chow: 
     {
         title: 'Chow Dining',
-        tech: 'HTML5, CSS, CSS grids',
-        live: '',
-        git: '',
-        mainImage: mainLace,
-        snapOne: screenshotOne,
+        tech: 'HTML5, CSS, CSS grid, Bootstrap',
+        live: 'https://www.chowdining.com/pages/menu.html',
+        git: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
+        mainImage: chowMain,
+        snapOne: chowOne,
     }
 }

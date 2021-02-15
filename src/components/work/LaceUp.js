@@ -14,8 +14,8 @@ const LaceUp = () => {
                 <h1>{projectData.laceUp.title}</h1>
 
                 <p className='intro-paragraph'>
-                    Lace Up is a single page React application built for a sports company specializing in sports training sneakers for both men and women. 
-                    Lace Up is built from the ground up.
+                    Laced Up is a single page React application built for a sports company specializing in sports training sneakers for both men and women. 
+                    I built this project from scratch with React. I utilized Netlify as a server to host Laced Up, because it allows live updates alongside github.
                 </p>
                 
                 <div className='tech-stack'>
@@ -38,11 +38,11 @@ const LaceUp = () => {
             <div className='purpose-container'>
                 <h3>Purpose + Goal</h3>
                 <div>
-                    <p>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
-                        have suffered alteration in some form, by injected humour, or randomised words 
-                        which don't look even slightly believable. If you are going to use a passage of 
-                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
-                        middle of text. The goal was to incorporate Redux into what we see everyday.</p>
+                    <p>The purpose of this project was to create an ecommerce app that allowed users to shop their favorite sneakers
+                        with the ability to add products to their cart, create or log in to their account and browse through
+                        a collection of footwear. In order to crate these features, this project consisted of 3 phases. First, 
+                        the structure of the app and determining where state would reside was laid out. Next, our backend was built 
+                        (currently being improved on). Lastly, the front end including form authentication and design was put in place.</p>
                 </div>
             </div>
             <div className='spotlight-container'>
@@ -50,7 +50,7 @@ const LaceUp = () => {
                 <div className='spotlight-flex'>
                     <div>
                         <p>React and Redux were the best choices for building this application. Due to React's component 
-                            based structure, we were able to quickly build a feature once and use it multiple times across
+                            based structure, I was able to quickly build a feature once and use it multiple times across
                             the app. With Redux's ease of state management, it only made sense to use both stacks together.</p>
                             <img src={projectData.laceUp.snapTwo} alt='project screenshot' className='snap-two-image'/>
 
@@ -66,23 +66,12 @@ const LaceUp = () => {
                 
             </div>
 
-            <div className='lessons-container'>
+            {/* <div className='lessons-container'>
                 <h3>Problems + Lessons Learned</h3>
                 <div>
                     
-                    <p>This project included 3 phases. There are many variations of passages of Lorem Ipsum available, but the majority 
-                        have suffered alteration in some form, by injected humour, or randomised words 
-                        which don't look even slightly believable. If you are going to use a passage of 
-                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
-                        middle of text.</p>
-                </div>
-            </div>
-            {/* <div className='more-projects'>
-                <div className='more-proj-one'>
-                    aht
-                </div>
-                <div className='more-proj-two'>
-                    aht
+                    <p>Similar to most projects, I ran into a few bumps along the way, one particularly difficult area was organization and structure of the code. Because of this project's size, I realized how important maintaining an organized structure would be.
+                        I worked hard to keep components as reusable as possible and utilized props for many slight variations. I also used styled-components, because the structure of CSS-in-js is much clearer and prevents overrides.</p>
                 </div>
             </div> */}
             </Wrapper>

@@ -60,7 +60,10 @@ const Homepage = () => {
 export default Homepage;
 
 const WrapperDiv = styled.div`
-  //min-width: 1280px;
+@media only screen and ${breakpoint.device.desktop} {
+    //background-color: red;
+    
+    }
 
 `
 
@@ -158,6 +161,7 @@ const Wrapper = styled.section`
 
     @media only screen and ${breakpoint.device.desktop} {
         // background-color: white;
+        
         
         .intro {
             margin: 0;
