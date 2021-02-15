@@ -174,7 +174,7 @@ const Wrapper = styled.section`
 
         margin: 0 40px;
         .intro-paragraph {
-            text-align: center;
+            text-align: left;
         }
 
         .tech-stack {
@@ -195,7 +195,8 @@ const Wrapper = styled.section`
     @media only screen and ${breakpoint.device.desktop} {
         // background-color: red;
 
-        margin: 0 50px;
+        max-width: 1024px;
+        margin: 0 auto;
 
         img {
             width: 900px;

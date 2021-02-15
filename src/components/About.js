@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import breakpoint from '../breakpoints';
 import quotes from '../images/quotes.png';
 import skills from '../images/skills.svg';
 import { AiFillStar } from 'react-icons/ai';
+import resume from '../images/resume.PDF';
 
 const About = () => {
     return (
@@ -21,7 +23,7 @@ const About = () => {
                 <div className='about-para'>
                     <p>
                     Hi <span role="img" aria-label="waving hand">👋🏾</span>! My name is Ruth but I prefer Alanna.
-                    I'm a developer at Travelopia, where I work to improve 
+                    I'm a developer at <StyledLink2 to='/travelopia'>Travelopia</StyledLink2>, where I work to improve 
                     the experience of yacht vacationing and the booking of exotic vacations on
                     the modern web. 
                     </p>
@@ -33,7 +35,7 @@ const About = () => {
                     Outside of work though, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link">writing</StyledLink> and
                     catching up with Game of Thrones. 
                     </p>
-                    <StyledLink className="btn-link resume" href="./pdfFile.pdf" target="blank">View Resumé</StyledLink>
+                    <StyledLink className="btn-link resume" href={resume} target="blank">View Resumé</StyledLink>
                     
                     
                 </div>
@@ -163,6 +165,13 @@ const Wrapper = styled.section`
 `;
 
 const StyledLink = styled.a`
+    color: #DC8666;
+    text-decoration: none;
+    
+
+`;
+
+const StyledLink2 = styled(Link)`
     color: #DC8666;
     text-decoration: none;
     
