@@ -21,7 +21,7 @@ const LaceUp = () => {
                 <p className='intro-paragraph'>
                 I currently work as a Jr. Web Developer (Online Specialist) specializing in Drupal CMS at <a className="btn-link" href='https://www.travelopia.com/' target='_blank' rel="noopener noreferrer">Travelopia</a>, a travel/leisure 
           company located in Clearwater, FL. Since I first began in August 2019, this role has proven to be an amazing experience 
-          where I have been able to work alongside senior Developers and experienced Designers to build multiple powerful client facing products.
+          where I have been able to work alongside senior Developers and experienced Designers to improe our client facing websites.
           Throughout my duration at Travelopia, I have been pushed and challenged to be a much better developer than when I first began.
                 </p>
 
@@ -37,19 +37,20 @@ const LaceUp = () => {
                 <div>
                   <p>
                           Prior to working at Travelopia, I had set a few goals for myself. 
-                          One being that I would learn as much as I could about the tech stack the company used, 
+                          One being that I would learn as much as I could about the tech stack utilized by the company, 
                           more specifically, Drupal, as I was expected to use the CMS daily.
                   </p>
 
                   <p>Another goal was to learn to be a productive member of my team. Travelopia is a UK-based company with
-                            multiple locations globally that which resulted in working with people not only from the US and UK but also Australia, 
+                            multiple global locations that which results in working with people not only from the US and UK but also Australia, 
                             Germany, France, South Africa and the Netherlands. 
                           
                   </p>
 
                   <p>My third goal was birthed during the covid-19 pandemic in early 2020. While working from home was
-                            always an option, come March 2020, it became the new normal. My goal was not only to adapt to the new work 
-                            environment but to also ensure I was being just as effective as I was in the office.
+                            always an option, come March 2020, it became the new normal not only for Travelopia but most 
+                            of corporate America. My goal was not only to adapt to this new work 
+                            environment but to ensure I was being just as effective (if not more) as I was in the office.
                   </p>
                 </div>
             </div>
@@ -71,18 +72,18 @@ const LaceUp = () => {
                   
                     <p>
                       The first week at Travelopia consisted of me launching a new destination (web page) for The Bahamas 
-                      from scratch using Drupal. Needless to say I needed guidance and with the 
-                      help of my talented seniors, I was able to survive this learning curve.</p>
+                      from scratch with Drupal. Needless to say I needed guidance and with the 
+                      help of my talented seniors, I was able to overcome a variety of Drupal learning curves.</p>
                     <p>
-                      Travelopia is a global company; we have employees from The US, UK, Germany, Australia, France, and Netherlands. Proper and efficient communication 
-                      is key in successful collaborations and scrum meetings. Communicaton became a challenge as I realized how easy 
-                      it was for misunderstndings to take place among my colleagues. For 
-                      this reason, I made it a habit to always use a nice, professional tone (sarcasm cannot be detected through 
-                      text) and be as detailed as possible to leave as little room as possible for confusion.
+                      Travelopia is a global company; we have employees from the US, UK, Germany, Australia, France, and Netherlands. Proper and efficient communication 
+                      is key in successful collaborations and scrum meetings. However, communicaton became a challenge as I realized how easy 
+                      it was for misunderstndings to take place among my colleagues due to differences in time zones, customs and work culture. For 
+                      this reason, I made it a habit to always go above and beyond in clarifying my intentions, structuring my email in an easy-to-decipher layout
+                      and never assume what the other person knows. I have found this creates little room for confusion.
                     </p>
-                    <p>Similar to many companies affected by covid-19, we had many lay offs and furloughs. Quickly, I found myself 
-                      wearing multiple hats as we lunged into an all-hands-on-deck approach. This scenario provided me with 
-                      the opportunity to dive further into the CMS and learning HubSpot.
+                    <p>My biggest challenge was birthed with the covid-19 pandemic. Similar to many companies affected by the coronavirus, we had many lay offs and furloughs 
+                      throughout 2020. Quickly, I found myself wearing multiple hats as we lunged into an all-hands-on-deck approach. This opportunity allowed me to dive 
+                      further into learning more about Drupal and HubSpot. 
                     </p>
                     </div>
                   </div>
