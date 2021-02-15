@@ -124,11 +124,20 @@ const Wrapper = styled.section`
         font-weight: 600;
     }
 
+    .cta {
+        padding-bottom: 40px;
+    }
+
     .cta a {
         text-decoration: none;
         color: #EEB462;
         font-weight: 500;
-        padding-right: 20px;
+        margin-right: 20px;
+    }
+
+    .cta a:hover {
+        cursor: pointer;
+        border-bottom: 4px solid #DC8666;
     }
 
     img {

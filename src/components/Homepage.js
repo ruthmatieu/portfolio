@@ -12,7 +12,7 @@ import headshot from '../images/headshot.svg';
 
 const Homepage = () => {  
 
-    const string = 'Clean code. Clean designs.'
+    const string = 'Code for the modern web'
 
   return (
       <WrapperDiv>

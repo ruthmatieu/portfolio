@@ -37,7 +37,7 @@ export const data = [
         cta1: '/project-chow-dining',
         github: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
         link: 'https://www.chowdining.com/',
-        description: `A static website for a local restaurant. Presents a nice look at the company's services, description and methods of contact.`
+        description: `A static website for a local restaurant. Presents a modern look at the company's services, description and methods of contact.`
     },
 ]
 
@@ -70,7 +70,7 @@ export const projectData = {
     {
         title: 'Chow Dining',
         tech: 'HTML5, CSS, CSS grid, Bootstrap',
-        live: 'https://www.chowdining.com/pages/menu.html',
+        live: 'https://www.chowdining.com/',
         git: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
         mainImage: chowMain,
         snapOne: chowOne,

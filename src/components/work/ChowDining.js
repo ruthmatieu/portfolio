@@ -24,8 +24,8 @@ const ChowDining = () => {
                         <p><span>Tech Stack:</span><br/>{projectData.chow.tech}</p>
                     </div>
                     <div className='cta'>
-                        <a href={projectData.potluck.live} target='_blank' rel="noopener noreferrer">Live Demo</a>
-                        <a href={projectData.potluck.git} target='_blank' rel="noopener noreferrer">Source Code</a>
+                        <a href={projectData.chow.live} target='_blank' rel="noopener noreferrer">Live Demo</a>
+                        <a href={projectData.chow.git} target='_blank' rel="noopener noreferrer">Source Code</a>
                     </div>
                 </div>
 
@@ -39,11 +39,9 @@ const ChowDining = () => {
             <div className='purpose-container'>
                 <h3>Purpose + Goal</h3>
                 <div>
-                    <p>This project is a Lambda School application built with two other developers. The goal of this 
-                        project was to create an application that would make party planning easier, mores specifically, potluckers.
-                        There were 4 stages of this application build. First, we laid out the structure of our app
-                        and determined where state would reside. In the second stage, our backend was built.
-                        Lastly, we built the structure of our front end including form authentication and design.</p>
+                    <p>The goal of this project was to create a full restaurant site from scratch.
+                        With HTML and CSS grids, 
+                    </p>
                 </div>
             </div>
 
@@ -51,9 +49,7 @@ const ChowDining = () => {
                 <h3>Web Stack</h3>
                 <div className='spotlight-flex'>
                     <div>
-                        <p>React and Redux were the best choices for building this application. Due to React's component 
-                            based structure, we were able to quickly build a feature once and use it multiple times across
-                            the app. With Redux's ease of state management, it only made sense to use both stacks together.</p>
+                        <p>Since this site is static, HTML/CSS and Bootstrap were best choices for building this site.</p>
                     </div>
                     <div>
                         <div>
@@ -126,11 +122,20 @@ const Wrapper = styled.section`
         font-weight: 600;
     }
 
+    .cta {
+        padding-bottom: 40px;
+    }
+
     .cta a {
         text-decoration: none;
         color: #EEB462;
         font-weight: 500;
-        padding-right: 20px;
+        margin-right: 20px;
+    }
+
+    .cta a:hover {
+        cursor: pointer;
+        border-bottom: 4px solid #DC8666;
     }
 
     img {
