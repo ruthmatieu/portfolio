@@ -14,7 +14,7 @@ const LaceUp = () => {
                 <h1>{projectData.laceUp.title}</h1>
 
                 <p className='intro-paragraph'>
-                    Lace Up is a Single Page React Application built for a sports company specializing in shoes for sports training. 
+                    Lace Up is a single page React application built for a sports company specializing in sports training sneakers for both men and women. 
                     Lace Up is built from the ground up.
                 </p>
                 

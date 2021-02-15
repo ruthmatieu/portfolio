@@ -4,6 +4,7 @@ import projectTwo from './images/chow-proj.svg';
 import projectThree from './images/potluck-proj.svg';
 import screenshotOne from './images/snapOne.png';
 import mainLace from './images/chow-proj.png';
+import mainPot from './images/potluck-main.png';
 
 export const data = [
     {
@@ -43,19 +44,29 @@ export const projectData = {
 
    laceUp: 
     {
-        title: 'Lace Up',
+        title: 'Laced Up',
         tech: 'React, Redux, CSS, HTML5, Styled Components',
         live: '',
-        git: '',
+        git: 'https://github.com/ruthmatieu/laced-up',
         mainImage: mainLace,
         snapOne: screenshotOne,
     },
     potluck: 
     {
-
+        title: 'Potluck Planner',
+        tech: 'React, Redux, HTML5, Styled Components',
+        live: 'https://front-end-liart-phi.vercel.app/',
+        git: 'https://github.com/PotluckPlanner-BW/front-end',
+        mainImage: mainPot,
+        snapOne: screenshotOne,
     },
     thirdproj: 
     {
-
+        title: 'Chow Dining',
+        tech: 'HTML5, CSS, CSS grids',
+        live: '',
+        git: '',
+        mainImage: mainLace,
+        snapOne: screenshotOne,
     }
 }

@@ -70,18 +70,19 @@ const LaceUp = () => {
 
                   
                     <p>
-                      Just as luck would have it, my first week consisted of me launching a new base (web page) for The Bahamas 
-                      from scratch using Drupal for the first time. Needless to say I needed guidance and with the 
+                      The first week at Travelopia consisted of me launching a new destination (web page) for The Bahamas 
+                      from scratch using Drupal. Needless to say I needed guidance and with the 
                       help of my talented seniors, I was able to survive this learning curve.</p>
                     <p>
-                      With such a huge and diverse team, effective communication is a necessity. This was my second-biggest
-                      area of growth. I realized how easy it was for misunderstndings to take place among my colleagues when 
-                      messages weren't clear with multple people in different countries and backgrounds being involved. For 
+                      Travelopia is a global company; we have employees from The US, UK, Germany, Australia, France, and Netherlands. Proper and efficient communication 
+                      is key in successful collaborations and scrum meetings. Communicaton became a challenge as I realized how easy 
+                      it was for misunderstndings to take place among my colleagues. For 
                       this reason, I made it a habit to always use a nice, professional tone (sarcasm cannot be detected through 
                       text) and be as detailed as possible to leave as little room as possible for confusion.
                     </p>
-                    <p>Similar to many companies affected by covid-19, many employees were laid 
-                      off. Quickly, I found myself wearing multiple hats as we lunged into an all-hands-on-deck approach.
+                    <p>Similar to many companies affected by covid-19, we had many lay offs and furloughs. Quickly, I found myself 
+                      wearing multiple hats as we lunged into an all-hands-on-deck approach. This scenario provided me with 
+                      the opportunity to dive further into the CMS and learning HubSpot.
                     </p>
                     </div>
                   </div>
@@ -126,8 +127,10 @@ const Wrapper = styled.section`
     .tech-stack {
         padding: 20px 0;
     }
+
     .tech-stack-row {
       padding-bottom: 50px;
+      width: 100%;
     }
     .tech-stack-col {
       display: none;
@@ -136,6 +139,11 @@ const Wrapper = styled.section`
     .tech-stack span {
         color: #DC8666;
         font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      color: #EEB462;
     }
 
     .cta a {

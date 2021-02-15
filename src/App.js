@@ -7,7 +7,8 @@ import breakpoint from './breakpoints';
 //
 import Homepage from './components/Homepage';
 import LaceUp from './components/work/LaceUp';
-import Travelopia from './components/Travelopia'
+import Potluck from './components/work/Potluck';
+import Travelopia from './components/Travelopia';
 
 //images
 import logo from './images/logo.png'
@@ -27,7 +28,7 @@ function App() {
         <ScrollToTop>
         <Route exact path='/' component={Homepage}/>
         <Route path='/project-laced-up' component={LaceUp}/>
-        <Route path='/project-potluck-planner' component={''}/>
+        <Route path='/project-potluck-planner' component={Potluck}/>
         <Route path='/project-the-chow' component={''}/>
         <Route path='/travelopia' component={Travelopia}/>
         <Route path='/lambda-school' component={''}/>
