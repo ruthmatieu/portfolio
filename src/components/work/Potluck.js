@@ -37,39 +37,34 @@ const Potluck = () => {
             <div className='purpose-container'>
                 <h3>Purpose + Goal</h3>
                 <div>
-                    <p>This project is a Lambda School application built with two other developers. The goal of This 
-                        project is to 
-                        There were 4 stages to build this app. First, we laid out the structure of our app
+                    <p>This project is a Lambda School application built with two other developers. The goal of this 
+                        project was to create an application that would make party planning easier, mores specifically, potluckers.
+                        There were 4 stages of this application build. First, we laid out the structure of our app
                         and determined where state would reside. In the second stage, our backend was built.
-                        Next, we built the structure of our front end including form authentication and design.</p>
+                        Lastly, we built the structure of our front end including form authentication and design.</p>
                 </div>
             </div>
 
             <div className='spotlight-container'>
-                <h3>Spotlight</h3>
-                <div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority 
-                        have suffered alteration in some form, by injected humour, or randomised words 
-                        which don't look even slightly believable. If you are going to use a passage of 
-                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
-                        middle of text. All the Lorem Ipsum generators on the Internet tend to repeat 
-                        predefined chunks as necessary, making this the first true generator on the 
-                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful 
-                        of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
-                        The generated Lorem Ipsum is therefore always free from repetition, injected 
-                        humour, or non-characteristic words etc.</p>
-                </div>
-                <div>
-                    <img src={projectData.potluck.snapOne} alt='project screenshot' className='snap-one-image'/>
+                <h3>Web Stack</h3>
+                <div className='spotlight-flex'>
                     <div>
-                        <img src='' alt='project screenshot' className=''/>
-                        <img src='' alt='project screenshot'/>
+                        <p>React and Redux were the best choices for building this application. Due to React's component 
+                            based structure, we were able to quickly build a feature once and use it multiple times across
+                            the app. With Redux's ease of state management, it only made sense to use both stacks together.</p>
                     </div>
+                    <div>
+                        <div>
+                            <img src={projectData.potluck.snapOne} alt='project screenshot' className='snap-one-image'/>
+                            {/* <img src='' alt='project screenshot'/> */}
+                        </div>
+                    </div> 
                 </div>
+                
                 
             </div>
 
-            <div className='lessons-container'>
+            {/* <div className='lessons-container'>
                 <h3>Problems + Lessons Learned</h3>
                 <div>
                     
@@ -79,7 +74,7 @@ const Potluck = () => {
                         Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the 
                         middle of text.</p>
                 </div>
-            </div>
+            </div> */}
             {/* <div className='more-projects'>
                 <div className='more-proj-one'>
                     aht
@@ -168,6 +163,10 @@ const Wrapper = styled.section`
         padding: 50px 0 90px 0;
     }
 
+    .snap-one-image {
+        width: 100%;
+    }
+
    
 
     @media only screen and ${breakpoint.device.tablet} {
@@ -189,7 +188,7 @@ const Wrapper = styled.section`
         }
 
         .snap-one-image {
-            width: 300px;
+            width: 600px;
         }
     }
 
@@ -203,6 +202,13 @@ const Wrapper = styled.section`
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .spotlight-flex {
+            display: flex;
+        }
+        .spotlight-flex img{
+            margin: 0 50px;
         }
     }
 `;

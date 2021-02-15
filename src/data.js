@@ -3,8 +3,10 @@ import projectOne from './images/lace-up-proj.svg';
 import projectTwo from './images/chow-proj.svg';
 import projectThree from './images/potluck-proj.svg';
 import screenshotOne from './images/snapOne.png';
-import mainLace from './images/chow-proj.png';
+import mainLace from './images/lacedup-main.png';
 import mainPot from './images/potluck-main.png';
+import potluckOne from './images/potluck-one.png';
+import lacedTwo from './images/lacedup-two.png'
 
 export const data = [
     {
@@ -50,6 +52,7 @@ export const projectData = {
         git: 'https://github.com/ruthmatieu/laced-up',
         mainImage: mainLace,
         snapOne: screenshotOne,
+        snapTwo: lacedTwo
     },
     potluck: 
     {
@@ -58,7 +61,7 @@ export const projectData = {
         live: 'https://front-end-liart-phi.vercel.app/',
         git: 'https://github.com/PotluckPlanner-BW/front-end',
         mainImage: mainPot,
-        snapOne: screenshotOne,
+        snapOne: potluckOne,
     },
     thirdproj: 
     {
