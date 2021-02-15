@@ -133,6 +133,11 @@ const Wrapper = styled.section`
         line-height: 25px;
         padding: 0 20px 10px 20px;
     }
+
+    .resume {
+        padding-left: 0px;
+    }
+
     @media only screen and ${breakpoint.device.tablet} {
         padding: 50px 40px 0 40px;
     }

@@ -124,12 +124,19 @@ const Wrapper = styled.section`
 
     .socials a {
         margin-bottom: 15px;
+        transition: 0.5s;
         color: #EEB462;
     }
 
     .socials a:hover {
-
+        color: #CE7672;
+        transition: 0.5s;
     }
+
+    // .link:hover {
+    //     cursor: pointer;
+    //     border-bottom: 4px solid #DC8666;
+    // }
 
     .btn-div {
         text-align: center;
