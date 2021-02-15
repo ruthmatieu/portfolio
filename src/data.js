@@ -15,7 +15,7 @@ export const data = [
         image: projectOne,
         cta1: '/project-laced-up',
         github: 'https://github.com/ruthmatieu/laced-up',
-        link: 'https://www.google.com/',
+        link: 'https://laced-up.netlify.app/',
         description: 'An e-commerce site that allows you to shop your favorite sneakers. Browse the collection and add your top picks to your cart.'
     },
     {
@@ -48,7 +48,7 @@ export const projectData = {
     {
         title: 'Laced Up',
         tech: 'React, Redux, CSS, HTML5, Styled Components',
-        live: '',
+        live: 'https://laced-up.netlify.app/',
         git: 'https://github.com/ruthmatieu/laced-up',
         mainImage: mainLace,
         snapOne: screenshotOne,
