@@ -27,7 +27,7 @@ export const data = [
         image: projectThree,
         cta1: '/project-potluck-planner',
         github: 'https://github.com/PotluckPlanner-BW/front-end',
-        link: 'https://front-end-liart-phi.vercel.app/',
+        link: 'https://planner-potluck.netlify.app/',
         description: 'A single page app to keep track of your guests and their responsibility to bring certain dishes to your event. Create, update or delete your lists to stay up to date with plan changes.'
     },
     {
