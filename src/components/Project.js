@@ -14,7 +14,7 @@ const Project = (props) => {
         
         <div className='mobile-desc'>
           <div>
-            <Link to={props.cta1}><img src={props.image} alt={props.name}/></Link>
+            <a href={props.link} target='_blank' rel="noopener noreferrer"><img src={props.image} alt={props.name}/></a>
           </div>
           <div className='mobile-project-details'>
             <StyledLink to={props.cta1}><h2>{props.name}</h2></StyledLink>
@@ -24,7 +24,7 @@ const Project = (props) => {
           </div>
 
           <div className='mobile-cta-container'>
-              <StyledLink to={props.cta1} className='cta'>View Project</StyledLink>
+              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
               <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
               <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
@@ -34,7 +34,7 @@ const Project = (props) => {
 
         <div className='desktop-desc'>
           <div>
-            <Link to={props.cta1}><img src={props.image} alt={props.name}/></Link>
+            <a href={props.link} target='_blank' rel="noopener noreferrer"><img src={props.image} alt={props.name}/></a>
           </div>
           <div className='project-details'>
             <h2>{props.name}</h2>
@@ -44,9 +44,9 @@ const Project = (props) => {
           </div>
 
           <div className='cta-container'>
-              <StyledLink to={props.cta1} className='cta'>View Project</StyledLink>
-              <a href={props.cta2} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
+              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
+              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
+              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
             </div>
           
         </div>
