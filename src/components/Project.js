@@ -24,9 +24,9 @@ const Project = (props) => {
           </div>
 
           <div className='mobile-cta-container'>
-              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
-              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
+              {/* <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink> */}
+              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt size={25} className='icons'/></a>
+              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub size={25} className='icons'/></a>
             </div>
           
         
@@ -44,9 +44,9 @@ const Project = (props) => {
           </div>
 
           <div className='cta-container'>
-              <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink>
-              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt className='icons'/></a>
-              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub className='icons'/></a>
+              {/* <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink> */}
+              <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt size={25} className='icons'/></a>
+              <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub size={25} className='icons'/></a>
             </div>
           
         </div>
@@ -116,7 +116,7 @@ const Wrapper = styled.section`
      bottom: 110px;
      left: 10;
      right: 0;
-     padding: 20px 0;
+     padding: 20px 30px; //change this if you're adding 'Learn more' to 20px 0;
      -webkit-box-shadow: 5px 5px 24px -1px #544667; 
      box-shadow: 5px 5px 24px -1px #544667;
     }
@@ -167,7 +167,7 @@ const Wrapper = styled.section`
         position: absolute;
         bottom: 130px;
         right: -50px;
-        padding: 20px 0;
+        padding: 20px 30px;
         -webkit-box-shadow: 5px 5px 24px -1px #544667; 
         box-shadow: 5px 5px 24px -1px #544667;
        }
@@ -187,8 +187,8 @@ const Wrapper = styled.section`
 
        .cta-container {
         bottom: 130px;
-        right: -150px;
-        padding: 20px 0;
+        right: -80px;
+        padding: 20px 30px;
        }
     }
 `;
