@@ -53,7 +53,7 @@ const Wrapper = styled.footer`
     .footer-container {
         @media only screen and ${breakpoint.device.desktop} {
             //background-color: red;
-            max-width: 1024px;
+            max-width: 1290px;
             margin: 0 auto;
         }
     }

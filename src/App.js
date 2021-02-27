@@ -20,7 +20,7 @@ function App() {
     <WrapperDiv>
       <header>
         <Nav>
-          <Link to='/'><img src={logo} alt='logo'/></Link>
+          <StyledLink to='/'><img src={logo} alt='logo'/></StyledLink>
           {/* <p>resume</p> */}
         </Nav>
       </header>
@@ -45,6 +45,13 @@ const WrapperDiv = styled.div`
   // display: grid;
   // place-items: center;
   // width: 1024px;
+  
+
+  header {
+    position: relative;
+    z-index: 3;
+    
+  }
 
 `
 
@@ -53,7 +60,7 @@ const Nav = styled.nav`
   display: flex;  
   justify-content: space-between;
   padding: 20px 0;
-  background: #138085;
+  background-color: #F9F9FC;
   
     img {
       width: 140px;
@@ -69,5 +76,14 @@ const Nav = styled.nav`
       img {
         padding-left: 50px;
       }
+    }
+`;
+
+const StyledLink = styled(Link)`
+
+    @media only screen and ${breakpoint.device.desktop} {
+      
+      max-width: 1290px;
+      margin: 0 auto;
     }
 `;

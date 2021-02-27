@@ -84,7 +84,7 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        max-width: 1024px;
+        max-width: 1290px;
         margin: 0 auto;
         display: flex;
 

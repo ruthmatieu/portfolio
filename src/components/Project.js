@@ -133,8 +133,9 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-      max-width: 1024px;
-        margin: 0 auto;
+      max-width: 1290px;
+      margin: 0 auto;
+      
       .project-container {
         padding-bottom: 100px;
         position: relative;

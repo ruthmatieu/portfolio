@@ -8,7 +8,8 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import headshot from '../images/headshot.svg';
+import headshot from '../images/headshot.png';
+import bgRect from '../images/bg-rectangle.svg';
 
 const Homepage = () => {  
 
@@ -19,33 +20,49 @@ const Homepage = () => {
 
       
         <Wrapper>
-            <div className='intro'>
-                <div className='intro-wrapper'>
-                    <div className='left-side'>
-                        <img className='headshot' src={headshot} alt='Ruth Matieu headshot'/>
+            <div className='width-container'>
+
+                <div className='hero-intro'>
+                    <div className='left-intro'>
+                        <img src={bgRect} className='object-one' alt=''/>
+                        <img src={headshot} alt='Ruth Matieu headshot' className='headshot'/>
+                        
                     </div>
-                    <div className='right-side'>
-                        <h1>Alanna Mathieu</h1>
-                        <h2>{string}</h2>
-                        <p>
-                            Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink> and Fullstack student at Lambda School.
-                        </p>
-                        <div className='btn-div'>
-                            <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>CONTACT ME</button></a>
+                    <div className='left-intro-desktop'>
+                        <img src={bgRect} className='object-one' alt=''/>
+                        <img src={headshot} alt='Ruth Matieu headshot' className='headshot'/>
+                        
+                    </div>
+                    <div className='right-intro'>
+                        <div>
+                            <h1>Alanna Mathieu</h1>
+                            <h2>{string}</h2>
+                            <p>
+                                Frontend Developer at <StyledLink to='/travelopia'>Travelopia</StyledLink>, <br/> Fullstack student at Lambda School.
+                            </p>
+                            <div className='btn-div'>
+                                <div className='mail-btn'>
+                                    <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>Contact Me</button></a>
+                                </div>
+                                <div className='resume-btn'>
+                                    <a href='#' target='_blank' rel="noopener noreferrer"><button>Resume</button></a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+                    
                 </div>
+            
+
+            <div className="socials">
+                <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
             </div>
-        
-
-        <div className="socials">
-            <a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100008826826867" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-            <a href="https://github.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-            <a href="https://twitter.com/ruthmatieu" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
         </div>
-
         
         </Wrapper>
         <About/>
@@ -60,8 +77,11 @@ const Homepage = () => {
 export default Homepage;
 
 const WrapperDiv = styled.div`
+
 @media only screen and ${breakpoint.device.desktop} {
     //background-color: red;
+
+    
     
     }
 
@@ -70,22 +90,53 @@ const WrapperDiv = styled.div`
 const Wrapper = styled.section`
 
     position: relative;
-    // background: rgb(19,128,133);
-    // background: linear-gradient(180deg, rgba(19,128,133,1) 0%, rgba(255,255,255,1) 100%);
-    background-color: rgb(19, 128, 134);
-    height: 80vh;
-    display: grid;
+    background: rgb(84,70,103);
+    background: linear-gradient(149deg, rgba(84,70,103,1) 0%, rgba(208,125,120,1) 100%);    height: 600px;
+    display: grid; 
     place-items: center;
+    
+    
 
-    .intro {
-        margin: 0 20px;
+    
+    .object-one {
+        position: absolute;
+        bottom: 0;
+        right: 28px;
+        width: 300px;
+        max-width: 500px;
+        z-index: 1;
     }
 
+    .hero-intro {
+        width: 100%;
+     }
+
+
     .headshot {
-        width: 275px;
+        width: 250px;
+        max-width: 350px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .left-intro {
+        width: 100%; 
+        display: grid; 
+        place-items: center;
+        position: relative;
+    }
+
+    .left-intro-desktop {
+        display: none;
+    }
+
+    .right-intro {
+        width: 100%; 
+        display: grid;
+        place-items: center;
     }
     
     h1 {
@@ -93,7 +144,7 @@ const Wrapper = styled.section`
         font-family: 'Anton', sans-serif;
         letter-spacing: 5px;
         padding: 10px 0;
-        color: #CE7672;
+        color: #EEB462;
         text-align: center;
     }
 
@@ -101,15 +152,15 @@ const Wrapper = styled.section`
         font-family: 'Padauk', sans-serif;
         padding-bottom: 30px;
         font-size: 30px;
-        color: #EEB462;
+        color: #544667;
         text-align: center;
     }
 
     p {
         
         line-height: 25px;
-        color: #DC8666;
-        text-align: left;
+        color: white;
+        text-align: center;
     }
 
 
@@ -125,11 +176,11 @@ const Wrapper = styled.section`
     .socials a {
         margin-bottom: 15px;
         transition: 0.5s;
-        color: #EEB462;
+        color: #EEB462;    
     }
 
     .socials a:hover {
-        color: #CE7672;
+        color: white;
         transition: 0.5s;
     }
 
@@ -139,55 +190,100 @@ const Wrapper = styled.section`
     // }
 
     .btn-div {
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
 
-    button {
-        margin-top: 30px;
+    .resume-btn button, .mail-btn button {
+        margin: 30px 5px 0 5px;
         padding: 15px 15px;
-        background-color: #544667;
+        
         border: none;
         border-radius: 25px;
         color: white;
         
     }
+    .resume-btn button {
+        background-color: #138085;
+    }
 
-    button:hover {
+    .resume-btn button:hover, mail-btn button:hover {
         cursor: pointer;
         background-color: rgba(84, 70, 103, 0.64);
     }
 
+    .mail-btn button {
+        background-color: #DC8666;
+    }
+
 
     @media only screen and ${breakpoint.device.tablet} {
-        // background-color: yellow;
+        //background-color: yellow;
         .socials {
             top: 60px;
             right: 40px; 
         }
+
+        
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        // background-color: white;
-        
-        
-        .intro {
-            margin: 0;
+        //background-color: red;
+
+        height: 600px;
+        width: 100%;
+
+        .width-container {
+            max-width: 1290px;
+            margin: 0 auto;
         }
 
-        .intro-wrapper {
-            display: flex;
+
+        h1 {
+            font-size: 60px;
+            padding-bottom: 30px;
+        }
+
+        .left-intro-desktop .object-one {
+            position: absolute;
+            bottom: 0px;
+            //left: 0;
+            right: -250px;
+            width: 350px;
+            z-index: 1;
+            //transform: rotate(-50deg);
+        }
+
+        .left-intro {
+            display: none;
+        }
+
+        .left-intro-desktop {
+            display: block;
+            position: relative;
+        }
+
+        .right-intro {
             width: 100%;
+            margin-left: 400px;
         }
 
-        .right-side {
-            padding: 0 120px;
-            width: 50%;
+        .hero-intro {
+            display: flex;
+            justify-content: space-around;
         }
-
-        .left-side {
-            width: 50%;
-            height: 100%;
+    
+        .left-intro-desktop .headshot {
+            width: 275px;
+            max-width: 350px;
+            display: block;
+            position: absolute;
+            right: -215px;
+            z-index: 2;
         }
+    
+        
 
         .socials {
             top: 60px;

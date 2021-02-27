@@ -32,7 +32,7 @@ const About = () => {
                     Currently, I’ve been honing my skills learning the backend as I
                     navigate through Lambda School's 18-month intensive Fullstack Development 
                     program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
-                    Outside of work though, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link"><span className='link'>writing</span></StyledLink> and
+                    Outside of work however, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link"><span className='link'>writing</span></StyledLink> and
                     catching up with Game of Thrones. 
                     </p>
                     <StyledLink className="btn-link resume" href={resume} target="blank"><span className='link'>View Resumé</span></StyledLink>
@@ -85,7 +85,7 @@ export default About;
 
 const Wrapper = styled.section`
 
-    padding: 50px 20px 0 20px;
+    padding: 100px 20px;
 
     h5 {
         font-size: 23px;
@@ -139,14 +139,14 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.tablet} {
-        padding: 50px 40px 0 40px;
+        padding: 100px 40px;
     }
     .resume {
         padding-left: 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-        max-width: 1024px;
+        max-width: 1290px;
         margin: 0 auto;
 
         h5 {
