@@ -10,6 +10,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import headshot from '../images/headshot.png';
 import bgRect from '../images/bg-rectangle.svg';
+import resume from '../images/resume.PDF';
 
 const Homepage = () => {  
 
@@ -45,7 +46,7 @@ const Homepage = () => {
                                     <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>Contact Me</button></a>
                                 </div>
                                 <div className='resume-btn'>
-                                    <a href='#' target='_blank' rel="noopener noreferrer"><button>Resume</button></a>
+                                    <a href={resume} target='_blank' rel="noopener noreferrer"><button>Resume</button></a>
                                 </div>
                             </div>
                             
@@ -152,7 +153,7 @@ const Wrapper = styled.section`
         font-family: 'Padauk', sans-serif;
         padding-bottom: 30px;
         font-size: 30px;
-        color: #544667;
+        color: white;
         text-align: center;
     }
 
@@ -195,27 +196,42 @@ const Wrapper = styled.section`
         text-align: center;
     }
 
-    .resume-btn button, .mail-btn button {
+
+
+
+    .mail-btn button {
+        transition: 0.5s;
+        background-color: #544667;
         margin: 30px 5px 0 5px;
         padding: 15px 15px;
-        
         border: none;
         border-radius: 25px;
         color: white;
-        
-    }
-    .resume-btn button {
-        background-color: #138085;
     }
 
-    .resume-btn button:hover, mail-btn button:hover {
+    .mail-btn button:hover {
+        transition: 0.5s;
         cursor: pointer;
-        background-color: rgba(84, 70, 103, 0.64);
+        background-color: rgba(84, 70, 103, 0.8);
     }
 
-    .mail-btn button {
-        background-color: #DC8666;
+    .resume-btn button {
+        transition: 0.5s;
+        background-color: #138085;
+        margin: 30px 5px 0 5px;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 25px;
+        color: white;
     }
+
+    .resume-btn button:hover {
+        transition: 0.5s;
+        cursor: pointer;
+        background-color: rgba(84, 70, 103, 0.8);
+    }
+
+    
 
 
     @media only screen and ${breakpoint.device.tablet} {

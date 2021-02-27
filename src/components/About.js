@@ -5,7 +5,6 @@ import breakpoint from '../breakpoints';
 import quotes from '../images/quotes.png';
 import skills from '../images/skills.svg';
 import { AiFillStar } from 'react-icons/ai';
-import resume from '../images/resume.PDF';
 
 const About = () => {
     return (
@@ -34,9 +33,7 @@ const About = () => {
                     program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
                     Outside of work however, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link"><span className='link'>writing</span></StyledLink> and
                     catching up with Game of Thrones. 
-                    </p>
-                    <StyledLink className="btn-link resume" href={resume} target="blank"><span className='link'>View Resumé</span></StyledLink>
-                    
+                    </p>                    
                     
                 </div>
             </div>
