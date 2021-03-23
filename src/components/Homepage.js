@@ -100,10 +100,10 @@ const Wrapper = styled.section`
     height: 90vh;
     position: relative;
     //background-color: #FFF8F5;
-    background-image: url(${background});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(${background});
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     display: grid; 
     place-items: center;
     
@@ -124,7 +124,7 @@ const Wrapper = styled.section`
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: 'Anton', sans-serif;
         letter-spacing: 5px;
         padding: 10px 0;
