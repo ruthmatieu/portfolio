@@ -8,6 +8,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import background from '../images/background-landing.png';
 import headshot from '../images/headshot.png';
 import bgRect from '../images/bg-rectangle.svg';
 import resume from '../images/resume.PDF';
@@ -22,12 +23,8 @@ const Homepage = () => {
       
         <Wrapper>
             <div className='width-container'>
-                <div className='swipe'>
-                    <h1>RUTH MATIEU</h1>
-                </div>
-                <div className='swipe'>
-                    <h2>Fullstack Developer</h2>
-                </div>
+                <h1>RUTH MATIEU</h1>
+                <h2>Fullstack Developer</h2>
                 
                 
                 
@@ -102,10 +99,18 @@ const Wrapper = styled.section`
 
     height: 90vh;
     position: relative;
-    background-color: #FFF8F5;
+    //background-color: #FFF8F5;
+    background-image: url(${background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid; 
     place-items: center;
     
+
+    .width-container {
+        
+    }
 
     h1 {
         font-size: 9rem;
