@@ -113,7 +113,7 @@ const Wrapper = styled.section`
     }
 
     h1 {
-        font-size: 9rem;
+        font-size: 7rem;
         font-family: 'Anton', sans-serif;
         letter-spacing: 15px;
         padding: 10px 0;
