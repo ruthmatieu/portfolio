@@ -22,8 +22,18 @@ const Homepage = () => {
       
         <Wrapper>
             <div className='width-container'>
+                <div className='swipe'>
+                    <h1>RUTH MATIEU</h1>
+                </div>
+                <div className='swipe'>
+                    <h2>Fullstack Developer</h2>
+                </div>
+                
+                
+                
+                
 
-                <div className='hero-intro'>
+                {/* <div className='hero-intro'>
                     <div className='left-intro'>
                         <img src={bgRect} className='object-one' alt=''/>
                         <img src={headshot} alt='Ruth Matieu headshot' className='headshot'/>
@@ -51,9 +61,9 @@ const Homepage = () => {
                             </div>
                             
                         </div>
-                    </div>
+                    </div> 
                     
-                </div>
+                </div>*/}
             
 
             <div className="socials">
@@ -90,79 +100,75 @@ const WrapperDiv = styled.div`
 
 const Wrapper = styled.section`
 
+    height: 90vh;
+
     position: relative;
-    background: rgb(84,70,103);
-    background: linear-gradient(149deg, rgba(84,70,103,1) 0%, rgba(208,125,120,1) 100%);    height: 600px;
+    background-color: #FFF8F5;
     display: grid; 
     place-items: center;
     
-    
+    .swipe {
+        position: relative;
+    }
 
-    
-    .object-one {
+    .swipe:after {
         position: absolute;
-        bottom: 0;
-        right: 28px;
-        width: 300px;
-        max-width: 500px;
-        z-index: 1;
-    }
-
-    .hero-intro {
-        width: 100%;
-     }
-
-
-    .headshot {
-        width: 250px;
-        max-width: 350px;
+        content: '';
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 100%
+        right: 0;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+        background-color: #FFF8F5;
+        animation: swipe 1s ease-out 1s forwards;
     }
 
-    .left-intro {
-        width: 100%; 
-        display: grid; 
-        place-items: center;
-        position: relative;
+    @keyframes swipe {
+        0% {
+            width: 0%;
+        }
+        50% {
+            width: 100%;
+            right: 0%;
+        }
+        100% {
+            width: 0%;
+            left: 100%;
+        }
     }
 
-    .left-intro-desktop {
-        display: none;
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
-    .right-intro {
-        width: 100%; 
-        display: grid;
-        place-items: center;
-    }
-    
     h1 {
-        font-size: 45px;
+        font-size: 9rem;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 15px;
+        padding: 10px 0;
+        color: #DC8666;
+        text-align: center;
+        text-shadow: 10px 8px 8px #edbcab;
+        animation: fade-in 0.01s linear 1.5s forwards;
+    }
+
+    h2 {
+        font-size: 2.5rem;
         font-family: 'Anton', sans-serif;
         letter-spacing: 5px;
         padding: 10px 0;
         color: #EEB462;
         text-align: center;
     }
-
-    h2 {
-        font-family: 'Padauk', sans-serif;
-        padding-bottom: 30px;
-        font-size: 30px;
-        color: white;
-        text-align: center;
-    }
-
-    p {
-        
-        line-height: 25px;
-        color: white;
-        text-align: center;
-    }
+ 
 
 
     .socials  {
@@ -184,20 +190,6 @@ const Wrapper = styled.section`
         color: white;
         transition: 0.5s;
     }
-
-    // .link:hover {
-    //     cursor: pointer;
-    //     border-bottom: 4px solid #DC8666;
-    // }
-
-    .btn-div {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-
-
 
     .mail-btn button {
         transition: 0.5s;
@@ -247,7 +239,7 @@ const Wrapper = styled.section`
     @media only screen and ${breakpoint.device.desktop} {
         //background-color: red;
 
-        height: 600px;
+        height: 700px;
         width: 100%;
 
         .width-container {
@@ -255,58 +247,13 @@ const Wrapper = styled.section`
             margin: 0 auto;
         }
 
-
-        h1 {
-            font-size: 60px;
-            padding-bottom: 30px;
-        }
-
-        .left-intro-desktop .object-one {
-            position: absolute;
-            bottom: 0px;
-            //left: 0;
-            right: -250px;
-            width: 350px;
-            z-index: 1;
-            //transform: rotate(-50deg);
-        }
-
-        .left-intro {
-            display: none;
-        }
-
-        .left-intro-desktop {
-            display: block;
-            position: relative;
-        }
-
-        .right-intro {
-            width: 100%;
-            margin-left: 400px;
-        }
-
-        .hero-intro {
-            display: flex;
-            justify-content: space-around;
-        }
-    
-        .left-intro-desktop .headshot {
-            width: 275px;
-            max-width: 350px;
-            display: block;
-            position: absolute;
-            right: -215px;
-            z-index: 2;
-        }
-    
-        
-
         .socials {
             top: 60px;
             right: 50px; 
         }
     }
 `;
+
 const StyledLink = styled(Link)`
     color: #EEB462;
     text-decoration: none;   
