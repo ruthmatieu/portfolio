@@ -101,53 +101,11 @@ const WrapperDiv = styled.div`
 const Wrapper = styled.section`
 
     height: 90vh;
-
     position: relative;
     background-color: #FFF8F5;
     display: grid; 
     place-items: center;
     
-    .swipe {
-        position: relative;
-    }
-
-    .swipe:after {
-        position: absolute;
-        content: '';
-        display: block;
-        top: 0;
-        left: 0;
-        right: 100%
-        right: 0;
-        width: 100%;
-        bottom: 0;
-        z-index: 1;
-        background-color: #FFF8F5;
-        animation: swipe 1s ease-out 1s forwards;
-    }
-
-    @keyframes swipe {
-        0% {
-            width: 0%;
-        }
-        50% {
-            width: 100%;
-            right: 0%;
-        }
-        100% {
-            width: 0%;
-            left: 100%;
-        }
-    }
-
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
 
     h1 {
         font-size: 9rem;
@@ -168,8 +126,6 @@ const Wrapper = styled.section`
         color: #EEB462;
         text-align: center;
     }
- 
-
 
     .socials  {
         display: flex;
