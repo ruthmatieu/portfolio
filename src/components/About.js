@@ -1,185 +1,187 @@
-import React from 'react';
+import React from "react";
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import breakpoint from '../breakpoints';
-import quotes from '../images/quotes.png';
-import skills from '../images/skills.svg';
-import { AiFillStar } from 'react-icons/ai';
 
+
+const skills_one = [
+  {
+    title: 'JavaScript ES6+'
+  },
+  {
+    title: 'Python'
+  },
+  {
+    title: 'React'
+  }
+]
+
+const skills_two = [
+  {
+    title: 'TypeScript'
+  },
+  {
+    title: 'Tailwind CSS'
+  },
+  {
+    title: 'HTML/CSS'
+  }
+]
+
+const skills_three = [
+  {
+    title: 'GIT'
+  },
+  {
+    title: 'Azure DevOps'
+  },
+  {
+    title: 'Figma'
+  }
+]
 const About = () => {
     return (
-        <Wrapper className='wrapper'>
-
-            <h5>About Me</h5>
-            <div className='about-flex-wrapper'>
-
-            
-            <div className='about-one'>
-                <div className='quotes'>
-                    <img src={quotes} alt='quotes'className='quotes-img'/>
-                </div>
-
-                <div className='about-para'>
-                    <p>
-                    Hi <span role="img" aria-label="waving hand">👋🏾</span>! My name is Ruth but I prefer Alanna.
-                    I'm a developer at <StyledLink2 to='/travelopia'><span className='link'>Travelopia</span></StyledLink2>, where I work to improve 
-                    the experience of yacht vacationing and the booking of exotic vacations on
-                    the modern web. 
-                    </p>
-
-                    <p>
-                    Currently, I’ve been honing my skills learning the backend as I
-                    navigate through Lambda School's 18-month intensive Fullstack Development 
-                    program. Through my journey, I've come to find that the more I learn, the more there is left to know. 
-                    Outside of work however, I spend most of my time reading, <StyledLink href='https://blog.ruthmatieu.com/' target='_blank' rel="noopener noreferrer" className="btn-link"><span className='link'>writing</span></StyledLink> and
-                    catching up with Game of Thrones. 
-                    </p>                    
-                    
-                </div>
+      <Container>
+        <div className="wrapper">
+          <div className="flex-container">
+            <div className="info">
+              <p>I'm a Frontend Developer at WebstaurantStore, where I work to improve the 
+                experience of shopping for major restuarant supplies and products online.
+                Currently, I’ve been honing my skills learning the backend as I navigate through Lambda School's 18-month 
+                intensive Fullstack Development program. Through my journey, I've come to find that the more I learn, the 
+                more there is left to know. When not adulting, I spend most of my time reading, writing, and catching 
+                up with Game of Thrones.</p>
             </div>
-            
-            <div className='about-two'>
-                <img src={skills} alt='skillset' className='skills'/>   
-                <div className='skills-container'>
-                    <div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#DC8666'}} size={20}/><span className='skills-item'>HTML/CSS</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>JavaScript</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#CE7672'}} size={20}/><span className='skills-item'>React</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>SASS + LESS</span>
-                        </div>
-                        
+            <div>
+              <h3>Tech Stack</h3>
+              <div className="skills">
+                <div>
+                  {skills_one.map((skill, i) => (
+                    <div key={i}>
+                      <p>{skill.title}</p>
                     </div>
-                    <div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#138085'}} size={20}/><span className='skills-item'>Node.js</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#DC8666'}} size={20}/><span className='skills-item'>Drupal</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#EEB462'}} size={20}/><span className='skills-item'>Redux</span>
-                        </div>
-                        <div className='skills-div'>
-                            <AiFillStar style={{color: '#CE7672'}} size={20}/><span className='skills-item'>HubSpot</span>
-                        </div>
-                    </div>
+                  ))}
                 </div>
+                <div className="skills_two">
+                  {skills_two.map((skill, i) => (
+                    <div key={i}>
+                      <p>{skill.title}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="skills_two">
+                  {skills_three.map((skill, i) => (
+                    <div key={i}>
+                      <p>{skill.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            </div>
-            
-        </Wrapper>
-    )
+          </div> 
+        </div>
+      </Container>
+    );
 }
-
+  
 export default About;
 
-const Wrapper = styled.section`
+const Container = styled.section`
+  //background: white;
 
-    padding: 100px 20px;
+  .wrapper {
+    max-width: 1680px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    height: 60rem;
+    background: #FAFAFA;
+    display: grid;
+    place-items: center;
+  }
 
-    h5 {
-        font-size: 23px;
-        text-transform: uppercase;
-        padding-bottom: 40px;
-        color: #138085;
-        font-weight: 700;
+  .flex-container {
+    width: 80%;
+    padding: 4rem 0;
+  }
+
+  .info, .skills {
+    color: #737373;
+    font-size: 14px;
+    line-height: 2rem;
+    letter-spacing: 0.045rem;
+  }
+
+  h3 {
+    color: #544667;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills_two {
+    padding-left: 2rem;
+  }
+
+  @media only screen and ${breakpoint.device.mobile} {
+    //background: red;
+
+    .wrapper {
+      height: 50rem;
+      //background: red;
+    }
+  }
+
+  @media only screen and ${breakpoint.device.tablet} {
+    //background: white;
+
+    .wrapper {
+      height: 45rem;
+      //background: white;
     }
 
-    .quotes {
-        position: relative;
-    }
-    .quotes-img {
-        width: 30px;
+    .flex-container {
+      width: 85%;
     }
 
-    .skills {
-        width: 100%;
-        margin: 30px 0;
-        
+    .info p, .skills {
+      font-size: 1rem;
+    }
+  }
+
+  @media only screen and ${breakpoint.device.desktop} {
+    //background: blue;
+
+    .wrapper {
+      height: 35rem;
+      //background: blue;
     }
 
-    .skills-div {
-        padding: 10px;
-        text-align: left;
+    .flex-container {
+      display: flex;
+      width: 85%;
     }
 
-    .skills-item {
-        margin-left: 10px;
+    .info {
+      padding-right: 15%;
     }
 
-    .skills-container {
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        padding: 30px 0 50px 0;
+    h3 {
+      padding: 0 0 2rem 0;
+    }
+  }
+
+  @media only screen and ${breakpoint.device.largeScreens} {
+    .flex-container {
+      width: 75%;
     }
 
-    .link:hover {
-        cursor: pointer;
-        border-bottom: 4px solid #DC8666;
-    }
-
-    p {
-        line-height: 25px;
-        padding: 0 20px 10px 20px;
-    }
-
-    .resume {
-        padding-left: 0px;
-    }
-
-    @media only screen and ${breakpoint.device.tablet} {
-        padding: 100px 40px;
-    }
-    .resume {
-        padding-left: 40px;
-    }
-
-    @media only screen and ${breakpoint.device.desktop} {
-        max-width: 1290px;
-        margin: 0 auto;
-
-        h5 {
-            text-align: center;
-        }
-        .about-flex-wrapper {
-            display: flex;
-        }
-
-        .about-one {
-            width: 50%;
-        }
-
-        .about-two {
-            width: 50%;
-        }
-        .skills {
-            width: 100%;
-        }
-
-        .resume {
-            padding-left: 20px;
-        }
-    }
-`;
-
-const StyledLink = styled.a`
-    color: #DC8666;
-    text-decoration: none;
-    
-
-`;
-
-const StyledLink2 = styled(Link)`
-    color: #DC8666;
-    text-decoration: none;
-    
-
-`;
+  }
+`

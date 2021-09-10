@@ -1,27 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 import breakpoint from '../breakpoints';
-
-import igCollage from '../images/insta-grid.svg';
-
-
+import styled from 'styled-components';
 
 const Contact = () => {
     return (
         <Wrapper>
-            <div className='action-left'>
-                <h6>Let's work together</h6>
-
-                <p>See something you like?</p>
-                <p>Shoot me an <StyledLink href='mailto:matieu.ruth@gmail.com' target='_blank'>email</StyledLink> if you'd like to collaborate, request services or just have a chat!</p>
-
-                <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noopener noreferrer"><button>contact me</button></a>
-
-            </div>
-            <div className='action-right'>
-                <a href='https://www.instagram.com/alanna.code/' target='_blank' rel="noopener noreferrer"><h6>Psst! Find me on the gram</h6></a>
-                <p>I sometimes do fun stuff <span role="img" aria-label="sheep">🙃</span></p>
-                <a href='https://www.instagram.com/alanna.code/' target='_blank' rel="noopener noreferrer"><img src={igCollage} alt='Instagram collage'/></a>
+            <div className="wrapper">
+              <h4>Get in touch</h4>
+              <div className="info-container">
+                <div className="card-1">
+                  <p className="title title-1">For general inquiries</p>
+                  <p className="details">Send an <a href='mailto:matieu.ruth@gmail.com' target='_blank' rel="noreferrer"><span className="email">email</span></a></p>
+                </div>
+                <div className="card-2">
+                  <p className="title title-2">Find me on the gram</p>
+                  <a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><p className="details">Follow my <span style={{color: '#EEB462'}}>insta</span></p></a>
+                </div>
+                <div className="card-3">
+                  <p className="title title-3">Find me on Twitter</p>
+                  <a href="https://twitter.com/ruthmatieu/" target="_blank" rel="noreferrer"><p className="details">Send a <span style={{color: '#DC8666'}}>Tweet</span></p></a></div>
+              </div>
             </div>
         </Wrapper>
     )
@@ -30,77 +28,80 @@ const Contact = () => {
 export default Contact;
 
 const Wrapper = styled.section`
+  .wrapper {
+    width: 100%;
+    max-width: 1680px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    height: 40rem;
+    background: #FAFAFA;
+  }
 
-    padding: 50px 20px 100px 20px;
+  h4 {
+    color: #544667;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 8rem 0 2rem 0;
+  }
 
-    h6 {
-        font-size: 23px;
-        text-transform: uppercase;
-        padding-bottom: 40px;
-        color: #138085;
-        font-weight: 700;
+  .info-container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+
+  .email {
+    color: #C9726C;
+  }
+
+  .card-1, .card-2, .card-3 {
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .title-1 {
+    border-bottom: 5px solid #EEB462;
+  }
+
+  .title-2 {
+    border-bottom: 5px solid #544667;
+  }
+
+  .title-3 {
+    border-bottom: 5px solid #D07D78;
+  }
+
+  .details {
+    padding-top: 0.5rem;
+  }
+
+  @media only screen and ${breakpoint.device.mobile} {
+    .wrapper {
+      //background: red;
     }
-
-    
-
-    p {
-        line-height: 25px;
-        padding: 0 0 10px 0;
+  }
+  @media only screen and ${breakpoint.device.tablet} {
+    .wrapper {
+      //background: yellow;
+      height: 35rem;
+      padding: 4rem 0;
     }
-
-    button {
-        text-align: center;
-        text-transform: uppercase;
-        margin-top: 30px;
-        padding: 10px 15px;
-        background-color: #138085;
-        border: 1px solid white;
-        border-radius: 25px;
-        color: white;
+    .info-container {
+      display: flex;
+      justify-content: space-around;
     }
-
-    button:hover {
-        cursor: pointer;
+  }
+  @media only screen and ${breakpoint.device.desktop} {
+    .wrapper {
+      //background: blue;
     }
-    .action-right {
-        text-align: right;
-        padding-top: 50px;
-    }
+  }
 
-    .action-right h6 {
-        font-size: 17px;
-    }
-    img {
-        width: 100%;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    @media only screen and ${breakpoint.device.tablet} {
-        padding: 50px 40px 100px 40px;
-        
-    }
-
-    @media only screen and ${breakpoint.device.desktop} {
-        max-width: 1290px;
-        margin: 0 auto;
-        display: flex;
-
-        .action-left {
-            width: 50%
-        }
-
-        .action-right {
-            // padding-top: 150px;
-            width: 50%
-        }
-    }
-`;
-
-const StyledLink = styled.a`
-    color: #EEB462;
-    text-decoration: none;
-    font-weight: 500;
-`;
+  `

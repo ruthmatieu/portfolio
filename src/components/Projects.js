@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <Wrapper>
-      <h5>Work</h5>
+      <h5>Projects</h5>
       <section>
         {data.map(item => {
           return (
@@ -32,6 +32,8 @@ export default Projects;
 
 const Wrapper = styled.section`
 
+    max-width: 1680px;
+    margin: 0 auto;
     padding: 50px 20px 0 20px;
     background-color: rgba(206, 120, 115, 0.96);
 
@@ -44,7 +46,10 @@ const Wrapper = styled.section`
     }
 
    
+    @media only screen and ${breakpoint.device.nobile} {
 
+      padding: 50px 40px 0 40px;
+    }
     @media only screen and ${breakpoint.device.tablet} {
 
         padding: 50px 40px 0 40px;

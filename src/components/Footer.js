@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
 
@@ -27,6 +27,13 @@ export default Footer;
 const Wrapper = styled.footer`
     background-color: #544667;
     padding: 30px 0;
+    height: 13rem;
+      //background-color: red;
+      width: 100%;
+      max-width: 1680px;
+      overflow: hidden;
+      margin: 0 auto;
+    
 
     p {
         color: white;
@@ -48,14 +55,6 @@ const Wrapper = styled.footer`
 
     .socials a:hover {
 
-    }
-
-    .footer-container {
-        @media only screen and ${breakpoint.device.desktop} {
-            //background-color: red;
-            max-width: 1290px;
-            margin: 0 auto;
-        }
     }
 
     

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import breakpoint from '../breakpoints';
-import { Link } from 'react-router-dom';
 import { FaExternalLinkSquareAlt, FaGithub } from 'react-icons/fa';
 
 const Project = (props) => {  
@@ -17,7 +16,7 @@ const Project = (props) => {
             <a href={props.link} target='_blank' rel="noopener noreferrer"><img src={props.image} alt={props.name}/></a>
           </div>
           <div className='mobile-project-details'>
-            <StyledLink to={props.cta1}><h2>{props.name}</h2></StyledLink>
+            <a href={props.link}><h2>{props.name}</h2></a>
             
             <p>{props.description}</p>
             
@@ -113,9 +112,8 @@ const Wrapper = styled.section`
     .mobile-cta-container {
      background-color: #544667;
      position: absolute;
-     bottom: 110px;
-     left: 10;
-     right: 0;
+     top: 90px;
+     right: -2%;
      padding: 20px 30px; //change this if you're adding 'Learn more' to 20px 0;
      -webkit-box-shadow: 5px 5px 24px -1px #544667; 
      box-shadow: 5px 5px 24px -1px #544667;
@@ -167,7 +165,7 @@ const Wrapper = styled.section`
         background-color: #544667;
         position: absolute;
         bottom: 130px;
-        right: -50px;
+        right: -5%;
         padding: 20px 30px;
         -webkit-box-shadow: 5px 5px 24px -1px #544667; 
         box-shadow: 5px 5px 24px -1px #544667;
@@ -188,18 +186,7 @@ const Wrapper = styled.section`
 
        .cta-container {
         bottom: 130px;
-        right: -80px;
         padding: 20px 30px;
        }
     }
-`;
-
-const StyledLink = styled(Link)`
-    color: #EEB462;
-    text-decoration: none;
-
-    @media only screen and ${breakpoint.device.desktop} {
-      color: #EEB462;
-     }
-
 `;
