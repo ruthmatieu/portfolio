@@ -58,7 +58,7 @@ const Nav = () =>{
            <img src={quotes} alt="" className="quotes"/>
            <div className="intro-block">
              <p className="first-line pb-2 font-light">Hi 👋🏾 I'm <span className="font-bold">Alanna</span>.</p>
-             <p className="second-line  font-light">Software Engineer, Student, <br/>and philomath of all things challenging.</p>
+             <p className="second-line  font-light">Software Developer, Student, and life-long learner of code.</p>
            </div>
          </div>
       </div>
