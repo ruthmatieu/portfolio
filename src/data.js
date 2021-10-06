@@ -1,17 +1,24 @@
 //images
 import projectOne from './images/lace-up-proj.svg';
-import projectTwo from './images/chow-proj.svg';
+import projectTwo from './images/haiti-proj.svg';
 import projectThree from './images/potluck-proj.svg';
 import screenshotOne from './images/snapOne.png';
 import mainLace from './images/lacedup-main.png';
 import mainPot from './images/potluck-main.png';
 import potluckOne from './images/potluck-one.png';
 import lacedTwo from './images/lacedup-two.png';
-import chowMain from './images/chow-proj.svg';
-import chowOne from './images/chow-screenshot-one.png';
 
 
 export const data = [
+    {
+        id: 3,
+        name: 'All News Haiti',
+        image: projectTwo,
+        cta1: '/project-chow-dining',
+        github: 'https://github.com/ruthmatieu/haiti-news-app',
+        link: 'https://allnewshaiti.netlify.app/',
+        description: `As Haitian, it is not always easy to `
+    },
     {
         id: 1,
         name: 'Laced Up',
@@ -29,16 +36,7 @@ export const data = [
         github: 'https://github.com/PotluckPlanner-BW/front-end',
         link: 'https://planner-potluck.netlify.app/',
         description: 'A single page app to keep track of your guests and their responsibility to bring certain dishes to your event. Create, update or delete your lists to stay up to date with plan changes.'
-    },
-    {
-        id: 3,
-        name: 'Chow Dining',
-        image: projectTwo,
-        cta1: '/project-chow-dining',
-        github: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
-        link: 'https://www.chowdining.com/',
-        description: `A static website for a local restaurant. Presents a modern look at the company's services, description and methods of contact.`
-    },
+    }
 ]
 
 
@@ -72,7 +70,5 @@ export const projectData = {
         tech: 'HTML5, CSS, CSS grid, Bootstrap',
         live: 'https://www.chowdining.com/',
         git: 'https://github.com/ruthmatieu/ruthmatieu.github.io',
-        mainImage: chowMain,
-        snapOne: chowOne,
     }
 }
