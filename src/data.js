@@ -17,7 +17,7 @@ export const data = [
         cta1: '/project-chow-dining',
         github: 'https://github.com/ruthmatieu/haiti-news-app',
         link: 'https://allnewshaiti.netlify.app/',
-        description: `There are limited news sources that report solely on Haiti. As a Haitian, it's important to have a quick go-to access to stay updated on Haiti world events.`
+        description: `There are limited news sources that report solely on Haiti. As a Haitian, it's important to me to have a quick go-to access to stay updated on Haiti world events.`
     },
     {
         id: 1,
