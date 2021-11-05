@@ -82,7 +82,7 @@ const Container = styled.div`
     z-index: 12;
     display: grid;
     place-items: center;
-    margin-left: 8rem;
+    margin-left: 2rem;
   }
 
   .social-links ul li {
@@ -90,9 +90,7 @@ const Container = styled.div`
   }
 
   .logo {
-    position: relative;
-    z-index: 3;
-    margin-right: 15rem;
+    display: none;
   }
 
   .images {
@@ -135,6 +133,7 @@ const Container = styled.div`
     top: 7rem;
     width: 76%;
     height: 115px;
+    border-radius: 35px 0 0 0;
   }
 
   .quotes {
@@ -178,6 +177,7 @@ const Container = styled.div`
     .first-line, .second-line {
       font-size: 1rem;
     }
+
   
     @media only screen and ${breakpoint.device.tablet} {
       //background: green;
@@ -197,8 +197,12 @@ const Container = styled.div`
 
       .logo {
         left: -2rem;
+        display: block;
+        position: relative;
+        z-index: 3;
+        margin-right: 3rem;
       }
-    
+
       .headshot {
         width: 300px;
         z-index: 40;
@@ -273,6 +277,7 @@ const Container = styled.div`
     }
 
     .logo {
+      margin-right: -2rem;
       position: relative;
       left: -8%;
     }
@@ -345,6 +350,7 @@ const Container = styled.div`
 
     .logo {
       left: 4%;
+      margin-right: 7rem;
     }
 
     .headshot {

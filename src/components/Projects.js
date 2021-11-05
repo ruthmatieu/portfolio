@@ -8,7 +8,6 @@ const Projects = () => {
 
   return (
     <Wrapper>
-      <h5>Projects</h5>
       <section>
         {data.map(item => {
           return (
@@ -34,7 +33,7 @@ const Wrapper = styled.section`
 
     max-width: 1680px;
     margin: 0 auto;
-    padding: 50px 20px 0 20px;
+    padding: 5rem 2rem;
     background-color: rgba(206, 120, 115, 0.96);
 
     h5 {
@@ -46,13 +45,13 @@ const Wrapper = styled.section`
     }
 
    
-    @media only screen and ${breakpoint.device.nobile} {
-
-      padding: 50px 40px 0 40px;
+    @media only screen and ${breakpoint.device.mobile} {
+      padding: 5rem 4rem;
+      //padding: 50px 40px 0 40px;
     }
     @media only screen and ${breakpoint.device.tablet} {
-
-        padding: 50px 40px 0 40px;
+      padding: 5rem 8rem;
+        //padding: 50px 40px 0 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {

@@ -12,7 +12,7 @@ const Project = (props) => {
        
         
         <div className='mobile-desc'>
-          <div>
+          <div class="project-image">
             <a href={props.link} target='_blank' rel="noopener noreferrer"><img src={props.image} alt={props.name}/></a>
           </div>
           <div className='mobile-project-details'>
@@ -62,29 +62,34 @@ const Wrapper = styled.section`
   display: grid;
   place-items: center;
   text-align: center;
+  padding: 25px 0;
 
     .project-container {
-      padding-bottom: 250px;
       position: relative;
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 600;
       padding: 30px 0 10px 0;
       color: #544667;
     }
 
     p {
+      font-size: 0.875rem;
       line-height: 25px;
-      padding-bottom: 10px;
+      padding-bottom: 0.75rem;
       color: white;
     }
 
     img {
-      width: 100%;
-      border-radius: 10px;
+      width:100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px 10px 0 0;
     }
+
     .cta {
       padding: 0 15px;
     }
@@ -93,16 +98,20 @@ const Wrapper = styled.section`
       color: #544667;
     }
 
-    .mobile-desc {
+    .icons:hover {
+      color: #FFF;
+      transition: 0.5s;
+      cursor: pointer;
     }
-    .mobile-project-details {
-      background-color: #DC8666;
-      position: absolute;
-      bottom: 150px;
-      right: 50px;
-      left: 0px;
+
+    .mobile-desc {
       -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
       box-shadow: 5px 5px 24px -1px #633C2E;
+      border-radius: 10px;
+    }
+
+    .mobile-project-details {
+      background-color: #DC8666;
      }
 
      .mobile-project-details  p {
@@ -110,22 +119,27 @@ const Wrapper = styled.section`
     }
 
     .mobile-cta-container {
+     display: flex;
+     justify-content: center;
+     border-radius: 0 0 10px 10px;
      background-color: #544667;
-     position: absolute;
-     top: 90px;
-     right: -2%;
-     padding: 20px 30px; //change this if you're adding 'Learn more' to 20px 0;
-     -webkit-box-shadow: 5px 5px 24px -1px #544667; 
-     box-shadow: 5px 5px 24px -1px #544667;
+     padding: 20px 30px;
     }
 
     .mobile-cta-container .icons {
      color: #EEB462;
    }
-    .desktop-desc {
 
+   .mobile-cta-container .icons:hover {
+      color: #FFF;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .desktop-desc {
       display: none;
     }
+
     @media only screen and ${breakpoint.device.laptop} {
 
     }
@@ -143,6 +157,9 @@ const Wrapper = styled.section`
          display: none;
        }
 
+       img {
+        border-radius: 10px ;      
+      }
        .desktop-desc {
          display: block;
        }
