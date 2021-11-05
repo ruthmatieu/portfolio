@@ -8,7 +8,7 @@ import pinkBlock from "../images/bg-rec-1.png";
 import orangeBlock from "../images/bg-rec-2.png";
 import headshot from "../images/headshot.svg";
 import quotes from "../images/quotes.png"
-import logo from "../images/logo.svg"
+import logo from "../images/logo.png"
 
 const Nav = () =>{
   const [isMobile, setIsMobile] = useState(window.innerWidth);
@@ -38,17 +38,6 @@ const Nav = () =>{
             </ul>
            </div>
            <div className="logo"><img src={logo} alt="logo" style={{width: '50px'}}/></div>
-           { window.innerWidth < 1200 ?
-            <GiHamburgerMenu size={35}/>
-            :
-            <div className="menu-list">
-              <ul>
-                <li className="mx-4 font-bold">LATEST WORK</li>
-                <li className="mx-4 font-bold">BLOG</li>
-                <li className="mx-4 font-bold">HIRE ME</li>
-              </ul>
-            </div>
-          }
            
         </nav>
         <div className="images">
@@ -82,7 +71,7 @@ const Container = styled.div`
 
   .wrapper nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 2rem;
     position: relative;
     z-index: 4;
@@ -93,6 +82,7 @@ const Container = styled.div`
     z-index: 12;
     display: grid;
     place-items: center;
+    margin-left: 8rem;
   }
 
   .social-links ul li {
@@ -102,6 +92,7 @@ const Container = styled.div`
   .logo {
     position: relative;
     z-index: 3;
+    margin-right: 15rem;
   }
 
   .images {
@@ -272,8 +263,6 @@ const Container = styled.div`
     }
 
     .wrapper nav {
-      display: flex;
-      justify-content: space-around;
       padding-top: 2rem;
     }
 
