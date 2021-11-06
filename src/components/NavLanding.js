@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import styled from 'styled-components';
+import { keyframes } from 'styled-components'
 import breakpoint from '../breakpoints';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
-import { GiHamburgerMenu} from 'react-icons/gi';
 import pinkBlock from "../images/bg-rec-1.png";
 import orangeBlock from "../images/bg-rec-2.png";
 import headshot from "../images/headshot.svg";
@@ -24,6 +24,7 @@ const Nav = () =>{
       window.removeEventListener('resize', handleWindowResize);
     };
   }, [handleWindowResize])  
+
 
   return (
     <Container>
@@ -46,8 +47,8 @@ const Nav = () =>{
            <img src={orangeBlock} alt="" className="orange-block"/>
            <img src={quotes} alt="" className="quotes"/>
            <div className="intro-block">
-             <p className="first-line pb-2 font-light">Hi 👋🏾 I'm <span className="font-bold">Alanna</span>.</p>
-             <p className="second-line  font-light">Software Developer, and life-long learner of code.</p>
+             <p className="first-line pb-2 font-light">Hi <span className="wave">👋🏾</span> I'm <span className="font-bold">Alanna</span>.</p>
+             <p className="second-line  font-light fade-in slide-up">Software Developer, and life-long learner of code.</p>
            </div>
          </div>
       </div>
@@ -57,8 +58,42 @@ const Nav = () =>{
 
 export default Nav;
   
+const wave = keyframes`
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+`
+
+const fadeInSlideUp = keyframes`
+  0% { 
+    opacity: 0;
+    padding-top: 50px; 
+  }
+  100% { 
+    opacity: 1;
+    padding-bottom: 0px; 
+  }
+`
 
 const Container = styled.div`
+
+  .wave {
+    animation-name: ${wave};
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%; 
+    display: inline-block;
+  }
+
+  .fade-in {
+    animation-name: ${fadeInSlideUp};
+    animation-duration: 1s;
+  }
   
   .wrapper {
     width: 100%;

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { keyframes } from 'styled-components'
 import breakpoint from '../breakpoints';
 
 
@@ -44,7 +45,7 @@ const About = () => {
         <div className="wrapper">
           <div className="flex-container">
             <div className="info">
-              <p>I'm a Frontend Developer at <a href="https://webstaurantstore.com/" target="_blank" rel="noreferrer" style={{color: '#C9726C'}}>WebstaurantStore</a>, where I work to improve the 
+              <p className="fade-in">I'm a Frontend Developer at <a href="https://webstaurantstore.com/" target="_blank" rel="noreferrer" style={{color: '#C9726C'}}>WebstaurantStore</a>, where I work to improve the 
                 experience of shopping for major restuarant supplies and products online.
                 Currently, I’ve been expanding my skills while exploring the backend technology stacks such as Node, Cypress and PosgreSQL.
                 Through my coding journey, I've come to find that the more I know, the more there is left to know. Therefore, I pride
@@ -85,7 +86,23 @@ const About = () => {
   
 export default About;
 
+const fadeInSlideUp = keyframes`
+  0% { 
+    opacity: 0;
+    padding-top: 50px; 
+  }
+  100% { 
+    opacity: 1;
+    padding-bottom: 0px; 
+  }
+`
+
 const Container = styled.section`
+
+  .fade-in {
+    animation-name: ${fadeInSlideUp};
+    animation-duration: 2s;
+  }
   //background: white;
 
   .wrapper {
