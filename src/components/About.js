@@ -36,7 +36,7 @@ const skills_three = [
     title: 'Azure'
   },
   {
-    title: 'Figma'
+    title: 'Storybook'
   }
 ]
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
             <div className="info">
               <p className="fade-in">I'm a Frontend Developer at <a href="https://webstaurantstore.com/" target="_blank" rel="noreferrer" style={{color: '#C9726C'}}>WebstaurantStore</a>, where I work to improve the 
                 experience of shopping for major restuarant supplies and products online.
-                Currently, I’ve been expanding my skills while exploring the backend technology stacks such as Node, Cypress and PosgreSQL.
+                Currently, I’ve been expanding my skills while exploring backend technology stacks such as Node, Cypress and PosgreSQL.
                 Through my coding journey, I've come to find that the more I know, the more there is left to know. Therefore, I pride
                 myself on life-long learning. When not adulting, however, I spend most of my time reading, writing, and catching 
                 up with Game of Thrones.</p>
