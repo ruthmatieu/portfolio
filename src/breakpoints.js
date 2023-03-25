@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 const size = {
     extraSmall: '0',
     mobile: '400px',

@@ -11,7 +11,7 @@ import quotes from "../images/quotes.png"
 import logo from "../images/logo.png"
 
 const Nav = () =>{
-  const [isMobile, setIsMobile] = useState(window.innerWidth);
+  const [, setIsMobile] = useState(window.innerWidth);
 
   const handleWindowResize = useCallback(e => {
     setIsMobile(window.innerWidth)
