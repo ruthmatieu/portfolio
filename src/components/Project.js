@@ -8,9 +8,6 @@ const Project = (props) => {
   return (
     <Wrapper>
       <div className='project-container'>
-
-       
-        
         <div className='mobile-desc'>
           <div class="project-image">
             <a href={props.link} target='_blank' rel="noopener noreferrer"><img src={props.image} alt={props.name}/></a>
@@ -23,12 +20,9 @@ const Project = (props) => {
           </div>
 
           <div className='mobile-cta-container'>
-              {/* <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink> */}
               <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt size={25} className='icons'/></a>
               <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub size={25} className='icons'/></a>
-            </div>
-          
-        
+          </div>
         </div>
 
         <div className='desktop-desc'>
@@ -43,7 +37,6 @@ const Project = (props) => {
           </div>
 
           <div className='cta-container'>
-              {/* <StyledLink to={props.cta1} className='cta'>Learn More</StyledLink> */}
               <a href={props.link} target='_blank' rel="noopener noreferrer" className='cta'><FaExternalLinkSquareAlt size={25} className='icons'/></a>
               <a href={props.github} target='_blank' rel="noopener noreferrer" className='cta'><FaGithub size={25} className='icons'/></a>
             </div>
