@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
 
                 <p>Designed and Built by Ruth Matieu</p>
-                <p><span>&#169;</span> Copyright 2021</p>
+                <p><span>&#169;</span> Copyright 2023</p>
             </div>
         </Wrapper>
     )
@@ -25,14 +25,13 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.footer`
-    background-color: #544667;
+    background-color: #B1BCBE;
     padding: 30px 0;
     height: 13rem;
-      //background-color: red;
-      width: 100%;
-      max-width: 1680px;
-      overflow: hidden;
-      margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    overflow: hidden;
+    margin: 0 auto;
     
 
     p {
@@ -48,17 +47,8 @@ const Wrapper = styled.footer`
     }
 
     .socials a {
-        
         color: #DC8666;
         padding: 0 10px;
     }
 
-    .socials a:hover {
-
-    }
-
-    
 `;
-
-
-//544667

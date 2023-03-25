@@ -72,7 +72,7 @@ const Wrapper = styled.section`
       font-size: 1.25rem;
       font-weight: 600;
       padding: 30px 0 10px 0;
-      color: #544667;
+      color: #F5F5EC;
     }
 
     p {
@@ -89,29 +89,34 @@ const Wrapper = styled.section`
       margin-right: auto;
       border-radius: 10px 10px 0 0;
     }
+    
+    img:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
 
     .cta {
       padding: 0 15px;
     }
 
     .icons {
-      color: #544667;
+      color: #ACB5AD;
     }
 
     .icons:hover {
-      color: #FFF;
+      color: #808a82;
       transition: 0.5s;
       cursor: pointer;
     }
 
     .mobile-desc {
-      -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
-      box-shadow: 5px 5px 24px -1px #633C2E;
+      -webkit-box-shadow: 5px 5px 24px -1px #1F2937; 
+      box-shadow: 5px 5px 24px -1px #1F2937;
       border-radius: 10px;
     }
 
     .mobile-project-details {
-      background-color: #DC8666;
+      background-color: #B1BCBE;
      }
 
      .mobile-project-details  p {
@@ -122,12 +127,12 @@ const Wrapper = styled.section`
      display: flex;
      justify-content: center;
      border-radius: 0 0 10px 10px;
-     background-color: #544667;
+     background-color: #EBD9D1;
      padding: 20px 30px;
     }
 
     .mobile-cta-container .icons {
-     color: #EEB462;
+     color: #ACB5AD;
    }
 
    .mobile-cta-container .icons:hover {
@@ -145,7 +150,7 @@ const Wrapper = styled.section`
     }
 
     @media only screen and ${breakpoint.device.desktop} {
-      max-width: 1290px;
+      max-width: 1100px;
       margin: 0 auto;
       
       .project-container {
@@ -165,13 +170,13 @@ const Wrapper = styled.section`
        }
 
        .project-details {
-        background-color: #DC8666;
+        background-color: #B1BCBE;
         position: absolute;
         top: 100px;
         right: 270px;
         left: -100px;
-        -webkit-box-shadow: 5px 5px 24px -1px #633C2E; 
-        box-shadow: 5px 5px 24px -1px #633C2E;
+        -webkit-box-shadow: 5px 5px 24px -1px #7e898c; 
+        box-shadow: 5px 5px 24px -1px #7e898c;
        }
 
        .project-details  p {
@@ -179,17 +184,17 @@ const Wrapper = styled.section`
        }
 
        .cta-container {
-        background-color: #544667;
+        background-color: #EBD9D1;
         position: absolute;
         bottom: 130px;
         right: -5%;
         padding: 20px 30px;
-        -webkit-box-shadow: 5px 5px 24px -1px #544667; 
-        box-shadow: 5px 5px 24px -1px #544667;
+        -webkit-box-shadow: 5px 5px 24px -1px #1F2937; 
+        box-shadow: 5px 5px 24px -1px #1F2937;
        }
 
        .icons {
-        color: #EEB462;
+        color: #ACB5AD;
       }
     }
 
@@ -197,8 +202,8 @@ const Wrapper = styled.section`
       
       .project-details {
         top: 100px;
-        right: 360px;
-        left: -200px;
+        right: 330px;
+        left: -50px;
        }
 
        .cta-container {

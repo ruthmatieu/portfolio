@@ -8,7 +8,8 @@ const Projects = () => {
 
   return (
     <Wrapper>
-      <section>
+      <section id="latest-projects">
+        <p className='pt-10 pb-4 text-sm font-mediu leading-8'>Note: For confidentiality reasons, I am unable to share some of the projects I have worked on in the past. However, I am happy to provide a few examples of projects that are either available for public viewing or are my personal projects.</p>
         {data.map(item => {
           return (
             <Project
@@ -31,10 +32,10 @@ export default Projects;
 
 const Wrapper = styled.section`
 
-    max-width: 1680px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 5rem 2rem;
-    background-color: rgba(206, 120, 115, 0.96);
+    background-color: #ACB5AE;
 
     h5 {
       font-size: 23px;
@@ -43,15 +44,13 @@ const Wrapper = styled.section`
       color: white;
       font-weight: 700;
     }
-
    
     @media only screen and ${breakpoint.device.mobile} {
       padding: 5rem 4rem;
-      //padding: 50px 40px 0 40px;
     }
+
     @media only screen and ${breakpoint.device.tablet} {
       padding: 5rem 8rem;
-        //padding: 50px 40px 0 40px;
     }
 
     @media only screen and ${breakpoint.device.desktop} {
@@ -62,6 +61,5 @@ const Wrapper = styled.section`
           
           width: 700px;
         }
-       
     }
 `;

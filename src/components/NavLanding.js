@@ -4,9 +4,9 @@ import { keyframes } from 'styled-components'
 import breakpoint from '../breakpoints';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiFillTwitterCircle, AiOutlineInstagram } from 'react-icons/ai';
-import pinkBlock from "../images/bg-rec-1.png";
-import orangeBlock from "../images/bg-rec-2.png";
-import headshot from "../images/headshot.svg";
+
+import headshot from "../images/headshot.png";
+import dots from "../images/dots.png";
 import quotes from "../images/quotes.png"
 import logo from "../images/logo.png"
 
@@ -32,10 +32,10 @@ const Nav = () =>{
         <nav>
           <div className="social-links">
             <ul>
-              <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="mx-4" style={{color: '#EDB462'}} size={22}/></a></li>
-              <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="mx-4" style={{color: '#EDB462'}} size={22}/></a></li>
-              <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="mx-4" style={{color: '#EDB462'}} size={22}/></a></li>
-              <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="mx-4" style={{color: '#EDB462'}} size={22}/></a></li>
+              <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="mx-4" size={22}/></a></li>
+              <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="mx-4" size={22}/></a></li>
+              <li><a href="https://twitter.com/ruthmatieu" target="_blank" rel="noreferrer"><AiFillTwitterCircle className="mx-4" size={22}/></a></li>
+              <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="mx-4" size={22}/></a></li>
             </ul>
            </div>
            <div className="logo"><img src={logo} alt="logo" style={{width: '50px'}}/></div>
@@ -43,12 +43,23 @@ const Nav = () =>{
         </nav>
         <div className="images">
            <img src={headshot} alt="headshot" className="headshot"/>
-           <img src={pinkBlock} alt="" className="pink-block"/>
-           <img src={orangeBlock} alt="" className="orange-block"/>
-           <img src={quotes} alt="" className="quotes"/>
-           <div className="intro-block">
-             <p className="first-line pb-2 font-light">Hi <span className="wave">👋🏾</span> I'm <span className="font-bold">Alanna</span>.</p>
-             <p className="second-line  font-light fade-in slide-up">Software Developer, and life-long learner of code.</p>
+           <img src={dots} alt="" className="dots absolute top-0 z-50"/>
+           <div className="pink-block"></div>
+           <div className="orange-block"></div>
+           <div className="lg:mr-10 desktop-intro">
+              <img src={quotes} alt="" className="quotes"/>
+              <p className="text-4xl pb-2 font-light mb-4">Hi <span className="wave">👋🏾</span> I'm <span className="font-bold">Alanna</span>.</p>
+              <p className="font-light">Focused on crafting elegant solutions through code, innovation, 
+and experience.</p>
+           
+           </div>
+           
+           <div className="menu-block">
+             <ul className="flex justify-around font-semibold">
+              <a href="#latest-projects"><li>latest projects</li></a>
+              <a href="#contact-me"><li>contact me</li></a>
+              <a href="https://blog.ruthmatieu.com/"><li>visit blog</li></a>
+             </ul>
            </div>
          </div>
       </div>
@@ -101,7 +112,6 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 0;
     height: 450px;
-    background: #FAFAFA;
   }
 
   .wrapper nav {
@@ -115,13 +125,22 @@ const Container = styled.div`
   .social-links {
     position: relative;
     z-index: 12;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-between
     margin-left: 2rem;
   }
 
   .social-links ul li {
     margin: 1.3rem 0;
+    color: #ACB5AE;
+  }
+
+  .social-links ul li:hover {
+    color: #EBD9D1;
+  }
+
+  .menu-block ul li:hover {
+    color: #EBD9D1;
   }
 
   .logo {
@@ -137,8 +156,14 @@ const Container = styled.div`
     width: 230px;
     z-index: 5;
     position: absolute;
-    top: -5rem;
+    top: -3rem;
     left: 30%;
+  }
+
+  .dots {
+    width: 120px;
+    top: 35px;
+    left: 0%;
   }
 
   .pink-block {
@@ -146,8 +171,10 @@ const Container = styled.div`
     position: absolute;
     top: -16rem;
     left: 30%;
+    border-radius: 25% 10%;
     width: 200px;
-    height: 18rem;
+    height: 21rem;
+    background: #EBD9D1;
   }
 
   .orange-block {
@@ -157,26 +184,38 @@ const Container = styled.div`
     top: -0.8rem;
     width: 100%;
     height: 14.85rem;
+    background: #B1BCBE;
   }
 
-  .intro-block {
-    background: #F3F5F9;
+
+  .menu-block {
+    background: #FFFFFF;
     padding-top: 20px;
     z-index: 6;
     position: absolute;
     right: 0;
-    top: 7rem;
+    top: 10.3rem;
     width: 76%;
-    height: 115px;
-    border-radius: 35px 0 0 0;
+    height: 60px;
   }
 
-  .quotes {
+  .menu-block ul {
+    font-size: 11px;
+  }
+
+  .desktop-intro {
+    display: none;
+  }
+
+  .mobile-intro {
     z-index: 7;
     position: absolute;
     left: 27.5%;
-    top: 8rem;
-    width: 6%;
+    top: 2rem;
+  }
+
+  .quotes {
+    width: 55px;
   }
 
   .first-line, .second-line {
@@ -187,13 +226,9 @@ const Container = styled.div`
 
   @media only screen and ${breakpoint.device.mobile} {
 
-    .wrapper {
-      //background: red;
-    }
-  
     .headshot {
       width: 250px;
-      top: -6.5rem;
+      top: -6rem;
     }
 
     .orange-block {
@@ -205,8 +240,18 @@ const Container = styled.div`
       width: 250px;
     }
 
-    .intro-block {
-      padding-left: 1.5rem;
+    .dots {
+      width: 120px;
+      top: 60px;
+      left: 3%;
+    }
+
+    .menu-block {
+      height: 90px;
+      padding: 35px 5px 0 5px;
+      z-index: 50;
+      top: 8.5rem;
+      width: 65%;
     }
   
     .first-line, .second-line {
@@ -215,11 +260,9 @@ const Container = styled.div`
 
   
     @media only screen and ${breakpoint.device.tablet} {
-      //background: green;
   
       .wrapper {
         height: 549.4px;
-        //background: green;
       }
   
       .social-links ul {
@@ -242,17 +285,23 @@ const Container = styled.div`
         width: 300px;
         z-index: 40;
         position: absolute;
-        top: 1rem;
-        left: 40%;
+        top: 6rem;
+        left: 35%;
+      }
+
+      .dots {
+        width: 150px;
+        top: 180px;
+        left: 10%;
       }
     
       .pink-block {
         z-index: 11;
         position: absolute;
         top: -7rem;
-        left: 40%;
+        left: 37%;
         width: 270px;
-        height: 18rem;
+        height: 24rem;
       }
     
       .orange-block {
@@ -264,45 +313,38 @@ const Container = styled.div`
         height: 22rem;
       }
     
-      .intro-block {
-        padding-top: 20px;
-        padding-left: 3rem;
+      .menu-block {
+        height: 100px;
+        padding-top: 37px;
         z-index: 50;
-        top: 16.7rem;
-        width: 75%;
-        height: 200px;
+        top: 23rem;
+        width: 65%;
       }
-    
-      .quotes {
-        z-index: 60;
-        position: absolute;
-        left: 28%;
-        top: 18rem;
-      }
-    
-      .first-line, .second-line {
-        text-align: left;
-        margin-left: 2.5rem;
-        font-size: 1.5rem;
-        padding-top: 10px;
-        padding-left: 15px;
+
+      .menu-block ul {
+        font-size: 15px;
       }
       
+      .mobile-intro {
+        display: none;
+      }
+
+      .mobile-intro {
+        z-index: 60;
+        position: absolute;
+        left: 68%;
+        top: 10rem;
+      }
+    
     }
   }
   
   @media only screen and ${breakpoint.device.desktop} {
-    //background: blue;
 
     .wrapper {
-      max-width: 1680px;
+      max-width: 1280px;
       margin: 0 auto;
       height: 700px;
-      //background: blue;
-    }
-
-    .wrapper nav {
-      padding-top: 2rem;
     }
 
     .social-links {
@@ -332,9 +374,15 @@ const Container = styled.div`
 
     .headshot {
       position: absolute;
-      top: 6rem;
-      left: 40%;
-      width: 350px;
+      top: 5rem;
+      left: 30%;
+      width: 450px;
+    }
+
+    .dots {
+      width: 200px;
+      top: 200px;
+      left: 9%;
     }
 
     .pink-block {
@@ -353,20 +401,24 @@ const Container = styled.div`
       height: 35rem;
     }
 
-    .intro-block {
-      background: #F3F5F9;
-      padding-top: 20px;
+    .menu-block {
+      height: 120px;
       position: absolute;
       right: 0;
-      top: 25rem;
       width: 70%;
-      height: 240px;
-      padding-top: 50px;
+      top: 31.5rem;
     }
 
-    .quotes {
-      left: 34%;
-      top: 28rem;
+    .menu-block ul {
+      font-size: 15px;
+    }
+
+    .desktop-intro {
+      display: block;
+      z-index: 60;
+      position: absolute;
+      left: 70%;
+      top: 15rem;
     }
 
     .first-line, .second-line {
@@ -379,9 +431,6 @@ const Container = styled.div`
   }
 
   @media only screen and ${breakpoint.device.largeScreens} {
-    .wrapper {
-      //background: cyan;
-    }
 
     .logo {
       left: 4%;
@@ -389,25 +438,36 @@ const Container = styled.div`
     }
 
     .headshot {
-      left: 45%;
+      position: absolute;
+      top: 5rem;
+      left: 30%;
+    }
+
+    .dots {
+      width: 200px;
+      top: 200px;
+      left: 10%;
     }
 
     .pink-block {
       left: 35%;
-      width: 35%;
+      width: 27%;
       height: 30rem;
     }
 
-    .intro-block {
-      width: 58%;
-      padding-top: 30px;
-      padding-left: 2rem;
+    .menu-block {
+      height: 120px;
+      padding-top: 20px;
+      position: absolute;
+      right: 0;
+      width: 70%;
+      top: 31.5rem;
+      padding-top: 50px;
     }
 
-    .quotes {
-      left: 44.5%;
-      top: 27rem;
-      width: 55px;
+    .desktop-intro {
+      left: 65%;
+      top: 14rem;
     }
 
   }
