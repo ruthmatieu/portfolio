@@ -12,8 +12,8 @@ import BlogPosts from './components/BlogPosts';
 function App() {
   return (
     <div style={{ backgroundColor: '#000D18' }} className="py-40">
-      <div className="mx-auto flex w-full" style={{ maxWidth: '1100px' }}>
-        <div className="static" style={{ position: 'fixed' }}>
+      <div className="mx-auto w-full px-6" style={{ maxWidth: '1100px' }}>
+        <div className="md:fixed">
           <ul className='flex space-x-8 mb-20'>
                 <li><a href="https://www.linkedin.com/in/ruthmatieu/" target="_blank" rel="noreferrer"><FaLinkedin className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
                 <li><a href="https://github.com/ruthmatieu" target="_blank" rel="noreferrer"><FaGithub className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
@@ -21,9 +21,12 @@ function App() {
                 <li><a href="https://www.instagram.com/alanna.code/" target="_blank" rel="noreferrer"><AiOutlineInstagram className="text-teal-200 hover:text-blue-300" size={22}/></a></li>
             </ul>
           <Intro />
-          <Menu />
+          <div className='hidden md:block'>
+            <Menu />
+          </div>
+         
         </div>
-        <div className="scrollable" style={{ marginLeft: '500px' }}>
+        <div className="md:ml-[500px]">
           <About />
           <Experience />
           <Projects />
