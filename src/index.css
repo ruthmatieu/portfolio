@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.show-arrow {
-    display: block;
-}
-
-.hide-arrow {
-    display: none;
-}
+html, body {
+    background-color: #98FBFC;
+  }
