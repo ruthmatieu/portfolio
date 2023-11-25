@@ -2,17 +2,17 @@ const About = () => {
     return (
         <div id="about" className="pb-16 ml-8" style={{color: "#888D91"}}>
             <p className="mb-2">
-                With a passion stemmed from the discovery of MySpace (🤣 remember that?), I am driven to develop intuitive
-                and user-friendly interfaces that consistently deliver exceptional user experiences.
+                Hello, and thanks for stopping by! I'm Alanna, a dedicated and innovative software engineer with a passion for 
+                crafting seamless digital experiences. 
             </p>
             <p className="mb-2">
-                Over the course of my career, I have had the opportunity to work on a variety of projects,
-                ranging from simple websites to complex web applications, using the latest frontend technologies. 
+                With five years of hands-on experience, I specialize in frontend development and have a proven track record 
+                of delivering high-impact solutions. Explore my portfolio to discover how I bring creativity, precision, and a 
+                commitment to excellence to every project, aiming to push boundaries and contribute to the ever-evolving world 
+                of technology. 
             </p>
             <p className="mb-2">
-                I place a strong emphasis on collaboration and teamwork and work seamlessly with all aspects of the
-                team to deliver high-quality projects. Ultimately, my goal is to create visually stunning and engaging
-                user interfaces that exceed both the expectations of clients and end-users.
+                Let's build the future together!
             </p>
         </div>
     )
